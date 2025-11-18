@@ -67,6 +67,7 @@ const App = () => {
                   Dr. Gustavo Paucar
                 </h1>
                 <p className={`text-xs ${scrolled ? 'text-slate-600' : 'text-slate-600 lg:text-teal-50'}`}>Psiquiatría Integrativa</p>
+
               </div>
             </div>
             
