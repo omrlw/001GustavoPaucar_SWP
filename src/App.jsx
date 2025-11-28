@@ -77,7 +77,14 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Logo Area */}
-            <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo(0,0)}>
+            <div 
+              className="flex items-center cursor-pointer" 
+              onClick={() => window.scrollTo(0,0)}
+              role="button"
+              tabIndex={0}
+              aria-label="Ir al inicio"
+              onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && window.scrollTo(0,0)}
+            >
               <div className={`p-2 rounded-xl transition-all ${scrolled ? 'bg-white shadow-md' : 'bg-white/80 backdrop-blur-md shadow-lg'}`}>
                 <img 
                   src={LogoGalene} 
@@ -85,12 +92,7 @@ const App = () => {
                   className="h-10 w-auto"
                 />
               </div>
-              <div className="flex flex-col">
-                <h1 className={`font-bold text-lg leading-none tracking-tight ${scrolled ? 'text-slate-900' : 'text-white'}`}>
-                  {doctorInfo.shortName}
-                </h1>
-                <p className={`text-xs font-medium ${scrolled ? 'text-[var(--primary-600)]' : 'text-white/80'}`}>Psiquiatría Integrativa</p>
-              </div>
+              <span className="sr-only">Dr. Paucar - Psiquiatría Integrativa</span>
             </div>
             
             {/* Desktop Menu */}
