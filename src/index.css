@@ -1,15 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #064168;
+  --color-secondary: #51BABC;
+  --color-accent: #14B8A6;
+  --color-dark: #0F172A;
+  --color-light: #F8FAFC;
+
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Inter", sans-serif;
+}
+
 :root {
-  --primary-50: #e6ecf0;
-  --primary-100: #cdd9e1;
-  --primary-200: #a8bcca;
-  --primary-300: #82a0b4;
-  --primary-400: #5d849d;
-  --primary-500: #386786;
-  --primary-600: #064168;
-  --primary-700: #053758;
-  --primary-800: #042a44;
-  --primary-900: #031d2f;
-  --primary-rgb: 6, 65, 104;
+  --primary: #064168;
+  --secondary: #51BABC;
+  --accent: #14B8A6;
+  --dark: #0F172A;
+  --light: #F8FAFC;
+}
+
+@layer base {
+  :root {
+    font-family: var(--font-body);
+    color: var(--dark);
+    background-color: var(--light);
+  }
+
+  html { scroll-behavior: smooth; }
+  body { background-color: var(--light); color: var(--dark); }
+  ::selection { background: var(--accent); color: white; }
 }
