@@ -30,7 +30,7 @@ export const HERO_CONTENT = {
   description:
     'Atención especializada en ansiedad, depresión y adicciones. Un enfoque humano basado en evidencia científica para adultos y adolescentes.',
   image: {
-    src: './assets/Gustavo_foto.webp',
+    src: './assets/LogoSWP.png',
     alt: 'Retrato profesional del Dr. Gustavo Paucar Chávez',
   },
   primaryCta: {

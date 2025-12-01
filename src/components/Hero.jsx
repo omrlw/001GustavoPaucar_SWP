@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronRight, Star } from 'lucide-react';
-import heroImg from '../assets/Gustavo_foto.webp';
+import heroImg from '../assets/LogoGalene.svg';
 import Button from './ui/Button';
 import { BRAND_INFO, DOCTOR_DATA, HERO_CONTENT } from '../data/content';
 
