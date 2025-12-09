@@ -9,9 +9,6 @@ export const BRAND_INFO = {
   schedule: 'Lunes a Sábado: 9:00 AM - 8:00 PM',
 };
 
-export const CRISIS_MESSAGE =
-  'Si tú o alguien está en peligro inmediato, llama al 105 o acude a emergencia. Esta web es para citas programadas.';
-
 export const WHATSAPP_TOOLTIP = '¡Escríbenos!';
 
 export const NAV_LINKS = [

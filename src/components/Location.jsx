@@ -3,8 +3,8 @@ import { ArrowRight, Clock, MapPin, Phone } from 'lucide-react';
 import { BRAND_INFO, LOCATION_CONTENT, LOCATION_LABELS } from '../data/content';
 
 const Location = () => (
-  <section id="ubicacion" className="py-0 flex flex-col lg:flex-row min-h-[600px] relative">
-    <div className="lg:w-1/2 bg-primary text-white p-12 lg:p-24 flex flex-col justify-center relative overflow-hidden">
+  <section id="ubicacion" className="flex flex-col lg:flex-row relative ">
+    <div className="lg:w-1/2 bg-primary text-white p-12 lg:p-24 flex flex-col justify-center relative overflow">
       <div
         className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none"
         style={{

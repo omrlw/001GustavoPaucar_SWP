@@ -8,8 +8,8 @@ import {
 } from '../../data/content';
 
 const Footer = () => (
-  <footer className="bg-slate-900 text-slate-400 py-16 border-t border-slate-800 font-body text-sm">
-    <div className="container mx-auto px-6">
+  <footer className="bg-slate-900 text-slate-400 py-16 border-t border-slate-800 font-body text-sm ">
+    <div className="container mx-auto px-6 ">
       <div className="grid md:grid-cols-4 gap-12 mb-12">
         <div className="col-span-1 md:col-span-2">
           <h2 className="font-heading text-3xl font-bold text-white mb-4 tracking-wide">
