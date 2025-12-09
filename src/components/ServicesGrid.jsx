@@ -28,11 +28,6 @@ const ServicesGrid = () => (
             </div>
             <h3 className="font-heading text-2xl font-bold text-dark mb-2">{service.title}</h3>
             <p className="text-sm text-dark/70 mb-4 min-h-[40px]">{service.description}</p>
-            <div className="w-full h-px bg-slate-100 my-4" />
-            <div className="flex justify-between items-center">
-              <span className="text-sm text-dark/60 font-body">{UI_TEXT.servicesPriceLabel}</span>
-              <span className="text-lg font-bold text-secondary font-body">{service.price}</span>
-            </div>
             <Button
               as="a"
               href={BRAND_INFO.whatsappLink}

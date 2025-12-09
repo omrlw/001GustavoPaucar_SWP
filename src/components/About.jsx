@@ -6,12 +6,22 @@ import { ABOUT_CONTENT, DOCTOR_DATA } from '../data/content';
 
 const About = () => (
   <section id="nosotros" className="py-24 bg-white relative overflow-hidden">
-    {/* Decoración de fondo sutil */}
-    <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-      <div className="absolute top-20 -left-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 -right-20 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
-    </div>
+      {/* --- FONDO RECOMENDADO: Patrón Geométrico + Luz Ambiental --- */}
+  <div className="absolute inset-0 pointer-events-none">
+    {/* 1. Fondo base degradado muy sutil */}
+    <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-white to-slate-50" />
 
+    {/* 2. Patrón de cuadrícula tipo "Papel Milimetrado Médico" */}
+    <div className="absolute inset-0 opacity-[0.03]" 
+          style={{ 
+            backgroundImage: 'radial-gradient(#444cf7 1px, transparent 1px)', 
+            backgroundSize: '24px 24px' 
+          }} 
+    />
+    {/* 3. Manchas de luz ambiental (Blobs) */}
+    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-100/40 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3" />
+    <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-50/60 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4" />
+    </div>
     <div className="container mx-auto px-6 relative z-10">
       <SectionTitle title={ABOUT_CONTENT.title} subtitle={ABOUT_CONTENT.subtitle} />
 
@@ -51,12 +61,22 @@ const About = () => (
                 Médico Especialista
               </span>
               <div className="flex gap-2">
-                 <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-mono border border-slate-200">
+                 <a
+                  href="https://aplicaciones.cmp.org.pe/conoce_a_tu_medico/datos-colegiado-detallado.php?id=cE9nQnlaek0xZngvK1F4aDVwV29zUT09"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-mono border border-slate-200 hover:text-primary hover:border-primary transition-colors"
+                 >
                   {DOCTOR_DATA.cmp}
-                </span>
-                <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-mono border border-slate-200">
+                </a>
+                  <a
+                  href="https://aplicaciones.cmp.org.pe/conoce_a_tu_medico/datos-colegiado-detallado.php?id=cE9nQnlaek0xZngvK1F4aDVwV29zUT09"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-mono border border-slate-200 hover:text-primary hover:border-primary transition-colors"
+                  >
                   {DOCTOR_DATA.rne}
-                </span>
+                </a>
               </div>
             </div>
             
