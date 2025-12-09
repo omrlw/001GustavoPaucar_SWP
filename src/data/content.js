@@ -52,7 +52,11 @@ export const DOCTOR_DATA = {
   rne: 'RNE 048301',
   bio: 'Médico psiquiatra con amplia experiencia en el diagnóstico y tratamiento de trastornos mentales en adultos y adolescentes. Especialista en depresión, ansiedad, esquizofrenia, insomnio crónico y adicciones. Ofrece un enfoque integral basado en la evidencia científica y terapias personalizadas para mejorar la calidad de vida.',
   languages: ['Español', 'Inglés', 'Alemán'],
-  education: 'Universidad Nacional de San Agustín de Arequipa',
+  education: [
+    'Universidad Nacional de San Agustín de Arequipa',
+    'Máster en Actualización de Tratamientos Psiquiátricos en pacientes menores',
+    'Introduction to Funcitonal Medicine',
+  ],
   hospitals: [
     'Hospital Honorio Delgado Espinoza',
     'Hospital III Yanahuara',

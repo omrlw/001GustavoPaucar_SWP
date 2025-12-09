@@ -1,6 +1,6 @@
 import React from 'react';
 import { CalendarSearch, MessageCircleMore, HeartHandshake, Brain, ChevronRight, Star } from 'lucide-react';
-import heroImg from '../assets/galeneImage1.webp';
+import heroImg from '../assets/galeneImage2.webp';
 import Button from './ui/Button';
 import { HERO_CONTENT } from '../data/content';
 
