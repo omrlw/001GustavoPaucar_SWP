@@ -5,7 +5,7 @@ export const BRAND_INFO = {
   whatsappLink:
     'https://wa.me/51953426499?text=Hola,%20quisiera%20información%20sobre%20una%20cita%20con%20el%20Dr.%20Paucar',
   address: 'Calle Ricardo Palma 305 Umacollo, Arequipa',
-  mapLink: 'https://maps.google.com/?q=Calle+Ricardo+Palma+305+Umacollo+Arequipa',
+  mapLink: 'https://maps.app.goo.gl/v4XR21v3PZowfYj36',
   schedule: 'Lunes a Sábado: 9:00 AM - 8:00 PM',
 };
 
