@@ -74,30 +74,22 @@
     animation-delay: -10s;
   }
 }
-@keyframes auroraDrift {
-  from {
-    transform: translate3d(-6%, -4%, 0) scale(1);
-  }
-  to {
-    transform: translate3d(10%, 6%, 0) scale(1.08);
-  }
-}
 
 
 @layer utilities {
   .animate-bounce-slow {
-    animation: bounce-slow 30s infinite ease-in-out;
+    animation: bounce-slow 3s infinite ease-in-out;
   }
 }
 @keyframes bounce-slow {
-  0%, 100% { transform: translateY(-5%); }
+  0%, 100% { transform: translateY(-7%); }
   50% { transform: translateY(0); }
 }
 
 @layer components {
   .testimonial-marquee {
     width: max-content;
-    animation: testimonialMarquee 80s linear infinite;
+    animation: testimonialMarquee 50s linear infinite;
   }
 }
 
