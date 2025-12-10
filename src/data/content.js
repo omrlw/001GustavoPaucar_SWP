@@ -5,7 +5,7 @@ export const BRAND_INFO = {
   whatsappLink:
     'https://wa.me/51953426499?text=Hola,%20quisiera%20información%20sobre%20una%20cita%20con%20el%20Dr.%20Paucar',
   address: 'Calle Ricardo Palma 305 Umacollo, Arequipa',
-  mapLink: 'https://maps.app.goo.gl/v4XR21v3PZowfYj36',
+  mapLink: 'https://maps.app.goo.gl/ZgVoMcpseMdn2nCT6',
   schedule: 'Lunes a Sábado: 9:00 AM - 8:00 PM',
 };
 
@@ -162,46 +162,100 @@ export const TESTIMONIALS_CONTENT = {
     'https://www.doctoralia.pe/gustavo-paucar-chavez/psiquiatra/arequipa#profile-reviews',
   reviews: [
     {
-      text: 'El doctor fue muy amable, comprensivo y empático, me explicó todo con claridad y transmite mucha confianza y seguridad.',
-      author: 'Paciente verificado',
-      date: '11 de septiembre de 2025',
+      initial: 'R',
+      author: 'RCV',
+      badge: 'Cita verificada',
+      text: 'Buena atención, escucha todo lo que le tienes que decir. Aconseja y explica bien. El tratamiento funciona. Es puntual. 10/10',
+      date: '1 de diciembre de 2025',
     },
     {
-      text: 'Muy buen profesional, muy dedicado y paciente en sus explicaciones. Muy recomendable, explica todo a detalle.',
-      author: 'Paciente verificado',
+      initial: 'C',
+      author: 'Camila V.',
+      badge: 'Cita verificada',
+      text: 'Muy buen profesional, muy dedicado y paciente en sus explicaciones.',
       date: '25 de noviembre de 2025',
     },
     {
-      text: 'Buen profesional, trato cordial, dispuesto a conversar y entender el problema. Pregunté todo lo que necesitaba saber.',
-      author: 'Paciente verificado',
+      initial: 'J',
+      author: 'JG',
+      badge: 'Cita verificada',
+      text: 'Muy buena atención , resultados con el tratamiento',
+      date: '4 de noviembre de 2025',
+    },
+    {
+      initial: 'G',
+      author: 'Gilmer Manuel Gonzales Chavarria',
+      badge: 'Cita verificada',
+      text: 'Muy recomendable, explica todo a detalle. Es una persona muy buen profesional',
+      date: '29 de octubre de 2025',
+    },
+    {
+      initial: 'M',
+      author: 'Max P.',
+      badge: 'Cita verificada',
+      text: 'El doctor me atendió a tiempo, me envió el link 10 min antes y me escuchó en todo lo que tenia que decirle',
+      date: '28 de octubre de 2025',
+    },
+    {
+      initial: 'L',
+      author: 'Luis Alberto',
+      badge: 'Número de teléfono verificado',
+      text: 'La atención fue excelente, me explicó a detalle mi padecimiento y me dió mucha confianza para hablar. Gracias doctor',
+      date: '11 de septiembre de 2025',
+    },
+    {
+      initial: 'S',
+      author: 'Sonia',
+      badge: 'Número de teléfono verificado',
+      text: 'El doctor fue muy amable, comprensivo y empatico, me explicó todo con claridad y transmite mucha confianza y seguridad',
+      date: '11 de septiembre de 2025',
+    },
+    {
+      initial: 'D',
+      author: 'D.O.',
+      badge: 'Cita verificada',
+      text: 'Buen profesional, trato cordial, dispuesto a conversar y entender el problema. Pregunte todo lo que necesitaba saber',
       date: '8 de agosto de 2025',
+    },
+    {
+      initial: 'E',
+      author: 'Estefany',
+      badge: 'Cita verificada',
+      text: 'Muy empatico y agradable. Nos brindó una atención muy detallada y humanizada. Muy agradecida doctor',
+      date: '11 de julio de 2025',
+    },
+    {
+      initial: 'P',
+      author: 'PH',
+      badge: 'Número de teléfono verificado',
+      text: 'Atención detallada. Especialista profesional y empático',
+      date: '9 de junio de 2025',
     },
   ],
 };
 
 export const FAQS = [
   {
-    question: '¿Aceptan seguros médicos?',
-    answer:
-      'Actualmente trabajamos de manera particular, pero emitimos recibos por honorarios que pueden ser presentados a su seguro para reembolso según su póliza.',
+    question: "¿Qué condiciones trata el Dr. Gustavo Paucar?",
+    answer: "El Dr. Gustavo Paucar se especializa en el diagnóstico y tratamiento de trastornos como la ansiedad, depresión, trastorno afectivo bipolar, esquizofrenia, ataques de pánico y trastornos del sueño (insomnio). Su enfoque es integral, buscando no solo el alivio de síntomas, sino la recuperación funcional del paciente."
   },
   {
-    question: '¿Atienden a adolescentes?',
-    answer:
-      'Sí, el Dr. Paucar cuenta con experiencia específica en psiquiatría infanto-juvenil y adolescentes (TDAH, trastornos de conducta).',
+    question: "¿Cómo es la primera consulta psiquiátrica?",
+    answer: "La primera sesión es una evaluación exhaustiva. Se realiza una entrevista clínica para entender tus antecedentes, síntomas actuales y contexto de vida. El objetivo es establecer un diagnóstico preciso y diseñar un plan de tratamiento personalizado, que puede incluir psicoterapia, medicación o ambos."
   },
   {
-    question: '¿Cuánto dura una sesión?',
-    answer:
-      'La primera consulta tiene una duración aproximada de 45-60 minutos para una evaluación exhaustiva.',
+    question: "¿Realiza consultas presenciales y online?",
+    answer: "Sí. El consultorio físico está ubicado en Arequipa para atención presencial. Además, ofrece la modalidad de telemedicina (videollamada) para pacientes que requieren seguimiento a distancia o tienen dificultades para trasladarse."
   },
   {
-    question: '¿Atienden emergencias?',
-    answer:
-      'Atendemos urgencias dentro del horario de consultorio. Para emergencias graves fuera de horario, acudir al hospital de guardia.',
+    question: "¿Acepta seguros médicos o EPS?",
+    answer: "El consultorio emite los recibos necesarios para que puedas gestionar el reembolso con tu seguro privado o EPS, dependiendo de las condiciones de tu póliza. Se recomienda consultar directamente vía WhatsApp para confirmar los convenios vigentes."
   },
+  {
+    question: "¿Cuál es la diferencia entre psiquiatra y psicólogo?",
+    answer: "El psiquiatra (como el Dr. Paucar) es un médico que puede diagnosticar enfermedades mentales y recetar medicamentos si es necesario, evaluando los aspectos biológicos y químicos del cerebro. El psicólogo se enfoca principalmente en la terapia conductual y emocional sin uso de fármacos. Ambos suelen trabajar en conjunto."
+  }
 ];
-
 export const LOCATION_CONTENT = {
   title: 'Visítanos en Arequipa',
   directionsNote: '(Edificio de 4 pisos a media cuadra del Parque Libertad de Expresión)',

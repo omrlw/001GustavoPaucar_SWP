@@ -4,6 +4,7 @@ import Button from './ui/Button';
 import SectionTitle from './ui/SectionTitle';
 import { BRAND_INFO, SERVICES_CONTENT, UI_TEXT } from '../data/content';
 
+
 const iconMap = {
   brain: <Brain size={24} aria-hidden />,
   activity: <Activity size={24} aria-hidden />,

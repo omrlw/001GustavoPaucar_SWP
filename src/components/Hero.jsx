@@ -12,18 +12,12 @@ const Hero = () => (
     <div className="absolute inset-0 pointer-events-none">
       {/* Degradado base suave */}
       <div className="absolute inset-0 bg-gradient-to-b from-teal-50/40 via-white to-slate-50/30" />
-      
-      {/* Patrón Grid: Aporta estructura técnica/científica */}
-      <div className="absolute inset-0 opacity-[0.03]" 
-            style={{ 
-              backgroundImage: 'radial-gradient(#0d9488 1px, transparent 1px)', 
-              backgroundSize: '24px 24px' 
-            }} 
-      />
-      
-      {/* Luces Ambientales (Blobs): Aportan calidez */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-teal-100/30 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3" />
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-100/40 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4" />
+
+      {/* Auroras animadas */}
+      <div className="hero-aurora-veil" />
+      <div className="hero-aurora hero-aurora-1" />
+      <div className="hero-aurora hero-aurora-2" />
+      <div className="hero-aurora hero-aurora-3" />
     </div>
 
     {/* Section */}
@@ -51,7 +45,7 @@ const Hero = () => (
               as="a"
               href={HERO_CONTENT.primaryCta.href}
               ariaLabel={HERO_CONTENT.primaryCta.ariaLabel}
-              className="w-full sm:w-auto justify-center shadow-md shadow-primary/14"
+              className="w-full sm:w-auto justify-center hover:duration-550"
             >
             <CalendarSearch/>
   
@@ -64,7 +58,7 @@ const Hero = () => (
               ariaLabel={HERO_CONTENT.secondaryCta.ariaLabel}
               target="_blank"
               rel="noreferrer"
-              className="w-full sm:w-auto justify-center"
+              className="w-full sm:w-auto justify-center hover:duration-550"
             >
             <MessageCircleMore/>
               {HERO_CONTENT.secondaryCta.label}

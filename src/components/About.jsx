@@ -25,7 +25,7 @@ const About = () => (
     <div className="container mx-auto px-6 relative z-10">
       <SectionTitle title={ABOUT_CONTENT.title} subtitle={ABOUT_CONTENT.subtitle} />
 
-      <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-20 items-center mt-12 max-w-7xl mx-auto">
+      <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-20 items-center mt-12 mx-auto">
         
         {/* COLUMNA IZQUIERDA: Imagen limpia y destacada */}
         <div className="relative order-2 lg:order-1 flex justify-center">
@@ -33,7 +33,7 @@ const About = () => (
               <img
                 src={doctorPortrait}
                 alt={`Dr. ${DOCTOR_DATA.name}`}
-                className="w-full h-auto object-cover aspect-[3/4] hover:scale-105 transition-transform duration-700"
+                className="w-100 h-auto object-cover aspect-[3/4] hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />
               {/* Eliminamos la tarjeta superpuesta redundante para dar limpieza */}

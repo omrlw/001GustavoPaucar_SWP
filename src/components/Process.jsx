@@ -2,6 +2,7 @@ import React from 'react';
 import { Activity, CalendarCheck, ClipboardList, ArrowRight } from 'lucide-react';
 import SectionTitle from './ui/SectionTitle';
 import { PROCESS_CONTENT } from '../data/content';
+import galeneSection1 from '../assets/galeneSection1.svg';
 
 const iconMap = {
   activity: <Activity size={32} aria-hidden />,
@@ -10,7 +11,17 @@ const iconMap = {
 };
 
 const Process = () => (
-  <section className="py-20 bg-light border-y border-slate-200">
+  <section
+    className="relative py-20 bg-light border-y border-slate-200"
+  >
+    <div className="pointer-events-none absolute inset-0 flex items-end justify-end pr-13 pb-13">
+      <img
+        src={galeneSection1}
+        alt=""
+        aria-hidden
+        className="w-50 opacity-10"
+      />
+    </div>
     <div className="container mx-auto px-6">
       <SectionTitle title={PROCESS_CONTENT.title} subtitle={PROCESS_CONTENT.subtitle} />
 
