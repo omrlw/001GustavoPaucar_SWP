@@ -8,18 +8,6 @@ import doctoraliaLogo from '../assets/docplanner.png';
 const Hero = () => (
   <header id="inicio" className="relative pt-32 pb-16 sm:pt-36 lg:pt-40 lg:pb-32 bg-light overflow-hidden">
       
-      {/* --- FONDO MEJORADO (Coherente con la sección About) --- */}
-    <div className="absolute inset-0 pointer-events-none">
-      {/* Degradado base suave */}
-      <div className="absolute inset-0 bg-gradient-to-b from-teal-50/40 via-white to-slate-50/30" />
-
-      {/* Auroras animadas */}
-      <div className="hero-aurora-veil" />
-      <div className="hero-aurora hero-aurora-1" />
-      <div className="hero-aurora hero-aurora-2" />
-      <div className="hero-aurora hero-aurora-3" />
-    </div>
-
     {/* Section */}
     <div className="container mx-auto px-6 sm:px-8 lg:px-10 max-w-7xl">
       <div className="flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-16 xl:gap-20 relative z-10">
