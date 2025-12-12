@@ -12,9 +12,9 @@ const iconMap = {
 
 const Process = () => (
   <section
-    className="relative py-20 bg-light border-y border-slate-200"
+    className="relative py-20 bg-light-alt border-y border-slate-200/50"
   >
-    <div className="pointer-events-none absolute inset-0 flex items-end justify-end pr-13 pb-13">
+    <div className="pointer-events-none absolute inset-0 flex items-end justify-end pr-13 pb-13 -z-10">
       <img
         src={galeneSection1}
         alt=""
@@ -22,7 +22,7 @@ const Process = () => (
         className="w-50 opacity-10"
       />
     </div>
-    <div className="container mx-auto px-6">
+    <div className="container mx-auto px-6 relative z-10">
       <SectionTitle title={PROCESS_CONTENT.title} subtitle={PROCESS_CONTENT.subtitle} />
 
       <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">

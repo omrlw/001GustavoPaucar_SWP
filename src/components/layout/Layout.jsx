@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
   const scrolled = useScroll();
 
   return (
-    <div className="font-body text-dark antialiased bg-light">
+    <div className="font-body text-dark antialiased bg-light page-mesh">
       <Navbar
         scrolled={scrolled}
         isMenuOpen={isOpen}

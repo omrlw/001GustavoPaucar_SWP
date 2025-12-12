@@ -8,8 +8,8 @@ const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section id="faq" className="py-24 bg-light overflow-hidden">
-      <div className="container mx-auto px-6 max-w-6xl">
+    <section id="faq" className="py-24 overflow-hidden bg-light bg-light-mesh mesh-soft border-y border-slate-200/50 ">
+      <div className="container mx-auto px-6 max-w-6xl ">
         <SectionTitle 
           title={FAQ_CONTENT.title} 
           subtitle={FAQ_CONTENT.subtitle} 

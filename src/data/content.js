@@ -40,6 +40,11 @@ export const HERO_CONTENT = {
     href: 'https://wa.me/51953426499?text=Hola,%20quisiera%20información%20sobre%20una%20cita%20con%20el%20Dr.%20Paucar',
     ariaLabel: 'Abrir conversación de WhatsApp con el consultorio del Dr. Paucar',
   },
+  floatingCard: {
+    title: 'Primera consulta',
+    subtitle: '45–60 min confidencial',
+    note: 'Presencial u online',
+  },
 };
 
 export const DOCTOR_DATA = {

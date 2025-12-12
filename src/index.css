@@ -80,10 +80,25 @@
   .animate-bounce-slow {
     animation: bounce-slow 3s infinite ease-in-out;
   }
+
+  .animate-float-slow {
+    animation: float-slow 6s ease-in-out infinite;
+  }
 }
 @keyframes bounce-slow {
   0%, 100% { transform: translateY(-7%); }
   50% { transform: translateY(0); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes auroraDrift {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(3%, -2%, 0) scale(1.04); }
+  100% { transform: translate3d(-2%, 3%, 0) scale(1.02); }
 }
 
 @layer components {
@@ -96,4 +111,98 @@
 @keyframes testimonialMarquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+
+@layer utilities {
+  .page-mesh {
+    position: relative;
+    z-index: 0;
+    isolation: isolate;
+    background-color: var(--light);
+  }
+
+  .page-mesh::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background:
+      radial-gradient(900px circle at 12% -8%, rgba(81, 186, 188, 0.14), transparent 55%),
+      radial-gradient(1200px circle at 95% 5%, rgba(6, 65, 104, 0.10), transparent 60%),
+      radial-gradient(1100px circle at 20% 45%, rgba(20, 184, 166, 0.08), transparent 60%),
+      radial-gradient(1400px circle at 85% 70%, rgba(81, 186, 188, 0.10), transparent 65%),
+      radial-gradient(1000px circle at 35% 110%, rgba(6, 65, 104, 0.07), transparent 60%);
+  }
+
+  .page-mesh::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+    background-size: 160px 160px;
+    opacity: 0.03;
+    mix-blend-mode: multiply;
+  }
+
+  .bg-light-mesh {
+    position: relative;
+    z-index: 0;
+    isolation: isolate;
+  }
+
+  .bg-light-mesh::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background:
+      radial-gradient(700px circle at var(--mesh-1-x, 8%) var(--mesh-1-y, -10%), rgba(81, 186, 188, var(--mesh-a, 0.16)), transparent 60%),
+      radial-gradient(900px circle at var(--mesh-2-x, 110%) var(--mesh-2-y, 15%), rgba(6, 65, 104, var(--mesh-b, 0.12)), transparent 65%),
+      radial-gradient(800px circle at var(--mesh-3-x, 30%) var(--mesh-3-y, 120%), rgba(20, 184, 166, var(--mesh-c, 0.10)), transparent 60%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+  }
+
+  .bg-light-mesh::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+    background-size: 160px 160px;
+    opacity: var(--noise-opacity, 0.035);
+    mix-blend-mode: multiply;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+  }
+
+  .mesh-strong {
+    --mesh-a: 0.18;
+    --mesh-b: 0.14;
+    --mesh-c: 0.12;
+    --noise-opacity: 0.04;
+  }
+
+  .mesh-soft {
+    --mesh-a: 0.12;
+    --mesh-b: 0.10;
+    --mesh-c: 0.08;
+    --noise-opacity: 0.03;
+  }
+
+  .mesh-min {
+    --mesh-a: 0.08;
+    --mesh-b: 0.06;
+    --mesh-c: 0.05;
+    --noise-opacity: 0.02;
+  }
+
+  .bg-light-alt {
+    background-color: rgba(6, 65, 104, 0.02);
+  }
 }

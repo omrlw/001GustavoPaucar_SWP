@@ -10,7 +10,7 @@ const Testimonials = () => {
   );
 
   return (
-    <section id="testimonios" className="py-24 bg-light overflow-hidden">
+    <section id="testimonios" className="py-24 bg-light-alt overflow-hidden border-y border-slate-200/50">
       <div className="container mx-auto px-6">
         <SectionTitle title={TESTIMONIALS_CONTENT.title} subtitle={TESTIMONIALS_CONTENT.subtitle} />
 
@@ -20,7 +20,7 @@ const Testimonials = () => {
               {marqueeReviews.map((review, idx) => (
                 <article
                   key={`${review.author}-${review.date}-${idx}`}
-                  className="bg-slate-100 p-10 rounded-2xl relative shadow-sm border border-slate-100 shrink-0 flex flex-col gap-3 w-[280px] h-[280px] sm:w-[300px] sm:h-[300px] lg:w-[500px] lg:h-[280px]"
+                  className="bg-light p-10 rounded-2xl relative shadow-sm border border-slate-50 shrink-0 flex flex-col gap-3 w-[280px] h-[280px] sm:w-[300px] sm:h-[300px] lg:w-[500px] lg:h-[280px]"
                 >
                   <Quote size={26} className="text-primary/10 absolute top-4 right-4" aria-hidden />
                   <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
