@@ -30,6 +30,11 @@ export const HERO_CONTENT = {
     src: './assets/LogoSWP.png',
     alt: 'Retrato profesional del Dr. Gustavo Paucar Chávez',
   },
+  overlays: {
+    confidential: '100% Confidencial',
+    locationTitle: 'Ubicación',
+    locationSubtitle: 'Consultorio en Arequipa',
+  },
   primaryCta: {
     label: 'Agendar Consulta',
     href: '#ubicacion',
@@ -42,7 +47,7 @@ export const HERO_CONTENT = {
   },
   floatingCard: {
     title: 'Primera consulta',
-    subtitle: '45–60 min confidencial',
+    duration: '45–60 min',
     note: 'Presencial u online',
   },
 };
