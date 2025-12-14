@@ -27,7 +27,7 @@ export const HERO_CONTENT = {
   description:
     'Atención especializada en ansiedad, depresión y adicciones. Un enfoque humano basado en evidencia científica para adultos y adolescentes.',
   primaryCta: {
-    label: 'Agendar Consulta',
+    label: 'Nuestra Ubicación',
     href: '#ubicacion',
     ariaLabel: 'Ir a la sección de ubicación para agendar una consulta',
   },
@@ -137,7 +137,7 @@ export const TESTIMONIALS_CONTENT = {
   subtitle: 'Opiniones verificadas de Doctoralia',
   ctaLabel: 'Ver todas las opiniones en Doctoralia',
   ctaHref:
-    'https://www.doctoralia.pe/gustavo-paucar-chavez/psiquiatra/arequipa#profile-reviews',
+    'https://www.doctoralia.pe/gustavo-paucar-chavez/psiquiatra/arequipa',
   reviews: [
     {
       initial: 'R',

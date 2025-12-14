@@ -42,6 +42,7 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
   }
 
   body {
@@ -237,9 +238,7 @@
     animation: float-slow 6s ease-in-out infinite;
   }
 
-  .animate-pulse-gentle {
-    animation: pulseGentle 4s ease-in-out infinite;
-  }
+
 }
 
 @keyframes bounce-slow {

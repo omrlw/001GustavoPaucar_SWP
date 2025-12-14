@@ -5,16 +5,16 @@ import doctorPortrait from '../assets/Gustavo_foto.webp';
 import { ABOUT_CONTENT, DOCTOR_DATA } from '../data/content';
 
 const About = () => (
-  <section id="nosotros" className="py-24 relative overflow-hidden bg-light-alt section-glow border-y border-slate-300/50 cv-auto">
+  <section id="nosotros" className="py-16 sm:py-20 lg:py-20 relative overflow-hidden bg-light-alt section-glow border-y border-slate-300/50">
 
-    <div className="container mx-auto px-6 relative z-10">
+    <div className="container mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
       <SectionTitle title={ABOUT_CONTENT.title} subtitle={ABOUT_CONTENT.subtitle} />
 
-      <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-20 items-center mt-12 mx-auto">
+      <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-20 items-center mt-8 lg:mt-12 mx-auto">
 
         {/* COLUMNA IZQUIERDA: Imagen limpia y destacada */}
-        <div className="relative order-2 lg:order-1 flex justify-center">
-          <div className="relative w-full max-w-[360px] rounded-3xl overflow-hidden shadow-2xl shadow-slate-200 aspect-[3/4]">
+        <div className="relative order-2 lg:order-1 flex justify-center group perspective-1000">
+          <div className="relative w-full max-w-[380px] aspect-[3/4] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-300/70 border-[6px] border-white transition-transform duration-500 hover:scale-[1.01]">
             <img
               src={doctorPortrait}
               alt={`Dr. ${DOCTOR_DATA.name}`}
@@ -24,7 +24,8 @@ const About = () => (
               loading="lazy"
               decoding="async"
             />
-            {/* Eliminamos la tarjeta superpuesta redundante para dar limpieza */}
+
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent opacity-60"></div>
           </div>
 
           {/* Badge flotante decorativo (opcional, pero se ve moderno) */}
@@ -68,7 +69,7 @@ const About = () => (
               </div>
             </div>
 
-            <h3 className="font-heading text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
+            <h3 className="font-heading text-4xl lg:text-5xl font-semibold tracking-tight text-slate-900 leading-tight">
               {DOCTOR_DATA.name}
             </h3>
 
@@ -116,7 +117,7 @@ const About = () => (
 
           {/* Idiomas: Diseño minimalista */}
           <div className="pt-4 border-t border-slate-100">
-            <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3 block">Idiomas</span>
+            <span className="text-xs font-semibold text-primary uppercase tracking-wider mb-3 block">Idiomas</span>
             <div className="flex gap-2 flex-wrap">
               {DOCTOR_DATA.languages.map((lang) => (
                 <span

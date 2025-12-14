@@ -3,7 +3,7 @@ import { ArrowRight, Clock, MapPin, Phone } from 'lucide-react';
 import { BRAND_INFO, LOCATION_CONTENT, LOCATION_LABELS } from '../data/content';
 
 const Location = () => (
-  <section id="ubicacion" className="py-20 bg-primary relative overflow-hidden text-white cv-auto">
+  <section id="ubicacion" className="py-16 sm:py-20 bg-primary relative overflow-hidden text-white">
     <div
       className="absolute inset-0 opacity-10 pointer-events-none"
       style={{
@@ -11,15 +11,15 @@ const Location = () => (
         backgroundSize: '30px 30px',
       }}
     />
-    <div className="container mx-auto px-6 relative z-10">
+    <div className="container mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
         <div className="lg:w-1/2 flex flex-col justify-center">
-          <h2 className="font-heading text-4xl lg:text-5xl font-bold mb-8">
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight mb-8 text-center lg:text-left">
             {LOCATION_CONTENT.title}
           </h2>
 
           <div className="space-y-8 font-body">
-            <div className="flex gap-4 group">
+            <div className="flex gap-4 group max-w-md mx-auto lg:mx-0">
               <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                 <MapPin size={20} aria-hidden />
               </div>
@@ -33,7 +33,7 @@ const Location = () => (
               </div>
             </div>
 
-            <div className="flex gap-4 group">
+            <div className="flex gap-4 group max-w-md mx-auto lg:mx-0">
               <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                 <Phone size={20} aria-hidden />
               </div>
@@ -44,7 +44,7 @@ const Location = () => (
               </div>
             </div>
 
-            <div className="flex gap-4 group">
+            <div className="flex gap-4 group max-w-md mx-auto lg:mx-0">
               <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                 <Clock size={20} aria-hidden />
               </div>

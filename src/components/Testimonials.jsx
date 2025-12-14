@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { ArrowRight, Quote, Star } from 'lucide-react';
+import { Quote, Star } from 'lucide-react';
 import SectionTitle from './ui/SectionTitle';
 import { TESTIMONIALS_CONTENT } from '../data/content';
 import doctoraliaLogo from '../assets/docplanner.png';
@@ -11,7 +11,7 @@ const Testimonials = () => {
   );
 
   return (
-    <section id="testimonios" className="py-24 bg-primary overflow-hidden section-glow border-y border-slate-200/50 cv-auto">
+    <section id="testimonios" className="py-16 sm:py-20 lg:py-24 bg-primary overflow-hidden section-glow border-y border-slate-200/50">
       <div
       className="absolute inset-0 opacity-10 pointer-events-none"
       style={{
@@ -21,7 +21,7 @@ const Testimonials = () => {
     />
 
 
-      <div className="container mx-auto px-6 ">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-10 ">
          <SectionTitle
           title={TESTIMONIALS_CONTENT.title}
           subtitle={TESTIMONIALS_CONTENT.subtitle}
@@ -79,7 +79,8 @@ const Testimonials = () => {
             href="https://www.doctoralia.pe/gustavo-paucar-chavez/psiquiatra/arequipa#profile-info"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-3 mt-3 w-fit px-5 py-2.5 rounded-full bg-white/80 backdrop-blur-sm border border-slate-200 text-dark shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+            className="inline-flex items-center gap-3 mt-3 w-fit px-5 py-2.5 rounded-full bg-white/90 border border-slate-200 text-dark shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary/40"
+            aria-label="Ver perfil en Doctoralia"
           >
             <img
               src={doctoraliaLogo}
@@ -91,7 +92,7 @@ const Testimonials = () => {
               decoding="async"
             />
             <div className="flex items-center gap-2 text-sm font-medium flex-wrap">
-              <span className="text-dark/60">Ver todas la opiniones en</span>
+              <span className="text-dark/60">Ver perfil en</span>
               <span className="text-primary font-semibold">Doctoralia</span>
               <span className="w-px h-5 bg-slate-200" aria-hidden />
               <span className="flex items-center gap-1 text-amber-400" aria-label="5 de 5 estrellas">

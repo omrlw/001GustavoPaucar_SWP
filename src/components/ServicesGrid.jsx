@@ -14,8 +14,8 @@ const iconMap = {
 };
 
 const ServicesGrid = () => (
-  <section id="servicios" className="py-24 bg-light section-glow cv-auto">
-    <div className="container mx-auto px-6">
+  <section id="servicios" className="py-16 sm:py-20 lg:py-20 bg-light section-glow">
+    <div className="container mx-auto px-6 sm:px-8 lg:px-10">
       <SectionTitle title={SERVICES_CONTENT.title} subtitle={SERVICES_CONTENT.subtitle} />
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -27,7 +27,7 @@ const ServicesGrid = () => (
             <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
               {iconMap[service.icon]}
             </div>
-            <h3 className="font-heading text-2xl font-bold text-dark mb-2">{service.title}</h3>
+            <h3 className="font-heading text-2xl font-semibold tracking-tight text-dark mb-2">{service.title}</h3>
             <p className="text-sm text-dark/70 mb-4 min-h-[40px]">{service.description}</p>
             <Button
               as="a"

@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  CalendarSearch,
+  MapPin,
   MessageCircleMore,
   HeartHandshake,
   Star,
@@ -8,9 +8,9 @@ import {
   BadgeCheck,
   Users,
 } from 'lucide-react';
-import heroImg512 from '../assets/galeneImage2-512.jpg';
-import heroImg768 from '../assets/galeneImage2-768.jpg';
-import heroImg1024 from '../assets/galeneImage2-1024.jpg';
+import heroImg512 from '../assets/galeneImage2-512.webp';
+import heroImg768 from '../assets/galeneImage2-768.webp';
+import heroImg1024 from '../assets/galeneImage2-1024.webp';
 import Button from './ui/Button';
 import { HERO_CONTENT } from '../data/content';
 import doctoraliaLogo from '../assets/docplanner.png';
@@ -48,7 +48,7 @@ const Hero = () => (
             <HeartHandshake size={14} />
             {HERO_CONTENT.badge}
           </div>
-          <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-dark leading-[1.1] drop-shadow-[0_4px_16px_rgba(6,65,104,0.08)]">
+          <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-semibold tracking-tight text-dark leading-[1.1] drop-shadow-[0_4px_16px_rgba(6,65,104,0.08)]">
             {HERO_CONTENT.titlePrefix}
             <br />
             <span className="text-primary italic">{HERO_CONTENT.highlight}</span>{' '}
@@ -65,7 +65,7 @@ const Hero = () => (
               ariaLabel={HERO_CONTENT.primaryCta.ariaLabel}
               className="w-full sm:w-auto justify-center"
             >
-              <CalendarSearch />
+              <MapPin />
               {HERO_CONTENT.primaryCta.label}
             </Button>
             <Button
@@ -118,7 +118,7 @@ const Hero = () => (
               srcSet={`${heroImg512} 512w, ${heroImg768} 768w, ${heroImg1024} 1024w`}
               sizes="(min-width: 1280px) 664px, (min-width: 1024px) 560px, (min-width: 640px) 512px, 100vw"
               alt="Instalaciones y equipo de Galene Salud Mental"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover p-2"
               width={768}
               height={768}
               loading="eager"
@@ -127,21 +127,24 @@ const Hero = () => (
             />
           </div>
 
-          {/* Trust badge widget - top right */}
-          <div className="absolute -top-2 -right-2 sm:top-4 sm:right-0 xl:-right-8 bg-white/98 p-3 sm:p-4 rounded-2xl shadow-xl border border-slate-100/80 z-20 animate-float-slow" style={{ animationDelay: '-2s' }}>
+          {/* Trust badge widget */}
+          <div
+            className="hidden lg:block absolute -top-2 -right-2 xl:-right-8 bg-white/98 p-4 rounded-2xl shadow-xl border border-slate-100/80 z-20 animate-float-slow"
+            style={{ animationDelay: '-2s' }}
+          >
             <div className="flex items-center gap-2.5">
               <div className="p-2 bg-gradient-to-br from-accent to-secondary rounded-full text-white shadow-lg shadow-accent/25">
                 <BadgeCheck size={18} aria-hidden />
               </div>
               <div>
-                <p className="text-[10px] font-bold text-accent uppercase tracking-wider">Verificado</p>
-                <p className="text-xs font-semibold text-slate-800">Médico Colegiado</p>
+                <p className="text-xs font-bold text-accent uppercase tracking-wider">Verificado</p>
+                <p className="text-sm font-bold text-slate-800">Médico Colegiado</p>
               </div>
             </div>
           </div>
 
           {/* Patients counter widget - mid left */}
-          <div className="absolute top-1/3 -left-3 sm:-left-1 bg-white/98 p-3 rounded-xl shadow-xl border border-slate-100/80 z-20 animate-pulse-gentle hidden sm:block">
+          <div className="hidden lg:block absolute top-1/3 -left-1 bg-white/98 p-3 rounded-xl shadow-xl border border-slate-100/80 z-20 animate-pulse-gentle">
             <div className="flex items-center gap-2">
               <div className="flex -space-x-2">
                 <div className="w-6 h-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-[10px] font-bold ring-2 ring-white">+</div>
@@ -151,7 +154,7 @@ const Hero = () => (
               </div>
               <div>
                 <p className="text-xs font-bold text-slate-800">100+</p>
-                <p className="text-[9px] text-slate-500">Pacientes atendidos</p>
+                <p className="text-xs font-semibold text-slate-800">Pacientes atendidos</p>
               </div>
             </div>
           </div>
@@ -162,13 +165,10 @@ const Hero = () => (
                 <Clock size={18} aria-hidden />
               </div>
               <div>
-                <p className="text-[10px] font-bold text-primary uppercase tracking-wider">
+                <p className="text-xs font-bold text-primary uppercase tracking-wider">
                   {HERO_CONTENT.floatingCard.title}
                 </p>
-                <p className="text-sm font-semibold text-slate-900">
-                  {HERO_CONTENT.floatingCard.subtitle}
-                </p>
-                <p className="text-xs font-semibold text-slate-800">
+                <p className="text-sm font-bold text-slate-800">
                   {HERO_CONTENT.floatingCard.note}
                 </p>
               </div>

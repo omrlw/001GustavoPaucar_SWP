@@ -5,19 +5,19 @@ const SectionTitle = ({
   subtitle,
   align = 'center',
   titleClassName = '',
-  subtitleClassName = 'text-light',
+  subtitleClassName = '',
   titleColorClassName = 'text-primary',
   subtitleColorClassName = 'text-slate-600',
 }) => (
-  <div className={`mb-12 ${align === 'center' ? 'text-center' : 'text-left'}`}>
+  <div className={`mb-8 sm:mb-10 lg:mb-12 ${align === 'center' ? 'text-center' : 'text-left'}`}>
     <h2
-      className={`font-heading text-4xl lg:text-5xl font-semibold mb-4 ${titleColorClassName} ${titleClassName}`}
+      className={`font-heading text-4xl lg:text-5xl font-semibold tracking-tight mb-4 ${titleColorClassName} ${titleClassName}`}
     >
       {title}
     </h2>
     {subtitle && (
       <p
-        className={`font-body text-lg max-w-2xl mx-auto ${subtitleColorClassName} ${subtitleClassName}`}
+        className={`font-body text-base sm:text-lg max-w-2xl mx-auto ${subtitleColorClassName} ${subtitleClassName}`}
       >
         {subtitle}
       </p>

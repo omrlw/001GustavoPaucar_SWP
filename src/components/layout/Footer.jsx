@@ -12,7 +12,7 @@ const Footer = () => (
     <div className="container mx-auto px-6 ">
       <div className="grid md:grid-cols-4 gap-12 mb-12">
         <div className="col-span-1 md:col-span-2">
-          <h2 className="font-heading text-3xl font-bold text-white mb-4 tracking-wide">
+          <h2 className="font-heading text-3xl font-semibold text-white mb-4 tracking-wide">
             {BRAND_INFO.name}
           </h2>
           <p className="max-w-xs text-slate-500 mb-6">{FOOTER_CONTENT.mission}</p>

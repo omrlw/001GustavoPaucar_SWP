@@ -5,21 +5,22 @@ import { FAQ_CONTENT, FAQS } from '../data/content';
 import assetFaq from '../assets/asset1.png';
 
 const Faq = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section id="faq" className="py-24 overflow-hidden bg-light section-glow border-y border-slate-200/50 cv-auto">
-      <div className="container mx-auto px-6 max-w-6xl ">
+    <section id="faq" className="py-16 sm:py-20 lg:py-20 overflow-hidden bg-light section-glow border-y border-slate-200/50">
+      
+      <div className="container mx-auto px-6 sm:px-8 lg:px-10 max-w-6xl ">
         <SectionTitle
           title={FAQ_CONTENT.title}
           subtitle={FAQ_CONTENT.subtitle}
           align="center"
         />
 
-        <div className="grid lg:grid-cols-[1.2fr_0.9fr] gap-12 items-start relative">
-
+          <div className="grid lg:grid-cols-[1.2fr_0.9fr] gap-12 items-start relative">
+          
           {/* COLUMNA IZQUIERDA: ACORDEÓN MEJORADO */}
-          <div className="lg:pt-10 pt-4 space-y-4 relative z-10">
+          <div className="lg:pt-10 pt-4 space-y-4 relative z-10 lg:h-[70vh] lg:overflow-y-auto lg:pr-2 lg:overscroll-contain [overflow-anchor:none]">
             {FAQS.map((faq, index) => {
               const isOpen = openIndex === index;
               return (
@@ -33,6 +34,7 @@ const Faq = () => {
                 >
                   <button
                     onClick={() => setOpenIndex(isOpen ? null : index)}
+                    type="button"
                     className="w-full flex justify-between items-center p-5 text-left cursor-pointer focus:outline-none"
                     aria-expanded={isOpen}
                     aria-controls={`faq-panel-${index}`}
