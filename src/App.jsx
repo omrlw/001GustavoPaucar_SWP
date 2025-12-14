@@ -1,23 +1,20 @@
 import React from 'react';
-import About from './components/About';
-import Faq from './components/Faq';
-import Hero from './components/Hero';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
-import Location from './components/Location';
-import ServicesGrid from './components/ServicesGrid';
-import Testimonials from './components/Testimonials';
-import TreatedConditions from './components/TreatedConditions';
+import Home from './pages/Home';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfUse from './pages/TermsOfUse';
 
 const App = () => (
-  <Layout>
-    <Hero />
-    <About />
-    <TreatedConditions />
-    <ServicesGrid />
-    <Testimonials />
-    <Faq />
-    <Location />
-  </Layout>
+  <Router>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/privacidad" element={<PrivacyPolicy />} />
+        <Route path="/terminos" element={<TermsOfUse />} />
+      </Routes>
+    </Layout>
+  </Router>
 );
 
 export default App;

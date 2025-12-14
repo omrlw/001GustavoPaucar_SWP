@@ -5,9 +5,8 @@ import { BRAND_INFO, NAV_LINKS, UI_TEXT } from '../../data/content';
 
 const Navbar = ({ scrolled, isMenuOpen, onToggleMenu, onCloseMenu }) => (
   <nav
-    className={`fixed w-full z-40 transition-all duration-300 ${
-      scrolled ? 'bg-primary shadow-lg py-2 top-0' : 'bg-primary py-6 top-0'
-    }`}
+    className={`fixed w-full z-40 transition-all duration-300 ${scrolled ? 'bg-primary shadow-lg py-2 top-0' : 'bg-primary py-6 top-0'
+      }`}
   >
     <div className="container mx-auto px-6 flex justify-between items-center text-white">
       <div className="flex items-center gap-3">
@@ -26,9 +25,9 @@ const Navbar = ({ scrolled, isMenuOpen, onToggleMenu, onCloseMenu }) => (
         {NAV_LINKS.map((item) => (
           <a
             key={item.label}
-            href={item.href}
+            href={item.href.startsWith('#') ? `/${item.href}` : item.href}
             className="text-white hover:text-accent transition-colors"
-            aria-label={`Ir a la secsción ${item.label}`}
+            aria-label={`Ir a la sección ${item.label}`}
           >
             {item.label}
           </a>
@@ -58,7 +57,7 @@ const Navbar = ({ scrolled, isMenuOpen, onToggleMenu, onCloseMenu }) => (
         {NAV_LINKS.map((item) => (
           <a
             key={item.label}
-            href={item.href}
+            href={item.href.startsWith('#') ? `/${item.href}` : item.href}
             onClick={onCloseMenu}
             className="text-lg text-white py-2 border-b border-white/10"
             aria-label={`Ir a la sección ${item.label}`}

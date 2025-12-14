@@ -1,0 +1,56 @@
+import React, { useEffect } from 'react';
+import SectionTitle from '../components/ui/SectionTitle';
+
+const PrivacyPolicy = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    return (
+        <div className="pt-32 pb-20 container mx-auto px-6 lg:px-10 max-w-4xl font-body">
+            <SectionTitle
+                title="Política de Privacidad"
+                subtitle="Protección de Datos Personales - Ley N° 29733"
+                className="mb-10 text-center"
+            />
+
+            <div className="prose prose-slate max-w-none text-slate-700 bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <p className="mb-4">
+                    La presente Política de Privacidad establece los términos en que <strong>Galene Salud Mental e Integrativa</strong> usa y protege la información que es proporcionada por sus pacientes y usuarios al momento de utilizar su sitio web o contactar a través de los diversos canales digitales.
+                </p>
+
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-3">1. Información Recopilada</h3>
+                <p className="mb-4">
+                    Nuestro sitio web podrá recoger información personal, por ejemplo: Nombre, información de contacto como su dirección de correo electrónica y número de teléfono. Así mismo cuando sea necesario podrá ser requerida información específica para procesar alguna cita médica o facturación.
+                </p>
+
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-3">2. Uso de la Información</h3>
+                <p className="mb-4">
+                    Nuestro sitio web emplea la información con el fin de proporcionar el mejor servicio posible, particularmente para agendar citas, mantener un registro de usuarios y mejorar nuestros servicios. Es posible que sean enviados mensajes periódicos a través de WhatsApp o correo electrónico con información relevante de salud.
+                </p>
+
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-3">3. Protección de Datos (Ley N° 29733)</h3>
+                <p className="mb-4">
+                    En cumplimiento con la Ley de Protección de Datos Personales de Perú, nos comprometemos a mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado.
+                </p>
+
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-3">4. Cookies</h3>
+                <p className="mb-4">
+                    Una cookie se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse en su ordenador. Nuestro sitio web emplea las cookies para poder identificar las páginas que son visitadas y su frecuencia. Esta información es empleada únicamente para análisis estadístico.
+                </p>
+
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-3">5. Enlaces a Terceros</h3>
+                <p className="mb-4">
+                    Este sitio web pudiera contener enlaces a otros sitios que pudieran ser de su interés (como Doctoralia). Una vez que usted de clic en estos enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos responsables de los términos o privacidad ni de la protección de sus datos en esos otros sitios terceros.
+                </p>
+
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-3">6. Control de su Información Personal</h3>
+                <p className="mb-4">
+                    En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a nuestro sitio web. Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que sea requerido por un juez con una orden judicial.
+                </p>
+            </div>
+        </div>
+    );
+};
+
+export default PrivacyPolicy;

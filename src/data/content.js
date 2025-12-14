@@ -245,9 +245,14 @@ export const LOCATION_CONTENT = {
 export const FOOTER_CONTENT = {
   mission:
     'Comprometidos con tu salud mental a través de un enfoque médico, humano y profesional.',
+  social: [
+    { label: 'Facebook', href: 'https://www.facebook.com/drgustavopaucar/', icon: 'Facebook' },
+    { label: 'Doctoralia', href: 'https://www.doctoralia.pe/gustavo-paucar-chavez/psiquiatra/arequipa', icon: 'Doctoralia' },
+    { label: 'Maps', href: 'https://maps.app.goo.gl/9V8ZDtC7NpFKNafR6', icon: 'Maps' },
+  ],
   legal: [
-    { label: 'Política de Privacidad', href: '#' },
-    { label: 'Términos de Uso', href: '#' },
+    { label: 'Política de Privacidad', href: '/privacidad' },
+    { label: 'Términos de Uso', href: '/terminos' },
   ],
 };
 
