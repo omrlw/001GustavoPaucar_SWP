@@ -103,7 +103,7 @@ const Location = () => (
           <div className="w-full h-[360px] lg:h-full min-h-[360px] bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-xl relative group">
             <iframe
               title="Mapa del consultorio en Arequipa"
-              src={`https://www.google.com/maps?q=${encodeURIComponent(BRAND_INFO.address)}&output=embed`}
+              src={"https://maps.google.com/maps?q=M%C3%A9dico%20Psiquiatra%20Dr.%20Gustavo%20Paucar%20Arequipa&t=&z=15&ie=UTF8&iwloc=&output=embed"}
               loading="lazy"
               className="absolute inset-0 w-full h-full"
               allowFullScreen

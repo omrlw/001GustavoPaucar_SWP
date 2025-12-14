@@ -239,8 +239,6 @@ export const LOCATION_CONTENT = {
   subtitle: 'Estamos listos para atenderte',
   directionsNote: '(Edificio de 4 pisos a media cuadra del Parque Libertad de Expresión)',
   mapCta: 'Ver en Google Maps',
-  mapImage:
-    'https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
   mapLinkLabel: 'Abrir mapa',
 };
 

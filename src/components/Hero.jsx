@@ -130,7 +130,6 @@ const Hero = () => (
           {/* Trust badge widget */}
           <div
             className="hidden lg:block absolute -top-2 -right-2 xl:-right-8 bg-white/98 p-4 rounded-2xl shadow-xl border border-slate-100/80 z-20 animate-float-slow"
-            style={{ animationDelay: '-2s' }}
           >
             <div className="flex items-center gap-2.5">
               <div className="p-2 bg-gradient-to-br from-accent to-secondary rounded-full text-white shadow-lg shadow-accent/25">
