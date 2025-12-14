@@ -16,13 +16,15 @@ const iconMap = {
 const ServicesGrid = () => (
   <section id="servicios" className="py-16 sm:py-20 lg:py-20 bg-light section-glow">
     <div className="container mx-auto px-6 sm:px-8 lg:px-10">
-      <SectionTitle title={SERVICES_CONTENT.title} subtitle={SERVICES_CONTENT.subtitle} />
+      <div className="scroll-reveal">
+        <SectionTitle title={SERVICES_CONTENT.title} subtitle={SERVICES_CONTENT.subtitle} />
+      </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {SERVICES_CONTENT.services.map((service) => (
+        {SERVICES_CONTENT.services.map((service, index) => (
           <div
             key={service.title}
-            className="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 group"
+            className={`bg-white p-8 rounded-xl shadow-sm transition-all duration-300 border border-slate-100 group scroll-reveal hover-lift stagger-${(index % 6) + 1}`}
           >
             <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
               {iconMap[service.icon]}

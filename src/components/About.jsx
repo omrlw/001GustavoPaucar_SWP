@@ -8,12 +8,13 @@ const About = () => (
   <section id="nosotros" className="py-16 sm:py-20 lg:py-20 relative overflow-hidden bg-light-alt section-glow border-y border-slate-300/50">
 
     <div className="container mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
-      <SectionTitle title={ABOUT_CONTENT.title} subtitle={ABOUT_CONTENT.subtitle} />
+      <div className="scroll-reveal">
+        <SectionTitle title={ABOUT_CONTENT.title} subtitle={ABOUT_CONTENT.subtitle} />
+      </div>
 
       <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-20 items-center mt-8 lg:mt-12 mx-auto">
 
-        {/* COLUMNA IZQUIERDA: Imagen limpia y destacada */}
-        <div className="relative order-2 lg:order-1 flex justify-center group perspective-1000">
+        <div className="relative order-2 lg:order-1 flex justify-center group perspective-1000 scroll-reveal-left">
           <div className="relative w-full max-w-[380px] aspect-[3/4] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-300/70 border-[6px] border-white transition-transform duration-500 hover:scale-[1.01]">
             <img
               src={doctorPortrait}
@@ -40,8 +41,7 @@ const About = () => (
           </div>
         </div>
 
-        {/* COLUMNA DERECHA: Información y Widgets Unificados */}
-        <div className="order-1 lg:order-2 space-y-8">
+        <div className="order-1 lg:order-2 space-y-8 scroll-reveal-right">
 
           {/* Cabecera: Nombre y Credenciales */}
           <div className="space-y-4">
@@ -82,8 +82,7 @@ const About = () => (
           {/* Al ponerlos juntos con el mismo estilo, se ven ordenados */}
           <div className="grid sm:grid-cols-2 gap-4">
 
-            {/* Widget 1: Educación */}
-            <div className="bg-white hover:bg-white hover:shadow-lg transition-all p-6 rounded-2xl border border-slate-100 group">
+            <div className="bg-white hover:bg-white hover:shadow-lg transition-all p-6 rounded-2xl border border-slate-100 group hover-lift scroll-reveal stagger-1">
               <div className="w-10 h-10 bg-white rounded-xl shadow-sm flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
                 <GraduationCap size={20} />
               </div>
@@ -98,8 +97,7 @@ const About = () => (
               </ul>
             </div>
 
-            {/* Widget 2: Experiencia (Antes estaba abajo de la foto y pesaba mucho) */}
-            <div className="bg-white hover:bg-white hover:shadow-lg transition-all p-6 rounded-2xl border border-slate-100 group">
+            <div className="bg-white hover:bg-white hover:shadow-lg transition-all p-6 rounded-2xl border border-slate-100 group hover-lift scroll-reveal stagger-2">
               <div className="w-10 h-10 bg-white rounded-xl shadow-sm flex items-center justify-center text-accent mb-4 group-hover:scale-110 transition-transform">
                 <Building2 size={20} />
               </div>
