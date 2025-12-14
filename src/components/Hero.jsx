@@ -3,13 +3,14 @@ import {
   CalendarSearch,
   MessageCircleMore,
   HeartHandshake,
-  ChevronRight,
   Star,
   Clock,
   BadgeCheck,
   Users,
 } from 'lucide-react';
-import heroImg from '../assets/galeneImage2.webp';
+import heroImg512 from '../assets/galeneImage2-512.jpg';
+import heroImg768 from '../assets/galeneImage2-768.jpg';
+import heroImg1024 from '../assets/galeneImage2-1024.jpg';
 import Button from './ui/Button';
 import { HERO_CONTENT } from '../data/content';
 import doctoraliaLogo from '../assets/docplanner.png';
@@ -62,10 +63,10 @@ const Hero = () => (
               as="a"
               href={HERO_CONTENT.primaryCta.href}
               ariaLabel={HERO_CONTENT.primaryCta.ariaLabel}
-              className="w-full sm:w-auto justify-center hover:duration-550"
+              className="w-full sm:w-auto justify-center"
             >
               <CalendarSearch />
-              {HERO_CONTENT.primaryCta.label} <ChevronRight size={18} aria-hidden />
+              {HERO_CONTENT.primaryCta.label}
             </Button>
             <Button
               as="a"
@@ -74,7 +75,7 @@ const Hero = () => (
               ariaLabel={HERO_CONTENT.secondaryCta.ariaLabel}
               target="_blank"
               rel="noreferrer"
-              className="w-full sm:w-auto justify-center hover:duration-550"
+              className="w-full sm:w-auto justify-center"
             >
               <MessageCircleMore />
               {HERO_CONTENT.secondaryCta.label}
@@ -85,9 +86,16 @@ const Hero = () => (
             href="https://www.doctoralia.pe/gustavo-paucar-chavez/psiquiatra/arequipa#profile-info"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-3 mt-3 w-fit px-5 py-2.5 rounded-full bg-white/80 backdrop-blur-sm border border-slate-200 text-dark shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+            className="inline-flex items-center gap-3 mt-3 w-fit px-5 py-2.5 rounded-full bg-white/90 border border-slate-200 text-dark shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
           >
-            <img src={doctoraliaLogo} alt="Doctoralia" className="w-5 h-5" loading="lazy" />
+            <img
+              src={doctoraliaLogo}
+              alt="Doctoralia"
+              className="w-5 h-5"
+              width={20}
+              height={20}
+              decoding="async"
+            />
             <div className="flex items-center gap-2 text-sm font-medium flex-wrap">
               <span className="text-dark/60">Ver perfil en</span>
               <span className="text-primary font-semibold">Doctoralia</span>
@@ -104,17 +112,23 @@ const Hero = () => (
 
         {/* 2 Image */}
         <div className="w-full lg:w-[56%] xl:w-[50%] relative animate-in zoom-in duration-700 delay-200">
-          <div className="relative z-10 rounded-2xl overflow-hidden xl:-mr-16 max-w-xl lg:max-w-none mx-auto hero-image-container">
+          <div className="relative z-10 rounded-2xl overflow-hidden xl:-mr-16 w-full max-w-xl lg:max-w-none mx-auto hero-image-container aspect-square">
             <img
-              src={heroImg}
+              src={heroImg768}
+              srcSet={`${heroImg512} 512w, ${heroImg768} 768w, ${heroImg1024} 1024w`}
+              sizes="(min-width: 1280px) 664px, (min-width: 1024px) 560px, (min-width: 640px) 512px, 100vw"
               alt="Instalaciones y equipo de Galene Salud Mental"
-              className="w-auto h-auto rounded-2xl object-cover aspect-square"
-              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover"
+              width={768}
+              height={768}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
             />
           </div>
 
           {/* Trust badge widget - top right */}
-          <div className="absolute -top-2 -right-2 sm:top-4 sm:right-0 xl:-right-8 bg-white/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl shadow-xl border border-slate-100/80 z-20 animate-float-slow" style={{ animationDelay: '-2s' }}>
+          <div className="absolute -top-2 -right-2 sm:top-4 sm:right-0 xl:-right-8 bg-white/98 p-3 sm:p-4 rounded-2xl shadow-xl border border-slate-100/80 z-20 animate-float-slow" style={{ animationDelay: '-2s' }}>
             <div className="flex items-center gap-2.5">
               <div className="p-2 bg-gradient-to-br from-accent to-secondary rounded-full text-white shadow-lg shadow-accent/25">
                 <BadgeCheck size={18} aria-hidden />
@@ -127,7 +141,7 @@ const Hero = () => (
           </div>
 
           {/* Patients counter widget - mid left */}
-          <div className="absolute top-1/3 -left-3 sm:-left-1 bg-white/95 backdrop-blur-md p-3 rounded-xl shadow-xl border border-slate-100/80 z-20 animate-pulse-gentle hidden sm:block">
+          <div className="absolute top-1/3 -left-3 sm:-left-1 bg-white/98 p-3 rounded-xl shadow-xl border border-slate-100/80 z-20 animate-pulse-gentle hidden sm:block">
             <div className="flex items-center gap-2">
               <div className="flex -space-x-2">
                 <div className="w-6 h-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-[10px] font-bold ring-2 ring-white">+</div>
@@ -142,7 +156,7 @@ const Hero = () => (
             </div>
           </div>
           {/* Primera Consulta */}
-          <div className="absolute bottom-6 left-4 sm:left-8 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-slate-100 z-20 max-w-[220px] animate-float-slow">
+          <div className="absolute bottom-6 left-4 sm:left-8 bg-white/98 p-4 rounded-2xl shadow-xl border border-slate-100 z-20 max-w-[220px] animate-float-slow">
             <div className="flex items-start gap-3">
               <div className="p-2 bg-primary rounded-full text-white shadow-lg shadow-primary/25">
                 <Clock size={18} aria-hidden />

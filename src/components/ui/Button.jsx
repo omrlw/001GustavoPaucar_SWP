@@ -11,10 +11,10 @@ const Button = ({
 }) => {
   const Component = as || (href ? 'a' : 'button');
   const variants = {
-    primary: 'bg-accent text-white hover:bg-accent-hover  border border-gray-200 shadow-lg shadow-accent/10',
+    primary: 'bg-accent text-white hover:bg-accent-hover hover:duration-550 border border-gray-200 shadow-lg shadow-accent/10',
     outline:
       'bg-transparent border border-accent text-accent hover:bg-accent hover:text-white',
-    ghost: 'bg-white text-primary hover:bg-primary hover:text-white border border-gray-200 shadow-lg shadow-gray/10',
+    ghost: 'bg-white text-primary hover:bg-primary hover:text-white hover:duration-550 shadow-lg shadow-gray/10',
   };
 
   const computedAriaLabel = ariaLabel || (typeof children === 'string' ? children : undefined);

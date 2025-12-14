@@ -15,18 +15,20 @@ const Navbar = ({ scrolled, isMenuOpen, onToggleMenu, onCloseMenu }) => (
           src={logoGalene}
           alt="Logotipo de Galene"
           className="h-12 w-auto object-contain"
-          loading="lazy"
+          width={216}
+          height={48}
+          decoding="async"
         />
         <span className="sr-only">{`${BRAND_INFO.name} - ${BRAND_INFO.tagline}`}</span>
       </div>
 
-      <div className="hidden md:flex items-center gap-8 font-body text-sm font-medium">
+      <div className="hidden md:flex items-center gap-8 font-body text-sl font-medium">
         {NAV_LINKS.map((item) => (
           <a
             key={item.label}
             href={item.href}
-            className="text-white/80 hover:text-secondary transition-colors"
-            aria-label={`Ir a la sección ${item.label}`}
+            className="text-white hover:text-accent transition-colors"
+            aria-label={`Ir a la secsción ${item.label}`}
           >
             {item.label}
           </a>

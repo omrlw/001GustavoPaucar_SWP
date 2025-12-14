@@ -26,15 +26,6 @@ export const HERO_CONTENT = {
   highlight: 'claridad mental',
   description:
     'Atención especializada en ansiedad, depresión y adicciones. Un enfoque humano basado en evidencia científica para adultos y adolescentes.',
-  image: {
-    src: './assets/LogoSWP.png',
-    alt: 'Retrato profesional del Dr. Gustavo Paucar Chávez',
-  },
-  overlays: {
-    confidential: '100% Confidencial',
-    locationTitle: 'Ubicación',
-    locationSubtitle: 'Consultorio en Arequipa',
-  },
   primaryCta: {
     label: 'Agendar Consulta',
     href: '#ubicacion',
@@ -47,7 +38,6 @@ export const HERO_CONTENT = {
   },
   floatingCard: {
     title: 'Primera consulta',
-    duration: '45–60 min',
     note: 'Presencial u online',
   },
 };
@@ -62,7 +52,7 @@ export const DOCTOR_DATA = {
   education: [
     'Universidad Nacional de San Agustín de Arequipa',
     'Máster en Actualización de Tratamientos Psiquiátricos en pacientes menores',
-    'Introduction to Funcitonal Medicine',
+    'The Institute for Functional Medicine',
   ],
   hospitals: [
     'Hospital Honorio Delgado Espinoza',
@@ -78,28 +68,6 @@ export const ABOUT_CONTENT = {
   subtitle: 'Trayectoria dedicada al bienestar mental.',
   featureTitle: 'Formación Académica',
   experienceTitle: 'Experiencia Hospitalaria',
-};
-
-export const PROCESS_CONTENT = {
-  title: '¿Cómo es la primera consulta?',
-  subtitle: 'Sabemos que dar el primer paso puede ser difícil. Aquí te explicamos el proceso.',
-  steps: [
-    {
-      title: '1. Reserva',
-      description: 'Contáctanos por WhatsApp o teléfono. Coordinaremos el horario que mejor se ajuste a ti.',
-      icon: 'calendar',
-    },
-    {
-      title: '2. Entrevista',
-      description: 'Una conversación confidencial de 45-60 min para entender tu situación, síntomas e historia.',
-      icon: 'clipboard',
-    },
-    {
-      title: '3. Plan de Tratamiento',
-      description: 'Recibirás un diagnóstico claro y opciones de tratamiento (terapia, medicación si es necesaria).',
-      icon: 'activity',
-    },
-  ],
 };
 
 export const CONDITIONS_CONTENT = {
@@ -251,7 +219,7 @@ export const FAQS = [
   },
   {
     question: "¿Cómo es la primera consulta psiquiátrica?",
-    answer: "La primera sesión es una evaluación exhaustiva. Se realiza una entrevista clínica para entender tus antecedentes, síntomas actuales y contexto de vida. El objetivo es establecer un diagnóstico preciso y diseñar un plan de tratamiento personalizado, que puede incluir psicoterapia, medicación o ambos."
+    answer: "Se realiza una entrevista clínica para entender tus antecedentes, síntomas actuales y contexto de vida. El objetivo es establecer un diagnóstico preciso y diseñar un plan de tratamiento personalizado, que puede incluir psicoterapia, medicación o ambos."
   },
   {
     question: "¿Realiza consultas presenciales y online?",

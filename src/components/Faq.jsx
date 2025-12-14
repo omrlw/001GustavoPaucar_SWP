@@ -8,7 +8,7 @@ const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section id="faq" className="py-24 overflow-hidden bg-light section-glow border-y border-slate-200/50">
+    <section id="faq" className="py-24 overflow-hidden bg-light section-glow border-y border-slate-200/50 cv-auto">
       <div className="container mx-auto px-6 max-w-6xl ">
         <SectionTitle
           title={FAQ_CONTENT.title}
@@ -79,6 +79,9 @@ const Faq = () => {
                 src={assetFaq}
                 alt="Dr. Gustavo Paucar preguntas frecuentes"
                 loading="lazy"
+                decoding="async"
+                width={466}
+                height={700}
               />
 
               {/* 3. Tarjetas Flotantes "Glassmorphism" */}

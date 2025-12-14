@@ -1,11 +1,11 @@
 import React from 'react';
-import { Building2, GraduationCap, Languages, Award, Stethoscope } from 'lucide-react';
+import { Building2, GraduationCap, Languages, Stethoscope } from 'lucide-react';
 import SectionTitle from './ui/SectionTitle';
 import doctorPortrait from '../assets/Gustavo_foto.webp';
 import { ABOUT_CONTENT, DOCTOR_DATA } from '../data/content';
 
 const About = () => (
-  <section id="nosotros" className="py-24 relative overflow-hidden bg-light-alt section-glow border-y border-slate-300/50">
+  <section id="nosotros" className="py-24 relative overflow-hidden bg-light-alt section-glow border-y border-slate-300/50 cv-auto">
 
     <div className="container mx-auto px-6 relative z-10">
       <SectionTitle title={ABOUT_CONTENT.title} subtitle={ABOUT_CONTENT.subtitle} />
@@ -14,12 +14,15 @@ const About = () => (
 
         {/* COLUMNA IZQUIERDA: Imagen limpia y destacada */}
         <div className="relative order-2 lg:order-1 flex justify-center">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-slate-200">
+          <div className="relative w-full max-w-[360px] rounded-3xl overflow-hidden shadow-2xl shadow-slate-200 aspect-[3/4]">
             <img
               src={doctorPortrait}
               alt={`Dr. ${DOCTOR_DATA.name}`}
-              className="w-100 h-auto object-cover aspect-[3/4] hover:scale-105 transition-transform duration-700"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 will-change-transform hover:scale-105"
+              width={530}
+              height={530}
               loading="lazy"
+              decoding="async"
             />
             {/* Eliminamos la tarjeta superpuesta redundante para dar limpieza */}
           </div>
@@ -50,7 +53,7 @@ const About = () => (
                   href="https://aplicaciones.cmp.org.pe/conoce_a_tu_medico/datos-colegiado-detallado.php?id=cE9nQnlaek0xZngvK1F4aDVwV29zUT09"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-mono border border-slate-200 hover:text-light hover:bg-primary transition-colors"
+                  className="px-3 py-1 rounded-full bg-primary text-light text-xs font-mono border border-slate-200 hover:text-primary hover:bg-slate-100 transition-colors"
                 >
                   {DOCTOR_DATA.cmp}
                 </a>
@@ -58,7 +61,7 @@ const About = () => (
                   href="https://aplicaciones.cmp.org.pe/conoce_a_tu_medico/datos-colegiado-detallado.php?id=cE9nQnlaek0xZngvK1F4aDVwV29zUT09"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-mono border border-slate-200 hover:text-light hover:bg-primary transition-colors"
+                  className="px-3 py-1 rounded-full bg-primary text-light text-xs font-mono border border-slate-200 hover:text-primary hover:bg-slate-100 transition-colors"
                 >
                   {DOCTOR_DATA.rne}
                 </a>
@@ -83,11 +86,11 @@ const About = () => (
               <div className="w-10 h-10 bg-white rounded-xl shadow-sm flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
                 <GraduationCap size={20} />
               </div>
-              <h4 className="font-bold text-slate-00 mb-2">{ABOUT_CONTENT.featureTitle}</h4>
+              <h4 className="font-bold text-slate-900 mb-2">{ABOUT_CONTENT.featureTitle}</h4>
               <ul className="space-y-2">
                 {DOCTOR_DATA.education.slice(0, 3).map((hospital) => ( // Limitamos a 3 para mantener altura
                   <li key={hospital} className="flex items-start gap-2 text-sm text-slate-600">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                     <span className="leading-snug">{hospital}</span>
                   </li>
                 ))}

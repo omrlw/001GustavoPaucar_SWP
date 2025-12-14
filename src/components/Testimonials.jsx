@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { ArrowRight, Quote, Star } from 'lucide-react';
 import SectionTitle from './ui/SectionTitle';
 import { TESTIMONIALS_CONTENT } from '../data/content';
+import doctoraliaLogo from '../assets/docplanner.png';
 
 const Testimonials = () => {
   const marqueeReviews = useMemo(
@@ -10,7 +11,7 @@ const Testimonials = () => {
   );
 
   return (
-    <section id="testimonios" className="py-24 bg-primary overflow-hidden section-glow border-y border-slate-200/50">
+    <section id="testimonios" className="py-24 bg-primary overflow-hidden section-glow border-y border-slate-200/50 cv-auto">
       <div
       className="absolute inset-0 opacity-10 pointer-events-none"
       style={{
@@ -75,13 +76,30 @@ const Testimonials = () => {
 
         <div className="mt-12 text-center">
           <a
-            href={TESTIMONIALS_CONTENT.ctaHref}
+            href="https://www.doctoralia.pe/gustavo-paucar-chavez/psiquiatra/arequipa#profile-info"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
-            aria-label="Ver todas las opiniones en Doctoralia"
+            className="inline-flex items-center gap-3 mt-3 w-fit px-5 py-2.5 rounded-full bg-white/80 backdrop-blur-sm border border-slate-200 text-dark shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
           >
-            {TESTIMONIALS_CONTENT.ctaLabel} <ArrowRight size={16} aria-hidden />
+            <img
+              src={doctoraliaLogo}
+              alt="Doctoralia"
+              className="w-5 h-5"
+              width={20}
+              height={20}
+              loading="lazy"
+              decoding="async"
+            />
+            <div className="flex items-center gap-2 text-sm font-medium flex-wrap">
+              <span className="text-dark/60">Ver todas la opiniones en</span>
+              <span className="text-primary font-semibold">Doctoralia</span>
+              <span className="w-px h-5 bg-slate-200" aria-hidden />
+              <span className="flex items-center gap-1 text-amber-400" aria-label="5 de 5 estrellas">
+                {[...Array(5)].map((_, idx) => (
+                  <Star key={idx} size={14} className="fill-current" />
+                ))}
+              </span>
+            </div>
           </a>
         </div>
       </div>

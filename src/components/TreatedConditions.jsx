@@ -2,7 +2,7 @@ import React from 'react';
 import { CONDITIONS_CONTENT } from '../data/content';
 
 const TreatedConditions = () => (
-  <section className="py-20 bg-primary text-white relative">
+  <section className="py-20 bg-primary text-white relative cv-auto">
     <div
       className="absolute inset-0 opacity-10 pointer-events-none"
       style={{

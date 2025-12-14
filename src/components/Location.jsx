@@ -3,7 +3,7 @@ import { ArrowRight, Clock, MapPin, Phone } from 'lucide-react';
 import { BRAND_INFO, LOCATION_CONTENT, LOCATION_LABELS } from '../data/content';
 
 const Location = () => (
-  <section id="ubicacion" className="py-20 bg-primary relative overflow-hidden text-white">
+  <section id="ubicacion" className="py-20 bg-primary relative overflow-hidden text-white cv-auto">
     <div
       className="absolute inset-0 opacity-10 pointer-events-none"
       style={{

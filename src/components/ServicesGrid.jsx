@@ -14,7 +14,7 @@ const iconMap = {
 };
 
 const ServicesGrid = () => (
-  <section id="servicios" className="py-24 bg-light section-glow">
+  <section id="servicios" className="py-24 bg-light section-glow cv-auto">
     <div className="container mx-auto px-6">
       <SectionTitle title={SERVICES_CONTENT.title} subtitle={SERVICES_CONTENT.subtitle} />
 
