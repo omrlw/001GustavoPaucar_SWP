@@ -12,7 +12,7 @@ const iconMap = {
 
 const Process = () => (
   <section
-    className="relative py-20 bg-light-alt border-y border-slate-200/50"
+    className="relative py-20 bg-light-alt section-glow border-y border-slate-200/50"
   >
     <div className="pointer-events-none absolute inset-0 flex items-end justify-end pr-13 pb-13 -z-10">
       <img

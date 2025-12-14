@@ -10,7 +10,7 @@ const Testimonials = () => {
   );
 
   return (
-    <section id="testimonios" className="py-24 bg-light-alt overflow-hidden border-y border-slate-200/50">
+    <section id="testimonios" className="py-24 bg-light-alt overflow-hidden section-glow border-y border-slate-200/50">
       <div className="container mx-auto px-6">
         <SectionTitle title={TESTIMONIALS_CONTENT.title} subtitle={TESTIMONIALS_CONTENT.subtitle} />
 
@@ -49,7 +49,7 @@ const Testimonials = () => {
                       ))}
                     </div>
                   </div>
-          
+
                   <p className=" py-2 text-gray-600 italic font-body leading-relaxed line-clamp-6 font-">"{review.text}"</p>
                 </article>
               ))}

@@ -127,7 +127,7 @@ const Hero = () => (
           </div>
 
           {/* Patients counter widget - mid left */}
-          <div className="absolute top-1/3 -left-3 sm:-left-6 bg-white/95 backdrop-blur-md p-3 rounded-xl shadow-xl border border-slate-100/80 z-20 animate-pulse-gentle hidden sm:block">
+          <div className="absolute top-1/3 -left-3 sm:-left-1 bg-white/95 backdrop-blur-md p-3 rounded-xl shadow-xl border border-slate-100/80 z-20 animate-pulse-gentle hidden sm:block">
             <div className="flex items-center gap-2">
               <div className="flex -space-x-2">
                 <div className="w-6 h-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-[10px] font-bold ring-2 ring-white">+</div>
@@ -136,25 +136,25 @@ const Hero = () => (
                 </div>
               </div>
               <div>
-                <p className="text-xs font-bold text-slate-800">1000+</p>
+                <p className="text-xs font-bold text-slate-800">100+</p>
                 <p className="text-[9px] text-slate-500">Pacientes atendidos</p>
               </div>
             </div>
           </div>
-
-          <div className="absolute bottom-6 left-4 sm:left-8 bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-slate-100 z-20 max-w-[220px] animate-float-slow">
+          {/* Primera Consulta */}
+          <div className="absolute bottom-6 left-4 sm:left-8 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-slate-100 z-20 max-w-[220px] animate-float-slow">
             <div className="flex items-start gap-3">
-              <div className="p-2 bg-primary/10 rounded-full text-primary">
+              <div className="p-2 bg-primary rounded-full text-white shadow-lg shadow-primary/25">
                 <Clock size={18} aria-hidden />
               </div>
               <div>
-                <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+                <p className="text-[10px] font-bold text-primary uppercase tracking-wider">
                   {HERO_CONTENT.floatingCard.title}
                 </p>
                 <p className="text-sm font-semibold text-slate-900">
                   {HERO_CONTENT.floatingCard.subtitle}
                 </p>
-                <p className="text-xs text-slate-500 mt-0.5">
+                <p className="text-xs font-semibold text-slate-800">
                   {HERO_CONTENT.floatingCard.note}
                 </p>
               </div>

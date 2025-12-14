@@ -54,6 +54,39 @@
     background: var(--accent);
     color: white;
   }
+
+  /* Global glow background for light sections - similar to hero */
+  .section-glow {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section-glow::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 50% at 20% 20%, rgba(81, 186, 188, 0.12), transparent 50%),
+      radial-gradient(ellipse 60% 40% at 80% 80%, rgba(20, 184, 166, 0.10), transparent 50%),
+      radial-gradient(ellipse 50% 50% at 50% 50%, rgba(6, 65, 104, 0.05), transparent 60%);
+    filter: blur(60px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .section-glow::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(81, 186, 188, 0.03);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .section-glow>* {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 @layer components {

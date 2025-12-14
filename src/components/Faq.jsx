@@ -8,29 +8,28 @@ const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section id="faq" className="py-24 overflow-hidden bg-light bg-light-mesh mesh-soft border-y border-slate-200/50 ">
+    <section id="faq" className="py-24 overflow-hidden bg-light section-glow border-y border-slate-200/50">
       <div className="container mx-auto px-6 max-w-6xl ">
-        <SectionTitle 
-          title={FAQ_CONTENT.title} 
-          subtitle={FAQ_CONTENT.subtitle} 
-          align="center" 
+        <SectionTitle
+          title={FAQ_CONTENT.title}
+          subtitle={FAQ_CONTENT.subtitle}
+          align="center"
         />
-        
+
         <div className="grid lg:grid-cols-[1.2fr_0.9fr] gap-12 items-start relative">
-          
+
           {/* COLUMNA IZQUIERDA: ACORDEÓN MEJORADO */}
           <div className="lg:pt-10 pt-4 space-y-4 relative z-10">
             {FAQS.map((faq, index) => {
               const isOpen = openIndex === index;
               return (
-                <div 
+                <div
                   key={index} // Usar index o faq.question como key
-                  className={`group border rounded-2xl overflow-hidden transition-all duration-300 ${
-                    isOpen 
-                      ? 'bg-white border-slate-200 shadow-lg shadow-blue-500/5' 
+                  className={`group border rounded-2xl overflow-hidden transition-all duration-300 ${isOpen
+                      ? 'bg-white border-slate-200 shadow-lg shadow-blue-500/5'
                       : 'bg-white border-slate-200 hover:primary'
-                  
-                  }`}
+
+                    }`}
                 >
                   <button
                     onClick={() => setOpenIndex(isOpen ? null : index)}
@@ -38,24 +37,21 @@ const Faq = () => {
                     aria-expanded={isOpen}
                     aria-controls={`faq-panel-${index}`}
                   >
-                    <span className={`font-semibold text-lg pr-4 transition-colors ${
-                      isOpen ? 'text-primary' : 'text-primary-hover group-hover:text-primary'
-                    }`}>
+                    <span className={`font-semibold text-lg pr-4 transition-colors ${isOpen ? 'text-primary' : 'text-primary-hover group-hover:text-primary'
+                      }`}>
                       {faq.question}
                     </span>
-                    <span className={`flex-shrink-0 ml-2 p-1 rounded-full transition-all duration-300 ${
-                      isOpen ? 'bg-accent text-white rotate-180' : 'bg-slate-100 text-secondary group-hover:bg-blue-50'
-                    }`}>
+                    <span className={`flex-shrink-0 ml-2 p-1 rounded-full transition-all duration-300 ${isOpen ? 'bg-accent text-white rotate-180' : 'bg-slate-100 text-secondary group-hover:bg-blue-50'
+                      }`}>
                       <ChevronRight size={20} className="transform rotate-90" />
                     </span>
                   </button>
-                  
+
                   {/* Animación Smooth con Grid Rows */}
-                  <div 
+                  <div
                     id={`faq-panel-${index}`}
-                    className={`grid transition-[grid-template-rows] duration-300 ease-out ${
-                      isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
-                    }`}
+                    className={`grid transition-[grid-template-rows] duration-300 ease-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                      }`}
                   >
                     <div className="overflow-hidden">
                       <div className="p-5 pt-0 text-dark/70 leading-relaxed border-t border-transparent">
@@ -72,7 +68,7 @@ const Faq = () => {
           <div className="hidden lg:block relative h-full">
             {/* 'sticky top-24' hace que la imagen te siga al hacer scroll */}
             <div className="sticky top-24 flex justify-center items-end">
-              
+
               {/* 1. Fondo Decorativo Abstracto (Blob) */}
               <div className="absolute top-10 w-[90%] h-[85%] bg-gradient-to-br from-blue-100 via-indigo-50 to-white rounded-[40px] rotate-3 -z-10 border border-blue-50"></div>
               <div className="absolute top-8 w-[90%] h-[85%] bg-blue-200/20 rounded-[40px] -rotate-2 -z-20 blur-sm"></div>
@@ -86,7 +82,7 @@ const Faq = () => {
               />
 
               {/* 3. Tarjetas Flotantes "Glassmorphism" */}
-              
+
               {/* Tarjeta: Ubicación */}
               <div className="absolute top-24 -right-4 bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-white/50 animate-bounce-slow z-10 max-w-[180px]">
                 <div className="flex items-start gap-3">
