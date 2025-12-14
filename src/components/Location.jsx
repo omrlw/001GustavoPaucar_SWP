@@ -4,14 +4,13 @@ import { BRAND_INFO, LOCATION_CONTENT, LOCATION_LABELS } from '../data/content';
 
 const Location = () => (
   <section id="ubicacion" className="py-20 bg-primary relative overflow-hidden text-white">
-     <div
+    <div
       className="absolute inset-0 opacity-10 pointer-events-none"
       style={{
         backgroundImage: 'radial-gradient(circle at 20% 20%, white 1px, transparent 1px)',
         backgroundSize: '30px 30px',
       }}
-      aria-hidden
-    />   
+    />
     <div className="container mx-auto px-6 relative z-10">
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
         <div className="lg:w-1/2 flex flex-col justify-center">

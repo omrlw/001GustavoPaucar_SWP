@@ -6,6 +6,8 @@ import {
   ChevronRight,
   Star,
   Clock,
+  BadgeCheck,
+  Users,
 } from 'lucide-react';
 import heroImg from '../assets/galeneImage2.webp';
 import Button from './ui/Button';
@@ -15,19 +17,34 @@ import doctoraliaLogo from '../assets/docplanner.png';
 const Hero = () => (
   <header id="inicio" className="relative pt-32 pb-16 sm:pt-36 lg:pt-40 lg:pb-32 overflow-hidden">
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+      {/* Background blur glow - full hero */}
+      <div className="absolute inset-0 bg-secondary/10 blur-3xl" />
+
       <div className="hero-aurora" />
       <div className="hero-aurora hero-aurora-2" />
       <div className="hero-aurora hero-aurora-3" />
+
+      {/* Decorative glowing rings - full hero background */}
+      <div className="hero-ring hero-ring-1" />
+      <div className="hero-ring hero-ring-2" />
+      <div className="hero-ring hero-ring-3" />
+
+      {/* Floating particles */}
+      <div className="hero-particle hero-particle-1" />
+      <div className="hero-particle hero-particle-2" />
+      <div className="hero-particle hero-particle-3" />
+      <div className="hero-particle hero-particle-4" />
+      <div className="hero-particle hero-particle-5" />
     </div>
 
     {/* Section */}
     <div className="container mx-auto px-6 sm:px-8 lg:px-10 max-w-7xl">
       <div className="flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-16 xl:gap-20 relative z-10">
-        
+
         {/* 1 */}
         <div className="w-full lg:w-[44%] xl:w-[42%] space-y-7 lg:space-y-8 animate-in slide-in-from-left duration-700 max-w-xl relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-primary text-xs font-semibold tracking-wider uppercase font-body">
-            <HeartHandshake size={14}/>
+            <HeartHandshake size={14} />
             {HERO_CONTENT.badge}
           </div>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-dark leading-[1.1] drop-shadow-[0_4px_16px_rgba(6,65,104,0.08)]">
@@ -85,37 +102,65 @@ const Hero = () => (
         </div>
 
 
-	        {/* 2 Image */}
-	        <div className="w-full lg:w-[56%] xl:w-[50%] relative animate-in zoom-in duration-700 delay-200">
-	          <div className="absolute inset-0 -right-10 -z-10 rounded-[32px] bg-secondary/10 blur-3xl" />
-	          <div className="relative z-10 rounded-2xl overflow-hidden xl:-mr-16 max-w-xl lg:max-w-none mx-auto">
-	            <img
-	              src={heroImg}
-	              alt="Instalaciones y equipo de Galene Salud Mental"
-	              className="w-auto h-auto rounded-2xl object-cover aspect-square"
-	              loading="lazy"
-	            />
-	          </div>
+        {/* 2 Image */}
+        <div className="w-full lg:w-[56%] xl:w-[50%] relative animate-in zoom-in duration-700 delay-200">
+          <div className="relative z-10 rounded-2xl overflow-hidden xl:-mr-16 max-w-xl lg:max-w-none mx-auto hero-image-container">
+            <img
+              src={heroImg}
+              alt="Instalaciones y equipo de Galene Salud Mental"
+              className="w-auto h-auto rounded-2xl object-cover aspect-square"
+              loading="lazy"
+            />
+          </div>
 
-	          <div className="absolute bottom-6 left-4 sm:left-8 bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-slate-100 z-20 max-w-[220px] animate-float-slow">
-	            <div className="flex items-start gap-3">
-	              <div className="p-2 bg-primary/10 rounded-full text-primary">
-	                <Clock size={18} aria-hidden />
-	              </div>
-	              <div>
-	                <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
-	                  {HERO_CONTENT.floatingCard.title}
-	                </p>
-	                <p className="text-sm font-semibold text-slate-900">
-	                  {HERO_CONTENT.floatingCard.subtitle}
-	                </p>
-	                <p className="text-xs text-slate-500 mt-0.5">
-	                  {HERO_CONTENT.floatingCard.note}
-	                </p>
-	              </div>
-	            </div>
-	          </div>
-	        </div>
+          {/* Trust badge widget - top right */}
+          <div className="absolute -top-2 -right-2 sm:top-4 sm:right-0 xl:-right-8 bg-white/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl shadow-xl border border-slate-100/80 z-20 animate-float-slow" style={{ animationDelay: '-2s' }}>
+            <div className="flex items-center gap-2.5">
+              <div className="p-2 bg-gradient-to-br from-accent to-secondary rounded-full text-white shadow-lg shadow-accent/25">
+                <BadgeCheck size={18} aria-hidden />
+              </div>
+              <div>
+                <p className="text-[10px] font-bold text-accent uppercase tracking-wider">Verificado</p>
+                <p className="text-xs font-semibold text-slate-800">Médico Colegiado</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Patients counter widget - mid left */}
+          <div className="absolute top-1/3 -left-3 sm:-left-6 bg-white/95 backdrop-blur-md p-3 rounded-xl shadow-xl border border-slate-100/80 z-20 animate-pulse-gentle hidden sm:block">
+            <div className="flex items-center gap-2">
+              <div className="flex -space-x-2">
+                <div className="w-6 h-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-[10px] font-bold ring-2 ring-white">+</div>
+                <div className="w-6 h-6 rounded-full bg-gradient-to-br from-accent to-secondary flex items-center justify-center text-white text-[10px] font-bold ring-2 ring-white">
+                  <Users size={10} />
+                </div>
+              </div>
+              <div>
+                <p className="text-xs font-bold text-slate-800">1000+</p>
+                <p className="text-[9px] text-slate-500">Pacientes atendidos</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="absolute bottom-6 left-4 sm:left-8 bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-slate-100 z-20 max-w-[220px] animate-float-slow">
+            <div className="flex items-start gap-3">
+              <div className="p-2 bg-primary/10 rounded-full text-primary">
+                <Clock size={18} aria-hidden />
+              </div>
+              <div>
+                <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+                  {HERO_CONTENT.floatingCard.title}
+                </p>
+                <p className="text-sm font-semibold text-slate-900">
+                  {HERO_CONTENT.floatingCard.subtitle}
+                </p>
+                <p className="text-xs text-slate-500 mt-0.5">
+                  {HERO_CONTENT.floatingCard.note}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>

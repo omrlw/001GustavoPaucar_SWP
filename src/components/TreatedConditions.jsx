@@ -3,7 +3,15 @@ import { CONDITIONS_CONTENT } from '../data/content';
 
 const TreatedConditions = () => (
   <section className="py-20 bg-primary text-white relative">
+    <div
+      className="absolute inset-0 opacity-10 pointer-events-none"
+      style={{
+        backgroundImage: 'radial-gradient(circle at 20% 20%, white 1px, transparent 1px)',
+        backgroundSize: '30px 30px',
+      }}
+    />
     <div className="container mx-auto px-6">
+
       <div className="text-center mb-12">
         <h2 className="font-heading text-4xl font-bold mb-4">{CONDITIONS_CONTENT.title}</h2>
         <p className="text-blue-100 max-w-2xl mx-auto">{CONDITIONS_CONTENT.subtitle}</p>
