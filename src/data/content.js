@@ -5,7 +5,7 @@ export const BRAND_INFO = {
   whatsappLink:
     'https://wa.me/51953426499?text=Hola,%20quisiera%20información%20sobre%20una%20cita%20con%20el%20Dr.%20Paucar',
   address: 'Calle Ricardo Palma 305 Umacollo, Arequipa',
-  mapLink: 'https://maps.app.goo.gl/ZgVoMcpseMdn2nCT6',
+  mapLink: 'https://maps.app.goo.gl/aQaZ4666PLvoGE8c9',
   schedule: 'Lunes a Sábado: 9:00 AM - 8:00 PM',
 };
 
@@ -236,6 +236,7 @@ export const FAQS = [
 ];
 export const LOCATION_CONTENT = {
   title: 'Visítanos en Arequipa',
+  subtitle: 'Estamos listos para atenderte',
   directionsNote: '(Edificio de 4 pisos a media cuadra del Parque Libertad de Expresión)',
   mapCta: 'Ver en Google Maps',
   mapImage:

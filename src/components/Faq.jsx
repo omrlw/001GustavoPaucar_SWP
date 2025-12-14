@@ -9,7 +9,7 @@ const Faq = () => {
 
   return (
     <section id="faq" className="py-16 sm:py-20 lg:py-20 overflow-hidden bg-light section-glow border-y border-slate-200/50">
-      
+
       <div className="container mx-auto px-6 sm:px-8 lg:px-10 max-w-6xl ">
         <SectionTitle
           title={FAQ_CONTENT.title}
@@ -17,8 +17,8 @@ const Faq = () => {
           align="center"
         />
 
-          <div className="grid lg:grid-cols-[1.2fr_0.9fr] gap-12 items-start relative">
-          
+        <div className="grid lg:grid-cols-[1.2fr_0.9fr] gap-12 items-start relative">
+
           {/* COLUMNA IZQUIERDA: ACORDEÓN MEJORADO */}
           <div className="lg:pt-10 pt-4 space-y-4 relative z-10 lg:h-[70vh] lg:overflow-y-auto lg:pr-2 lg:overscroll-contain [overflow-anchor:none]">
             {FAQS.map((faq, index) => {
@@ -27,8 +27,8 @@ const Faq = () => {
                 <div
                   key={index} // Usar index o faq.question como key
                   className={`group border rounded-2xl overflow-hidden transition-all duration-300 ${isOpen
-                      ? 'bg-white border-slate-200 shadow-lg shadow-blue-500/5'
-                      : 'bg-white border-slate-200 hover:primary'
+                    ? 'bg-white border-slate-200 shadow-lg shadow-blue-500/5'
+                    : 'bg-white border-slate-200 hover:primary'
 
                     }`}
                 >
