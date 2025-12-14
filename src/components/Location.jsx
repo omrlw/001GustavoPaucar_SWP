@@ -18,7 +18,7 @@ const Location = () => (
 
     <div className="container mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
       {/* Header con subtítulo */}
-      <div className="text-center mb-10 lg:mb-12">
+      <div className="text-center mb-10 lg:mb-12 scroll-reveal">
         <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight mb-3">
           {LOCATION_CONTENT.title}
         </h2>
@@ -28,17 +28,16 @@ const Location = () => (
         {/* Línea decorativa */}
         <div className="flex items-center justify-center gap-3 mt-5">
           <div className="h-px w-12 bg-gradient-to-r from-transparent to-secondary/50" />
-          <div className="w-1.5 h-1.5 rounded-full bg-secondary" />
+          <div className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse-gentle" />
           <div className="h-px w-12 bg-gradient-to-l from-transparent to-secondary/50" />
         </div>
       </div>
 
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 items-stretch">
         {/* Tarjetas de información */}
-        <div className="lg:w-1/2 flex flex-col justify-center">
+        <div className="lg:w-1/2 flex flex-col justify-center scroll-reveal-left">
           <div className="space-y-5 font-body">
-            {/* Tarjeta Dirección */}
-            <div className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-all duration-300">
+            <div className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-all duration-300 hover-lift">
               <div className="flex gap-4">
                 <div className="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform duration-300">
                   <MapPin size={20} aria-hidden />
@@ -53,8 +52,7 @@ const Location = () => (
               </div>
             </div>
 
-            {/* Tarjeta Contacto */}
-            <div className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-all duration-300">
+            <div className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-all duration-300 hover-lift">
               <div className="flex gap-4">
                 <div className="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform duration-300">
                   <Phone size={20} aria-hidden />
@@ -71,7 +69,7 @@ const Location = () => (
             </div>
 
             {/* Tarjeta Horario */}
-            <div className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-all duration-300">
+            <div className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:bg-white/10 transition-all duration-300 hover-lift">
               <div className="flex gap-4">
                 <div className="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform duration-300">
                   <Clock size={20} aria-hidden />
@@ -90,7 +88,7 @@ const Location = () => (
               href={BRAND_INFO.whatsappLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-secondary/20 hover:scale-105 text-sm"
+              className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-secondary/20 hover:scale-105 text-sm hover-shine"
             >
               <span>Escríbenos por WhatsApp</span>
               <ArrowRight size={16} aria-hidden />
@@ -99,7 +97,7 @@ const Location = () => (
         </div>
 
         {/* Mapa */}
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 scroll-reveal-right">
           <div className="w-full h-[360px] lg:h-full min-h-[360px] bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-xl relative group">
             <iframe
               title="Mapa del consultorio en Arequipa"

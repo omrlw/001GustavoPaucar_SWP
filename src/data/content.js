@@ -3,7 +3,7 @@ export const BRAND_INFO = {
   tagline: 'Salud Mental e Integrativa',
   phone: '953 426 499',
   whatsappLink:
-    'https://wa.me/51953426499?text=Hola,%20quisiera%20información%20sobre%20una%20cita%20con%20el%20Dr.%20Paucar',
+    'https://wa.me/51953426499?text=Hola,%20me%20comunico%20desde%20la%20web.%20Quisiera%20información%20para%20una%20cita%20(Presencial%20/%20Virtual)%20con%20el%20Dr.%20Paucar',
   address: 'Calle Ricardo Palma 305 Umacollo, Arequipa',
   mapLink: 'https://maps.app.goo.gl/aQaZ4666PLvoGE8c9',
   schedule: 'Lunes a Sábado: 9:00 AM - 8:00 PM',
@@ -33,7 +33,7 @@ export const HERO_CONTENT = {
   },
   secondaryCta: {
     label: 'Escribir al WhatsApp',
-    href: 'https://wa.me/51953426499?text=Hola,%20quisiera%20información%20sobre%20una%20cita%20con%20el%20Dr.%20Paucar',
+    href: 'https://wa.me/51953426499?text=Hola,%20me%20comunico%20desde%20la%20web.%20Quisiera%20información%20para%20una%20cita%20(Presencial%20/%20Virtual)%20con%20el%20Dr.%20Paucar',
     ariaLabel: 'Abrir conversación de WhatsApp con el consultorio del Dr. Paucar',
   },
   floatingCard: {
