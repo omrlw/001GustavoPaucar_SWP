@@ -4,10 +4,14 @@ import Footer from './Footer';
 import Navbar from './Navbar';
 import { useMenu } from '../../hooks/useMenu';
 import { useScroll } from '../../hooks/useScroll';
+import { useScrollReveal } from '../../hooks/useScrollReveal';
 
 const Layout = ({ children }) => {
   const { isOpen, toggleMenu, closeMenu } = useMenu();
   const scrolled = useScroll();
+
+  // Initialize scroll reveal animations
+  useScrollReveal();
 
   return (
     <div className="font-body text-dark antialiased bg-light page-mesh">
