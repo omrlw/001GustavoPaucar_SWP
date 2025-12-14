@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Quote, Star } from 'lucide-react';
 import SectionTitle from './ui/SectionTitle';
 import { TESTIMONIALS_CONTENT } from '../data/content';
-import doctoraliaLogo from '../assets/docplanner.png';
+import doctoraliaLogo from '../assets/docplanner.webp';
 
 const Testimonials = () => {
   const marqueeReviews = useMemo(
@@ -13,21 +13,21 @@ const Testimonials = () => {
   return (
     <section id="testimonios" className="py-16 sm:py-20 lg:py-24 bg-primary overflow-hidden section-glow border-y border-slate-200/50">
       <div
-      className="absolute inset-0 opacity-10 pointer-events-none"
-      style={{
-        backgroundImage: 'radial-gradient(circle at 20% 20%, white 1px, transparent 1px)',
-        backgroundSize: '30px 30px',
-      }}
-    />
+        className="absolute inset-0 opacity-10 pointer-events-none"
+        style={{
+          backgroundImage: 'radial-gradient(circle at 20% 20%, white 1px, transparent 1px)',
+          backgroundSize: '30px 30px',
+        }}
+      />
 
 
       <div className="container mx-auto px-6 sm:px-8 lg:px-10 ">
-         <SectionTitle
+        <SectionTitle
           title={TESTIMONIALS_CONTENT.title}
           subtitle={TESTIMONIALS_CONTENT.subtitle}
           titleClassName="text-white"
           subtitleClassName="text-white/80"
-        
+
 
         />
 

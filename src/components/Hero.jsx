@@ -8,12 +8,9 @@ import {
   BadgeCheck,
   Users,
 } from 'lucide-react';
-import heroImg512 from '../assets/galeneImage2-512.webp';
-import heroImg768 from '../assets/galeneImage2-768.webp';
-import heroImg1024 from '../assets/galeneImage2-1024.webp';
 import Button from './ui/Button';
 import { HERO_CONTENT } from '../data/content';
-import doctoraliaLogo from '../assets/docplanner.png';
+import doctoraliaLogo from '../assets/docplanner.webp';
 
 const Hero = () => (
   <header id="inicio" className="relative pt-32 pb-16 sm:pt-36 lg:pt-40 lg:pb-32 overflow-hidden">
@@ -114,8 +111,8 @@ const Hero = () => (
         <div className="w-full lg:w-[56%] xl:w-[50%] relative animate-in zoom-in duration-700 delay-200">
           <div className="relative z-10 rounded-2xl overflow-hidden xl:-mr-16 w-full max-w-xl lg:max-w-none mx-auto hero-image-container aspect-square">
             <img
-              src={heroImg768}
-              srcSet={`${heroImg512} 512w, ${heroImg768} 768w, ${heroImg1024} 1024w`}
+              src="/images/hero-lcp-768.webp"
+              srcSet="/images/hero-lcp-512.webp 512w, /images/hero-lcp-768.webp 768w, /images/hero-lcp-1024.webp 1024w"
               sizes="(min-width: 1280px) 664px, (min-width: 1024px) 560px, (min-width: 640px) 512px, 100vw"
               alt="Instalaciones y equipo de Galene Salud Mental"
               className="absolute inset-0 w-full h-full object-cover p-2"
