@@ -5,7 +5,7 @@ const SectionTitle = ({
   subtitle,
   align = 'center',
   titleClassName = '',
-  subtitleClassName = '',
+  subtitleClassName = 'text-light',
   titleColorClassName = 'text-primary',
   subtitleColorClassName = 'text-slate-600',
 }) => (

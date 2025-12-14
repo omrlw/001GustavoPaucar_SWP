@@ -24,8 +24,8 @@ const Testimonials = () => {
          <SectionTitle
           title={TESTIMONIALS_CONTENT.title}
           subtitle={TESTIMONIALS_CONTENT.subtitle}
-          titleClassName="text-light"
-          subtitleClassName="text-light/80"
+          titleClassName="text-white"
+          subtitleClassName="text-white/80"
         
 
         />
