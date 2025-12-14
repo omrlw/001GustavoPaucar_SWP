@@ -10,9 +10,25 @@ const Testimonials = () => {
   );
 
   return (
-    <section id="testimonios" className="py-24 bg-light-alt overflow-hidden section-glow border-y border-slate-200/50">
-      <div className="container mx-auto px-6">
-        <SectionTitle title={TESTIMONIALS_CONTENT.title} subtitle={TESTIMONIALS_CONTENT.subtitle} />
+    <section id="testimonios" className="py-24 bg-primary overflow-hidden section-glow border-y border-slate-200/50">
+      <div
+      className="absolute inset-0 opacity-10 pointer-events-none"
+      style={{
+        backgroundImage: 'radial-gradient(circle at 20% 20%, white 1px, transparent 1px)',
+        backgroundSize: '30px 30px',
+      }}
+    />
+
+
+      <div className="container mx-auto px-6 ">
+         <SectionTitle
+          title={TESTIMONIALS_CONTENT.title}
+          subtitle={TESTIMONIALS_CONTENT.subtitle}
+          titleClassName="text-light"
+          subtitleClassName="text-light/80"
+        
+
+        />
 
         <div className="relative mt-10">
           <div className="overflow-hidden">

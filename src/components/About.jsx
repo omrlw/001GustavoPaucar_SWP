@@ -5,7 +5,7 @@ import doctorPortrait from '../assets/Gustavo_foto.webp';
 import { ABOUT_CONTENT, DOCTOR_DATA } from '../data/content';
 
 const About = () => (
-  <section id="nosotros" className="py-24 relative overflow-hidden bg-light-alt section-glow">
+  <section id="nosotros" className="py-24 relative overflow-hidden bg-light-alt section-glow border-y border-slate-300/50">
 
     <div className="container mx-auto px-6 relative z-10">
       <SectionTitle title={ABOUT_CONTENT.title} subtitle={ABOUT_CONTENT.subtitle} />
