@@ -1,4 +1,5 @@
 import React from 'react';
+import StructuredData from '../components/seo/StructuredData';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import TreatedConditions from '../components/TreatedConditions';
@@ -9,6 +10,7 @@ import Location from '../components/Location';
 
 const Home = () => (
     <>
+        <StructuredData />
         <Hero />
         <About />
         <TreatedConditions />

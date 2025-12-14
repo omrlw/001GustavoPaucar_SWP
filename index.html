@@ -1,12 +1,61 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-PE">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="src/assets/faviconGalene.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Galene Salud Mental e Integrativa en Arequipa. Atención especializada en ansiedad, depresión, insomnio y adicciones. Consulta presencial u online con el Dr. Gustavo Paucar Chávez." />
-    <title>Galene Salud Mental e Integrativa</title>
+    <meta
+      name="description"
+      content="Psiquiatra en Arequipa. Atención presencial y online con el Dr. Gustavo Paucar Chávez (CMP 79326, RNE 048301). Especialista en ansiedad, depresión, insomnio y adicciones."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="theme-color" content="#064168" />
+
+    <link rel="canonical" href="%VITE_SITE_URL%/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_PE" />
+    <meta property="og:site_name" content="Galene Salud Mental e Integrativa" />
+    <meta property="og:title" content="Psiquiatra en Arequipa | Dr. Gustavo Paucar Chávez" />
+    <meta
+      property="og:description"
+      content="Atención presencial y online en Arequipa. Ansiedad, depresión, insomnio y adicciones. Agenda tu cita con el Dr. Gustavo Paucar Chávez."
+    />
+    <meta property="og:url" content="%VITE_SITE_URL%/" />
+    <meta property="og:image" content="%VITE_SITE_URL%/images/hero-lcp-1024.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Psiquiatra en Arequipa | Dr. Gustavo Paucar Chávez" />
+    <meta
+      name="twitter:description"
+      content="Atención presencial y online en Arequipa. Ansiedad, depresión, insomnio y adicciones."
+    />
+    <meta name="twitter:image" content="%VITE_SITE_URL%/images/hero-lcp-1024.webp" />
+
+    <title>Psiquiatra en Arequipa | Dr. Gustavo Paucar Chávez | Galene</title>
     <link rel="preload" as="image" href="/images/hero-lcp-768.webp" imagesrcset="/images/hero-lcp-512.webp 512w, /images/hero-lcp-768.webp 768w, /images/hero-lcp-1024.webp 1024w" imagesizes="(min-width: 1280px) 664px, (min-width: 1024px) 560px, (min-width: 640px) 512px, 100vw" />
+
+    <script>
+      (function () {
+        var raw = '%VITE_SITE_URL%';
+        var hasEnv = raw && raw.indexOf('%VITE_') === -1;
+        var base = hasEnv ? raw.replace(/\/+$/, '') : window.location.origin;
+        var path = window.location.pathname || '/';
+        var canonicalUrl = base + (path === '/' ? '/' : path.replace(/\/+$/, ''));
+
+        var canonical = document.querySelector('link[rel="canonical"]');
+        if (canonical) canonical.setAttribute('href', canonicalUrl);
+
+        var ogUrl = document.querySelector('meta[property="og:url"]');
+        if (ogUrl) ogUrl.setAttribute('content', canonicalUrl);
+
+        var ogImage = document.querySelector('meta[property="og:image"]');
+        if (ogImage) ogImage.setAttribute('content', base + '/images/hero-lcp-1024.webp');
+
+        var twitterImage = document.querySelector('meta[name="twitter:image"]');
+        if (twitterImage) twitterImage.setAttribute('content', base + '/images/hero-lcp-1024.webp');
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

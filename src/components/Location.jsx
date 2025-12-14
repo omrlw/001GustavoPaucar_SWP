@@ -59,7 +59,13 @@ const Location = () => (
                 </div>
                 <div className="flex-1">
                   <h3 className="text-base font-semibold mb-1 text-white">{LOCATION_LABELS.contactLabel}</h3>
-                  <p className="text-white text-xl font-medium tracking-wide">{BRAND_INFO.phone}</p>
+                  <a
+                    href={`tel:+51${String(BRAND_INFO.phone).replace(/\D/g, '')}`}
+                    className="text-white text-xl font-medium tracking-wide underline-offset-4 hover:underline"
+                    aria-label={`Llamar al ${BRAND_INFO.phone}`}
+                  >
+                    {BRAND_INFO.phone}
+                  </a>
                   <p className="text-blue-200/70 text-xs mt-1 flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-green-400 rounded-full" />
                     {LOCATION_LABELS.contactNote}
