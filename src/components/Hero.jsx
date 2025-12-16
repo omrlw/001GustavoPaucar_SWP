@@ -27,12 +27,18 @@ const Hero = () => (
       <div className="hero-ring hero-ring-2" />
       <div className="hero-ring hero-ring-3" />
 
-      {/* Floating particles */}
+      {/* Floating particles - right side */}
       <div className="hero-particle hero-particle-1" />
       <div className="hero-particle hero-particle-2" />
       <div className="hero-particle hero-particle-3" />
       <div className="hero-particle hero-particle-4" />
       <div className="hero-particle hero-particle-5" />
+      {/* Floating particles - left side */}
+      <div className="hero-particle hero-particle-6" />
+      <div className="hero-particle hero-particle-7" />
+      <div className="hero-particle hero-particle-8" />
+      <div className="hero-particle hero-particle-9" />
+      <div className="hero-particle hero-particle-10" />
     </div>
 
     {/* Section */}

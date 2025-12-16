@@ -177,6 +177,45 @@
     animation-duration: 16s;
   }
 
+  /* Left side particles */
+  .hero-particle-6 {
+    width: 9px;
+    height: 9px;
+    top: 20%;
+    left: 15%;
+    background: linear-gradient(135deg, rgba(20, 184, 166, 0.5), rgba(81, 186, 188, 0.4));
+    animation-delay: -2s;
+    animation-duration: 14s;
+  }
+
+  .hero-particle-7 {
+    width: 6px;
+    height: 6px;
+    top: 45%;
+    left: 10%;
+    animation-delay: -7s;
+    animation-duration: 17s;
+  }
+
+  .hero-particle-9 {
+    width: 5px;
+    height: 5px;
+    top: 30%;
+    left: 28%;
+    animation-delay: -10s;
+    animation-duration: 18s;
+  }
+
+  .hero-particle-10 {
+    width: 7px;
+    height: 7px;
+    top: 80%;
+    left: 20%;
+    background: linear-gradient(135deg, rgba(81, 186, 188, 0.5), rgba(6, 65, 104, 0.35));
+    animation-delay: -8s;
+    animation-duration: 13s;
+  }
+
   /* Decorative glowing rings - full hero background */
   .hero-ring {
     position: absolute;
