@@ -36,8 +36,8 @@ const Hero = () => (
       <div className="flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-16 xl:gap-20 relative z-10">
 
         {/* 1 */}
-        <div className="w-full lg:w-[44%] xl:w-[42%] space-y-7 lg:space-y-8 animate-in slide-in-from-left duration-700 max-w-xl relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-primary text-xs font-semibold tracking-wider uppercase font-body animate-pulse-gentle">
+        <div className="w-full lg:w-[44%] xl:w-[42%] space-y-7 lg:space-y-8 max-w-xl relative z-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-primary text-xs font-semibold tracking-wider uppercase font-body">
             <HeartHandshake size={14} />
             {HERO_CONTENT.badge}
           </div>
@@ -104,7 +104,7 @@ const Hero = () => (
 
 
         {/* 2 Image */}
-        <div className="w-full lg:w-[56%] xl:w-[50%] relative animate-in zoom-in duration-700 delay-200">
+        <div className="w-full lg:w-[56%] xl:w-[50%] relative animate-fade-in">
           <div className="relative z-10 rounded-2xl overflow-hidden xl:-mr-16 w-full max-w-xl lg:max-w-none mx-auto hero-image-container aspect-square">
             <img
               src="/images/hero-lcp-768.webp"
@@ -171,13 +171,15 @@ const Hero = () => (
     </div>
 
     {/* Scroll Down Indicator */}
-    <a
-      href="#nosotros"
-      className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 p-3 rounded-full bg-white/30 backdrop-blur-md border border-white/50 shadow-lg text-primary hover:bg-white hover:scale-110 active:scale-95 transition-all duration-300 animate-bounce-slow group cursor-pointer"
-      aria-label="Ir a la siguiente sección"
-    >
-      <ChevronDown className="w-6 h-6 group-hover:translate-y-0.5 transition-transform" />
-    </a>
+    <div className="hidden lg:block absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-fade-in">
+      <a
+        href="#nosotros"
+        className="block p-3 rounded-full bg-white/30 backdrop-blur-md border border-white/50 shadow-lg text-primary hover:bg-white hover:scale-110 active:scale-95 transition-all duration-300 animate-bounce-slow group cursor-pointer"
+        aria-label="Ir a la siguiente sección"
+      >
+        <ChevronDown className="w-6 h-6 group-hover:translate-y-0.5 transition-transform" />
+      </a>
+    </div>
   </header>
 );
 
