@@ -7,6 +7,7 @@ import {
   Clock,
   BadgeCheck,
   Users,
+  ChevronDown,
 } from 'lucide-react';
 import Button from './ui/Button';
 import { HERO_CONTENT } from '../data/content';
@@ -18,27 +19,16 @@ const Hero = () => (
       {/* Background blur glow - full hero */}
       <div className="absolute inset-0 bg-secondary/10 blur-3xl" />
 
-      <div className="hero-aurora" />
-      <div className="hero-aurora hero-aurora-2" />
-      <div className="hero-aurora hero-aurora-3" />
-
       {/* Decorative glowing rings - full hero background */}
       <div className="hero-ring hero-ring-1" />
-      <div className="hero-ring hero-ring-2" />
-      <div className="hero-ring hero-ring-3" />
 
       {/* Floating particles - right side */}
       <div className="hero-particle hero-particle-1" />
       <div className="hero-particle hero-particle-2" />
-      <div className="hero-particle hero-particle-3" />
-      <div className="hero-particle hero-particle-4" />
-      <div className="hero-particle hero-particle-5" />
       {/* Floating particles - left side */}
       <div className="hero-particle hero-particle-6" />
       <div className="hero-particle hero-particle-7" />
-      <div className="hero-particle hero-particle-8" />
-      <div className="hero-particle hero-particle-9" />
-      <div className="hero-particle hero-particle-10" />
+
     </div>
 
     {/* Section */}
@@ -179,6 +169,15 @@ const Hero = () => (
         </div>
       </div>
     </div>
+
+    {/* Scroll Down Indicator */}
+    <a
+      href="#nosotros"
+      className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 p-3 rounded-full bg-white/30 backdrop-blur-md border border-white/50 shadow-lg text-primary hover:bg-white hover:scale-110 active:scale-95 transition-all duration-300 animate-bounce-slow group cursor-pointer"
+      aria-label="Ir a la siguiente sección"
+    >
+      <ChevronDown className="w-6 h-6 group-hover:translate-y-0.5 transition-transform" />
+    </a>
   </header>
 );
 
