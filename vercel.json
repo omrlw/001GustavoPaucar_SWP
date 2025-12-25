@@ -1,4 +1,12 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "galenesalud.com" }],
+      "destination": "https://www.galenesalud.com/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/privacidad", "destination": "/index.html" },
     { "source": "/terminos", "destination": "/index.html" }

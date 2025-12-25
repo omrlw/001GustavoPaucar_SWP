@@ -10,6 +10,15 @@ Esto genera:
 - `public/robots.txt` (con `Sitemap:` cuando la URL está disponible)
 - `public/sitemap.xml`
 
+## 1.1) Dominio en Vercel + DNS (importante)
+
+- Agrega ambos dominios en Vercel: `galenesalud.com` y `www.galenesalud.com` y marca uno como **Primary**.
+- Si marcas **Primary** `www.galenesalud.com`, usa `VITE_SITE_URL="https://www.galenesalud.com"` y redirige `galenesalud.com` → `www`.
+- En tu DNS (Spaceship u otro), lo típico en Vercel es:
+  - `A` con host `@` → `76.76.21.21`
+  - `CNAME` con host `www` → `cname.vercel-dns.com`
+- Si `www` no existe en DNS/Vercel, `www.galenesalud.com` dará error.
+
 ## 2) Google Business Profile (lo que más mueve en “psiquiatra arequipa”)
 
 - Reclamar/crear la ficha en Google Maps (mismo nombre, dirección y teléfono que en la web).
@@ -35,4 +44,3 @@ Esto genera:
 
 - Mostrar credenciales (CMP/RNE), experiencia, enlaces verificables (CMP/Doctoralia).
 - Citas locales: directorios médicos, colegios profesionales, menciones (sin spam).
-
