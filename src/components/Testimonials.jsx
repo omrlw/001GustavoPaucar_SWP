@@ -2,7 +2,6 @@ import React, { useMemo } from 'react';
 import { Quote, Star } from 'lucide-react';
 import SectionTitle from './ui/SectionTitle';
 import { TESTIMONIALS_CONTENT } from '../data/content';
-import doctoraliaLogo from '../assets/docplanner.webp';
 
 const Testimonials = () => {
   const marqueeReviews = useMemo(
@@ -83,7 +82,7 @@ const Testimonials = () => {
             aria-label="Ver perfil en Doctoralia"
           >
             <img
-              src={doctoraliaLogo}
+              src="/images/docplanner.webp"
               alt="Doctoralia"
               className="w-5 h-5"
               width={20}

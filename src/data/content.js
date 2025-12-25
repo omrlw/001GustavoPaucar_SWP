@@ -4,8 +4,8 @@ export const BRAND_INFO = {
   phone: '953 426 499',
   whatsappLink:
     'https://wa.me/51953426499?text=Hola,%20me%20comunico%20desde%20la%20web.%20Quisiera%20información%20para%20una%20cita%20(Presencial%20/%20Virtual)%20con%20el%20Dr.%20Paucar',
-  address: 'Calle Ricardo Palma 305 Umacollo, Arequipa',
-  mapLink: 'https://maps.app.goo.gl/aQaZ4666PLvoGE8c9',
+  address: 'Orquideas 105, Yanahuara 04014, Arequipa',
+  mapLink: 'https://maps.app.goo.gl/aD34JeGEw6bCqhZY8',
   schedule: 'Lunes a Sábado: 9:00 AM - 8:00 PM',
 };
 
@@ -237,7 +237,7 @@ export const FAQS = [
 export const LOCATION_CONTENT = {
   title: 'Visítanos en Arequipa',
   subtitle: 'Estamos listos para atenderte',
-  directionsNote: '(Edificio de 4 pisos a media cuadra del Parque Libertad de Expresión)',
+  directionsNote: '(Clínica Cálidamente - atención integral de salud mental)',
   mapCta: 'Ver en Google Maps',
   mapLinkLabel: 'Abrir mapa',
 };
@@ -248,7 +248,7 @@ export const FOOTER_CONTENT = {
   social: [
     { label: 'Facebook', href: 'https://www.facebook.com/drgustavopaucar/', icon: 'Facebook' },
     { label: 'Doctoralia', href: 'https://www.doctoralia.pe/gustavo-paucar-chavez/psiquiatra/arequipa', icon: 'Doctoralia' },
-    { label: 'Maps', href: 'https://maps.app.goo.gl/9V8ZDtC7NpFKNafR6', icon: 'Maps' },
+    { label: 'Maps', href: 'https://maps.app.goo.gl/aD34JeGEw6bCqhZY8', icon: 'Maps' },
   ],
   legal: [
     { label: 'Política de Privacidad', href: '/privacidad' },

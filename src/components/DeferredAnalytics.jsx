@@ -1,10 +1,4 @@
-/* eslint-disable react-refresh/only-export-components */
-import React, { StrictMode, Suspense, lazy, useEffect, useState } from 'react';
-import { createRoot } from 'react-dom/client';
-
-import './styles/fonts.css';
-import './index.css';
-import App from './App.jsx';
+import React, { Suspense, lazy, useEffect, useState } from 'react';
 
 const Analytics = lazy(() =>
   import('@vercel/analytics/react').then((module) => ({ default: module.Analytics }))
@@ -36,9 +30,4 @@ const DeferredAnalytics = () => {
   );
 };
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-    <DeferredAnalytics />
-  </StrictMode>
-);
+export default DeferredAnalytics;

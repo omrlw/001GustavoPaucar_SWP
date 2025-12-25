@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Linkedin, MapPin } from 'lucide-react';
 import {
   BRAND_INFO,
@@ -8,8 +7,6 @@ import {
   FOOTER_LABELS,
   NAV_LINKS,
 } from '../../data/content';
-import logoGalene from '../../assets/LogoGaleneOscuro.svg';
-import docplannerLogo from '../../assets/docplanner.webp';
 
 const Footer = () => {
   const getIcon = (iconName) => {
@@ -21,7 +18,7 @@ const Footer = () => {
       case 'Doctoralia':
         return (
           <img
-            src={docplannerLogo}
+            src="/images/docplanner.webp"
             alt="Doctoralia"
             className="w-4 h-4 object-contain brightness-0 invert opacity-60 group-hover:opacity-100"
           />
@@ -35,13 +32,13 @@ const Footer = () => {
       <div className="container mx-auto px-6 ">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
-            <Link to="/" className="inline-block mb-6">
+            <a href="/" className="inline-block mb-6">
               <img
-                src={logoGalene}
+                src="/images/LogoGaleneOscuro.svg"
                 alt={BRAND_INFO.name}
                 className="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity brightness-0 invert"
               />
-            </Link>
+            </a>
             <p className="max-w-xs text-slate-500 mb-6">{FOOTER_CONTENT.mission}</p>
             <div className="flex gap-4">
               {FOOTER_CONTENT.social.map((social) => (
@@ -84,12 +81,12 @@ const Footer = () => {
             <ul className="space-y-2">
               {FOOTER_CONTENT.legal.map((item) => (
                 <li key={item.label}>
-                  <Link
-                    to={item.href}
+                  <a
+                    href={item.href}
                     className="hover:text-accent transition-colors"
                   >
                     {item.label}
-                  </Link>
+                  </a>
                 </li>
               ))}
               <li>

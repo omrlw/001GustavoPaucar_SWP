@@ -2,6 +2,9 @@ import React from 'react';
 import { ArrowRight, Clock, MapPin, Phone } from 'lucide-react';
 import { BRAND_INFO, LOCATION_CONTENT, LOCATION_LABELS } from '../data/content';
 
+const mapQuery = encodeURIComponent(`Clínica Cálidamente ${BRAND_INFO.address}`);
+const mapEmbedSrc = `https://maps.google.com/maps?q=${mapQuery}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+
 const Location = () => (
   <section id="ubicacion" className="py-16 sm:py-20 bg-primary relative overflow-hidden text-white">
     {/* Fondo decorativo */}
@@ -107,7 +110,7 @@ const Location = () => (
           <div className="w-full h-[360px] lg:h-full min-h-[360px] bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-xl relative group">
             <iframe
               title="Mapa del consultorio en Arequipa"
-              src={"https://maps.google.com/maps?q=M%C3%A9dico%20Psiquiatra%20Dr.%20Gustavo%20Paucar%20Arequipa&t=&z=15&ie=UTF8&iwloc=&output=embed"}
+              src={mapEmbedSrc}
               loading="lazy"
               className="absolute inset-0 w-full h-full"
               allowFullScreen

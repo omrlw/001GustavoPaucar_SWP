@@ -1,6 +1,5 @@
 import React from 'react';
 import { BRAND_INFO, WHATSAPP_TOOLTIP } from '../data/content';
-import WhatsApp from '../assets/icons_whatsapp.svg';
 
 const FloatingWhatsApp = () => (
   <a
@@ -11,7 +10,7 @@ const FloatingWhatsApp = () => (
     aria-label="Contactar por WhatsApp"
   >
     <img
-      src={WhatsApp}
+      src="/images/icons_whatsapp.svg"
       alt=""
       aria-hidden
       className="w-10 h-10"

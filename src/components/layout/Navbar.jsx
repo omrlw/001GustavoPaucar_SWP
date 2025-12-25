@@ -1,6 +1,5 @@
 import React from 'react';
 import { MessageCircle, Menu, X, ArrowRight, Phone, MapPin, Clock } from 'lucide-react';
-import logoGalene from '../../assets/LogoGaleneOscuro.svg';
 import { BRAND_INFO, NAV_LINKS, UI_TEXT } from '../../data/content';
 
 const Navbar = ({ scrolled, isMenuOpen, onToggleMenu, onCloseMenu }) => (
@@ -11,7 +10,7 @@ const Navbar = ({ scrolled, isMenuOpen, onToggleMenu, onCloseMenu }) => (
     <div className="container mx-auto px-6 flex justify-between items-center text-white">
       <a href="/" className="flex items-center gap-3 group">
         <img
-          src={logoGalene}
+          src="/images/LogoGaleneOscuro.svg"
           alt="Logotipo de Galene"
           className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
           width={216}

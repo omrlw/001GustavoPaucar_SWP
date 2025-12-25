@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { ChevronRight, MapPin, CheckCircle2, MessageCircle } from 'lucide-react';
 import SectionTitle from './ui/SectionTitle';
 import { FAQ_CONTENT, FAQS } from '../data/content';
-import assetFaq from '../assets/asset1.png';
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -80,7 +79,7 @@ const Faq = () => {
               {/* 2. Imagen Transparente */}
               <img
                 className="w-auto h-auto max-h-[550px] object-contain drop-shadow-2xl relative z-0 mx-auto transform transition-transform duration-700 hover:scale-[1.02]"
-                src={assetFaq}
+                src="/images/asset1.png"
                 alt="Dr. Gustavo Paucar preguntas frecuentes"
                 loading="lazy"
                 decoding="async"

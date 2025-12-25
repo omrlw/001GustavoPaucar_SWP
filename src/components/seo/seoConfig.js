@@ -22,9 +22,11 @@ export function getSeoForPath(pathname) {
 }
 
 export function getBaseUrl() {
-  const envUrl = import.meta.env.VITE_SITE_URL;
+  let envUrl = import.meta.env.VITE_SITE_URL || import.meta.env.PUBLIC_SITE_URL;
+  if (!envUrl && typeof process !== 'undefined') {
+    envUrl = process.env.VITE_SITE_URL || process.env.PUBLIC_SITE_URL;
+  }
   const raw = typeof envUrl === 'string' ? envUrl.trim() : '';
   if (raw) return raw.replace(/\/+$/, '');
-  return window.location.origin;
+  return '';
 }
-

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Building2, GraduationCap, Languages, Stethoscope } from 'lucide-react';
 import SectionTitle from './ui/SectionTitle';
-import doctorPortrait from '../assets/Gustavo_foto.webp';
 import { ABOUT_CONTENT, DOCTOR_DATA } from '../data/content';
 
 const About = () => (
@@ -17,7 +16,7 @@ const About = () => (
         <div className="relative order-2 lg:order-1 flex justify-center group perspective-1000 scroll-reveal-left">
           <div className="relative w-full max-w-[380px] aspect-[3/4] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-300/70 border-[6px] border-white transition-transform duration-500 hover:scale-[1.01]">
             <img
-              src={doctorPortrait}
+              src="/images/Gustavo_foto.webp"
               alt={`Dr. ${DOCTOR_DATA.name}`}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 will-change-transform hover:scale-105"
               width={530}
