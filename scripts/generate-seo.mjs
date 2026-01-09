@@ -2,10 +2,13 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const ROUTES = ['/', '/privacidad', '/terminos'];
+const CANONICAL_HOST = 'www.galenesalud.com';
+const FALLBACK_BASE_URL = `https://${CANONICAL_HOST}`;
 
 const getBaseUrl = () => {
   const direct =
     process.env.VITE_SITE_URL ||
+    process.env.PUBLIC_SITE_URL ||
     process.env.SITE_URL ||
     process.env.URL ||
     process.env.DEPLOY_PRIME_URL ||
@@ -25,6 +28,22 @@ const normalizeBaseUrl = (raw) => {
   return withScheme.replace(/\/+$/, '');
 };
 
+const canonicalizeBaseUrl = (baseUrl) => {
+  if (!baseUrl) return '';
+  try {
+    const url = new URL(baseUrl);
+    if (url.hostname === 'galenesalud.com') {
+      url.hostname = CANONICAL_HOST;
+    }
+    if (url.hostname === CANONICAL_HOST) {
+      url.protocol = 'https:';
+    }
+    return url.toString().replace(/\/$/, '');
+  } catch {
+    return baseUrl;
+  }
+};
+
 const toAbsoluteUrl = (baseUrl, route) => {
   if (route === '/') return `${baseUrl}/`;
   return `${baseUrl}${route}`;
@@ -36,13 +55,13 @@ const projectRoot = process.cwd();
 const publicDir = path.join(projectRoot, 'public');
 
 const main = async () => {
-  const baseUrl = normalizeBaseUrl(getBaseUrl());
+  const baseUrl = canonicalizeBaseUrl(normalizeBaseUrl(getBaseUrl() || FALLBACK_BASE_URL));
   const today = formatIsoDate(new Date());
 
   await fs.mkdir(publicDir, { recursive: true });
 
   const robotsLines = ['User-agent: *', 'Allow: /'];
-  if (baseUrl) robotsLines.push('', `Sitemap: ${baseUrl}/sitemap.xml`);
+  if (baseUrl) robotsLines.push(`Sitemap: ${baseUrl}/sitemap.xml`);
   robotsLines.push('');
   await fs.writeFile(path.join(publicDir, 'robots.txt'), robotsLines.join('\n'), 'utf8');
 
@@ -74,4 +93,3 @@ const main = async () => {
 };
 
 main();
-

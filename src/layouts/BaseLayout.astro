@@ -14,8 +14,35 @@ const title = titleProp || seo.title;
 const description = descriptionProp || seo.description;
 const robots = robotsProp || 'index,follow,max-image-preview:large';
 
-const rawSite = import.meta.env.VITE_SITE_URL || import.meta.env.PUBLIC_SITE_URL || '';
-const siteUrl = rawSite ? rawSite.trim().replace(/\/+$/, '') : '';
+const normalizeSiteUrl = (value) => {
+  if (!value) return '';
+  const trimmed = value.trim();
+  if (!trimmed) return '';
+  const withScheme = /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`;
+  return withScheme.replace(/\/+$/, '');
+};
+
+const canonicalizeSiteUrl = (value) => {
+  if (!value) return '';
+  try {
+    const url = new URL(value);
+    if (url.hostname === 'galenesalud.com') {
+      url.hostname = 'www.galenesalud.com';
+    }
+    if (url.hostname === 'www.galenesalud.com') {
+      url.protocol = 'https:';
+    }
+    return url.toString().replace(/\/$/, '');
+  } catch {
+    return value;
+  }
+};
+
+const rawSite =
+  import.meta.env.VITE_SITE_URL ||
+  import.meta.env.PUBLIC_SITE_URL ||
+  'https://www.galenesalud.com';
+const siteUrl = canonicalizeSiteUrl(normalizeSiteUrl(rawSite));
 const canonicalUrl = siteUrl ? `${siteUrl}${Astro.url.pathname}` : '';
 const ogImage = siteUrl ? `${siteUrl}/images/hero-lcp-1024.webp` : '/images/hero-lcp-1024.webp';
 ---
