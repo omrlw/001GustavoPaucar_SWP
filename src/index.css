@@ -132,38 +132,6 @@
     animation-duration: 14s;
   }
 
-  .hero-particle-7 {
-    width: 6px;
-    height: 6px;
-    top: 45%;
-    left: 10%;
-    animation-delay: -7s;
-    animation-duration: 17s;
-  }
-
-
-
-  /* Decorative glowing rings - full hero background */
-  .hero-ring {
-    position: absolute;
-    border-radius: 50%;
-    border: 2px solid transparent;
-    animation: ringPulse 8s ease-in-out infinite;
-    pointer-events: none;
-  }
-
-  .hero-ring-1 {
-    width: 120%;
-    height: 120%;
-    top: -10%;
-    left: -10%;
-    border-color: rgba(81, 186, 188, 0.15);
-    filter: blur(2px);
-    animation-delay: 0s;
-  }
-
-
-
 }
 
 
@@ -226,20 +194,6 @@
   75% {
     transform: translate(15px, -10px) scale(1.05);
     opacity: 0.8;
-  }
-}
-
-@keyframes ringPulse {
-
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 0.6;
-  }
-
-  50% {
-    transform: scale(1.05);
-    opacity: 0.3;
   }
 }
 
@@ -545,7 +499,6 @@
   }
 
 
-  .hero-ring,
   .hero-particle,
   .testimonial-marquee,
   .animate-bounce-slow,
@@ -579,8 +532,7 @@
 
 /* Performance Optimizations */
 
-.hero-particle,
-.hero-ring {
+.hero-particle {
   will-change: transform;
   transform: translateZ(0);
   /* Force GPU acceleration */

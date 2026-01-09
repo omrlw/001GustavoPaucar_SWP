@@ -16,18 +16,13 @@ const Hero = () => (
   <header id="inicio" className="relative pt-32 pb-16 sm:pt-36 lg:pt-40 lg:pb-32 overflow-hidden">
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
       {/* Background blur glow - full hero */}
-      <div className="absolute inset-0 bg-secondary/10 blur-3xl" />
-
-      {/* Decorative glowing rings - full hero background */}
-      <div className="hero-ring hero-ring-1" />
+      <div className="absolute inset-0 bg-secondary/10 blur-2xl sm:blur-3xl" />
 
       {/* Floating particles - right side */}
       <div className="hero-particle hero-particle-1" />
       <div className="hero-particle hero-particle-2" />
       {/* Floating particles - left side */}
       <div className="hero-particle hero-particle-6" />
-      <div className="hero-particle hero-particle-7" />
-
     </div>
 
     {/* Section */}
@@ -150,7 +145,7 @@ const Hero = () => (
             </div>
           </div>
           {/* Primera Consulta */}
-          <div className="absolute bottom-6 left-4 sm:left-8 bg-white/98 p-4 rounded-2xl shadow-xl border border-slate-100 z-20 max-w-[220px] animate-float-slow">
+          <div className="absolute bottom-6 left-4 sm:left-8 bg-white/98 p-4 rounded-2xl shadow-xl border border-slate-100 z-20 max-w-[220px] lg:animate-float-slow">
             <div className="flex items-start gap-3">
               <div className="p-2 bg-primary rounded-full text-white shadow-lg shadow-primary/25">
                 <Clock size={18} aria-hidden />
@@ -173,7 +168,7 @@ const Hero = () => (
     <div className="hidden lg:block absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-fade-in">
       <a
         href="#nosotros"
-        className="block p-3 rounded-full bg-white/30 backdrop-blur-md border border-white/50 shadow-lg text-primary hover:bg-white hover:scale-110 active:scale-95 transition-all duration-300 animate-bounce-slow group cursor-pointer"
+        className="block p-3 rounded-full bg-white/30 backdrop-blur-sm border border-white/50 shadow-lg text-primary hover:bg-white hover:scale-110 active:scale-95 transition-all duration-300 animate-bounce-slow group cursor-pointer"
         aria-label="Ir a la siguiente sección"
       >
         <ChevronDown className="w-6 h-6 group-hover:translate-y-0.5 transition-transform" />
