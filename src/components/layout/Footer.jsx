@@ -101,7 +101,18 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-slate-800 text-center flex flex-col md:flex-row justify-between items-center gap-4">
           <p>&copy; {new Date().getFullYear()} {DOCTOR_DATA.name}. Todos los derechos reservados.</p>
-          <p className="text-slate-600">Diseñado con dedicación en Arequipa.</p>
+          <p className="text-slate-600">
+            Desarrollado con dedicación por{' '}
+            <a
+              href="https://simplewebperu.com"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-accent transition-colors"
+            >
+              Simple Web Peru
+            </a>
+            .
+          </p>
         </div>
       </div>
     </footer>
