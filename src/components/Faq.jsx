@@ -79,7 +79,7 @@ const Faq = () => {
               {/* 2. Imagen Transparente */}
               <img
                 className="w-auto h-auto max-h-[550px] object-contain drop-shadow-2xl relative z-0 mx-auto transform transition-transform duration-700 hover:scale-[1.02]"
-                src="/images/asset1.png"
+                src="/images/asset1.webp"
                 alt="Dr. Gustavo Paucar preguntas frecuentes"
                 loading="lazy"
                 decoding="async"

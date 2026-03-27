@@ -1,0 +1,3958 @@
+{
+  "version": "2.9",
+  "children": [
+    {
+      "type": "frame",
+      "id": "uR2sC",
+      "x": 0,
+      "y": 0,
+      "name": "Galene Homepage Editable",
+      "width": 1440,
+      "height": 6170,
+      "fill": "$light",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "jDC6Y",
+          "x": 0,
+          "y": 0,
+          "name": "Nav",
+          "width": 1440,
+          "height": 60,
+          "fill": "$primary",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Fq902",
+              "x": 40,
+              "y": 10,
+              "name": "logo",
+              "width": 205,
+              "height": 40,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./assets/logo-galene.png",
+                "mode": "fit"
+              }
+            },
+            {
+              "type": "text",
+              "id": "gblQe",
+              "x": 778,
+              "y": 23,
+              "name": "navInicio",
+              "fill": "#E7F3F8",
+              "content": "Inicio",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "ubdS2",
+              "x": 830,
+              "y": 23,
+              "name": "navNosotros",
+              "fill": "#E7F3F8",
+              "content": "Nosotros",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "PjSCV",
+              "x": 904,
+              "y": 23,
+              "name": "navServicios",
+              "fill": "#E7F3F8",
+              "content": "Servicios",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "TEgH1",
+              "x": 983,
+              "y": 23,
+              "name": "navTestimonios",
+              "fill": "#E7F3F8",
+              "content": "Testimonios",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "3iLWR",
+              "x": 1081,
+              "y": 23,
+              "name": "navUbicacion",
+              "fill": "#E7F3F8",
+              "content": "Ubicación",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "JfoxW",
+              "x": 1192,
+              "y": 14,
+              "name": "cta",
+              "width": 154,
+              "height": 32,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 90,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "$secondary",
+                    "position": 0
+                  },
+                  {
+                    "color": "$accent",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 18,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#14B8A61F",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 16
+              },
+              "gap": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "tOabO",
+                  "name": "ctaIcon",
+                  "width": 15,
+                  "height": 15,
+                  "iconFontName": "message-circle",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                },
+                {
+                  "type": "text",
+                  "id": "K8gNL",
+                  "name": "ctaText",
+                  "fill": "#FFFFFF",
+                  "content": "Agendar",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "EVWRU",
+                  "name": "ctaArrow",
+                  "width": 14,
+                  "height": 14,
+                  "iconFontName": "arrow-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "urs2r",
+          "x": 0,
+          "y": 60,
+          "name": "Hero",
+          "width": 1440,
+          "height": 760,
+          "fill": "$light",
+          "layout": "none",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "UhFcI",
+              "x": -120,
+              "y": 40,
+              "name": "heroGlow1",
+              "fill": "#51BABC1A",
+              "width": 860,
+              "height": 620,
+              "effect": {
+                "type": "blur",
+                "radius": 120
+              }
+            },
+            {
+              "type": "ellipse",
+              "id": "cUpS1",
+              "x": 640,
+              "y": 10,
+              "name": "heroGlow2",
+              "fill": "#06416812",
+              "width": 760,
+              "height": 560,
+              "effect": {
+                "type": "blur",
+                "radius": 120
+              }
+            },
+            {
+              "type": "ellipse",
+              "id": "Ydngi",
+              "x": 860,
+              "y": 420,
+              "name": "heroGlow3",
+              "fill": "#14B8A618",
+              "width": 520,
+              "height": 260,
+              "effect": {
+                "type": "blur",
+                "radius": 110
+              }
+            },
+            {
+              "type": "frame",
+              "id": "ttL1Y",
+              "x": 103,
+              "y": 78,
+              "name": "heroBadge",
+              "width": 296,
+              "height": 30,
+              "fill": "#DDEDF0",
+              "cornerRadius": 15,
+              "gap": 8,
+              "padding": [
+                7,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "jg9Z3",
+                  "name": "heroBadgeIcon",
+                  "width": 14,
+                  "height": 14,
+                  "iconFontName": "heart-handshake",
+                  "iconFontFamily": "lucide",
+                  "fill": "$primary"
+                },
+                {
+                  "type": "text",
+                  "id": "rp8l6",
+                  "name": "heroBadgeText",
+                  "fill": "#5B82A0",
+                  "content": "PSIQUIATRÍA INTEGRAL EN AREQUIPA",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": 0.6
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Y2e7C",
+              "x": 102,
+              "y": 136,
+              "name": "heroLine1",
+              "fill": "$dark",
+              "content": "Recupera tu",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 68,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "6JsXI",
+              "x": 102,
+              "y": 212,
+              "name": "heroLine2",
+              "fill": "$primary",
+              "content": "claridad mental",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 72,
+              "fontWeight": "600",
+              "fontStyle": "italic"
+            },
+            {
+              "type": "text",
+              "id": "1KAAT",
+              "x": 102,
+              "y": 293,
+              "name": "heroLine3",
+              "fill": "$dark",
+              "content": "y",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 68,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "Aj6pp",
+              "x": 102,
+              "y": 368,
+              "name": "heroLine4",
+              "fill": "$dark",
+              "content": "equilibrio.",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 68,
+              "fontWeight": "600"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "4fPQ0",
+              "x": 101,
+              "y": 481,
+              "name": "heroAccentLine",
+              "fill": "$accent",
+              "width": 4,
+              "height": 76
+            },
+            {
+              "type": "text",
+              "id": "Hu2cE",
+              "x": 124,
+              "y": 481,
+              "name": "heroDesc",
+              "fill": "#415266",
+              "textGrowth": "fixed-width",
+              "width": 432,
+              "content": "Atención especializada en ansiedad, depresión y adicciones. Un enfoque humano basado en evidencia científica para adultos y adolescentes.",
+              "lineHeight": 1.45,
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "47Z5u",
+              "x": 103,
+              "y": 598,
+              "name": "heroPrimary",
+              "width": 228,
+              "height": 48,
+              "fill": "$accent",
+              "cornerRadius": 10,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#14B8A624",
+                "offset": {
+                  "x": 0,
+                  "y": 12
+                },
+                "blur": 24
+              },
+              "gap": 10,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "EJ04N",
+                  "name": "heroPrimaryIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "map-pin",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                },
+                {
+                  "type": "text",
+                  "id": "Lu9FD",
+                  "name": "heroPrimaryText",
+                  "fill": "#FFFFFF",
+                  "content": "Nuestra Ubicación",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "1KeFW",
+              "x": 346,
+              "y": 598,
+              "name": "heroSecondary",
+              "width": 244,
+              "height": 48,
+              "fill": "#FFFFFF",
+              "cornerRadius": 10,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A14",
+                "offset": {
+                  "x": 0,
+                  "y": 12
+                },
+                "blur": 24
+              },
+              "gap": 10,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "rH1FP",
+                  "name": "heroSecondaryIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "message-circle-more",
+                  "iconFontFamily": "lucide",
+                  "fill": "$primary"
+                },
+                {
+                  "type": "text",
+                  "id": "Xa1Me",
+                  "name": "heroSecondaryText",
+                  "fill": "$primary",
+                  "content": "Escribir al WhatsApp",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "diErl",
+              "x": 103,
+              "y": 678,
+              "name": "heroDocPill",
+              "width": 344,
+              "height": 36,
+              "fill": "#FFFFFF",
+              "cornerRadius": 18,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E2E8F0"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A12",
+                "offset": {
+                  "x": 0,
+                  "y": 10
+                },
+                "blur": 18
+              },
+              "gap": 10,
+              "padding": [
+                0,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "knFM1",
+                  "name": "heroDocIcon",
+                  "width": 16,
+                  "height": 16,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../public/images/docplanner.webp",
+                    "mode": "fit"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "tUL9F",
+                  "name": "heroDocText",
+                  "fill": "#64748B",
+                  "content": "Ver perfil en Doctoralia   ★★★★★",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "DvKs0",
+              "x": 221,
+              "y": 687,
+              "name": "heroDocText2",
+              "fill": "$primary",
+              "content": "Doctoralia",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "A3IAe",
+              "x": 735,
+              "y": 67,
+              "name": "heroImage",
+              "width": 540,
+              "height": 560,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "../public/images/hero-lcp-1024.webp",
+                "mode": "fit"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "jsKIm",
+              "x": 1166,
+              "y": 71,
+              "name": "verifyCard",
+              "width": 206,
+              "height": 76,
+              "fill": "#FFFFFF",
+              "cornerRadius": 22,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A14",
+                "offset": {
+                  "x": 0,
+                  "y": 18
+                },
+                "blur": 28
+              },
+              "gap": 14,
+              "padding": [
+                16,
+                18
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TQym1",
+                  "name": "verifyIconWrap",
+                  "width": 38,
+                  "height": 38,
+                  "fill": "#E8FBF8",
+                  "cornerRadius": 19,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "gu6Ld",
+                      "name": "verifyIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "badge-check",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "okZZl",
+                  "name": "verifyText",
+                  "fill": "#4B5563",
+                  "textGrowth": "fixed-width",
+                  "width": 112,
+                  "content": "VERIFICADO\nMédico Colegiado",
+                  "lineHeight": 1.25,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "guwKa",
+              "x": 704,
+              "y": 253,
+              "name": "patientsCard",
+              "width": 210,
+              "height": 62,
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A14",
+                "offset": {
+                  "x": 0,
+                  "y": 16
+                },
+                "blur": 24
+              },
+              "gap": 12,
+              "padding": [
+                14,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "73ZNA",
+                  "name": "patientsIcons",
+                  "width": 42,
+                  "height": 18,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "dzrJF",
+                      "x": 0,
+                      "y": 0,
+                      "name": "patientsBubble1",
+                      "fill": "$secondary",
+                      "width": 18,
+                      "height": 18
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "gZbjm",
+                      "x": 12,
+                      "y": 0,
+                      "name": "patientsBubble2",
+                      "fill": "$accent",
+                      "width": 18,
+                      "height": 18
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "DR59D",
+                  "name": "patientsText",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 120,
+                  "content": "100+\nPacientes atendidos",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NZWlN",
+              "x": 757,
+              "y": 564,
+              "name": "consultCard",
+              "width": 226,
+              "height": 74,
+              "fill": "#FFFFFF",
+              "cornerRadius": 22,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A14",
+                "offset": {
+                  "x": 0,
+                  "y": 16
+                },
+                "blur": 26
+              },
+              "gap": 14,
+              "padding": [
+                16,
+                18
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "3lRW1",
+                  "name": "consultIconWrap",
+                  "width": 36,
+                  "height": 36,
+                  "fill": "$primary",
+                  "cornerRadius": 18,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "d75G5",
+                      "name": "consultIcon",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "clock-3",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "MjDSs",
+                  "name": "consultText",
+                  "fill": "#5D6A79",
+                  "textGrowth": "fixed-width",
+                  "width": 132,
+                  "content": "PRIMERA CONSULTA\nPresencial u online",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dMiND",
+              "x": 696,
+              "y": 693,
+              "name": "scrollCircle",
+              "width": 46,
+              "height": 46,
+              "fill": "#F3F7FB",
+              "cornerRadius": 23,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A10",
+                "offset": {
+                  "x": 0,
+                  "y": 12
+                },
+                "blur": 22
+              },
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "sY3o8",
+                  "name": "scrollIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "chevron-down",
+                  "iconFontFamily": "lucide",
+                  "fill": "$primary"
+                }
+              ]
+            },
+            {
+              "type": "ellipse",
+              "id": "cmLeE",
+              "x": 1287,
+              "y": 185,
+              "name": "particle1",
+              "fill": "#5FC6D466",
+              "width": 8,
+              "height": 8,
+              "effect": {
+                "type": "blur",
+                "radius": 1
+              }
+            },
+            {
+              "type": "ellipse",
+              "id": "LZ4QC",
+              "x": 1310,
+              "y": 69,
+              "name": "particle2",
+              "fill": "#51BABC66",
+              "width": 10,
+              "height": 10,
+              "effect": {
+                "type": "blur",
+                "radius": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "2EY29",
+          "x": 0,
+          "y": 820,
+          "name": "About",
+          "width": 1440,
+          "height": 1120,
+          "fill": "$light",
+          "layout": "none",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "XQ28G",
+              "x": -120,
+              "y": 10,
+              "name": "aboutGlow1",
+              "fill": "#51BABC14",
+              "width": 760,
+              "height": 620,
+              "effect": {
+                "type": "blur",
+                "radius": 120
+              }
+            },
+            {
+              "type": "ellipse",
+              "id": "sTRPP",
+              "x": 860,
+              "y": 140,
+              "name": "aboutGlow2",
+              "fill": "#14B8A612",
+              "width": 520,
+              "height": 420,
+              "effect": {
+                "type": "blur",
+                "radius": 110
+              }
+            },
+            {
+              "type": "text",
+              "id": "4nHXl",
+              "x": 420,
+              "y": 74,
+              "name": "aboutTitle",
+              "fill": "$primary",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "Sobre el Especialista",
+              "textAlign": "center",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 56,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "nEwIu",
+              "x": 450,
+              "y": 147,
+              "name": "aboutSubtitle",
+              "fill": "#64748B",
+              "textGrowth": "fixed-width",
+              "width": 540,
+              "content": "Trayectoria dedicada al bienestar mental.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "500"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "5zYCI",
+              "x": 694,
+              "y": 202,
+              "name": "aboutLine",
+              "fill": "$accent",
+              "width": 68,
+              "height": 4
+            },
+            {
+              "type": "frame",
+              "id": "yBlly",
+              "x": 132,
+              "y": 280,
+              "name": "aboutPortrait",
+              "width": 386,
+              "height": 508,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "../public/images/Gustavo_foto.webp",
+                "mode": "fill"
+              },
+              "cornerRadius": 34,
+              "stroke": {
+                "thickness": 6,
+                "fill": "#FFFFFF"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#CBD5E145",
+                "offset": {
+                  "x": 0,
+                  "y": 18
+                },
+                "blur": 34
+              }
+            },
+            {
+              "type": "frame",
+              "id": "MwEMW",
+              "x": 395,
+              "y": 764,
+              "name": "specialtyBadge",
+              "width": 156,
+              "height": 56,
+              "fill": "#FFFFFF",
+              "cornerRadius": 18,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A12",
+                "offset": {
+                  "x": 0,
+                  "y": 16
+                },
+                "blur": 26
+              },
+              "gap": 12,
+              "padding": [
+                12,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "OQnoE",
+                  "name": "specialtyIcon",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "#ECFDF5",
+                  "cornerRadius": 16,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "eeXan",
+                      "name": "specialtySteth",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "stethoscope",
+                      "iconFontFamily": "lucide",
+                      "fill": "#16A34A"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "CPVEX",
+                  "name": "specialtyText",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 76,
+                  "content": "Médico\nPsiquiatra",
+                  "lineHeight": 1.15,
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "20n6U",
+              "x": 650,
+              "y": 250,
+              "name": "pill1",
+              "width": 172,
+              "height": 30,
+              "fill": "#DDEDF0",
+              "cornerRadius": 15,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "moTl3",
+                  "name": "pill1Text",
+                  "fill": "#5B82A0",
+                  "content": "MÉDICO ESPECIALISTA",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hjtri",
+              "x": 834,
+              "y": 250,
+              "name": "pill2",
+              "width": 98,
+              "height": 30,
+              "fill": "$primary",
+              "cornerRadius": 15,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "k01BD",
+                  "name": "pill2Text",
+                  "fill": "#FFFFFF",
+                  "content": "CMP 79326",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Kzyv7",
+              "x": 944,
+              "y": 250,
+              "name": "pill3",
+              "width": 102,
+              "height": 30,
+              "fill": "$primary",
+              "cornerRadius": 15,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "HFl3F",
+                  "name": "pill3Text",
+                  "fill": "#FFFFFF",
+                  "content": "RNE 048301",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "vmiwQ",
+              "x": 650,
+              "y": 312,
+              "name": "aboutName",
+              "fill": "$dark",
+              "textGrowth": "fixed-width",
+              "width": 700,
+              "content": "Dr. Gustavo Paucar Chávez",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 52,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "goAuF",
+              "x": 650,
+              "y": 398,
+              "name": "aboutBio",
+              "fill": "#536577",
+              "textGrowth": "fixed-width",
+              "width": 616,
+              "content": "Médico psiquiatra con amplia experiencia en el diagnóstico y tratamiento de trastornos mentales en adultos y adolescentes. Especialista en depresión, ansiedad, esquizofrenia, insomnio crónico y adicciones. Ofrece un enfoque integral basado en la evidencia científica y terapias personalizadas para mejorar la calidad de vida.",
+              "lineHeight": 1.55,
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "gwliZ",
+              "x": 650,
+              "y": 700,
+              "name": "eduCard",
+              "width": 288,
+              "height": 264,
+              "fill": "#FFFFFF",
+              "cornerRadius": 22,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#EEF2F7"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A10",
+                "offset": {
+                  "x": 0,
+                  "y": 14
+                },
+                "blur": 26
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CwORK",
+                  "x": 22,
+                  "y": 22,
+                  "name": "eduIconWrap",
+                  "width": 36,
+                  "height": 36,
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#EEF2F7"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "PObUK",
+                      "name": "eduIcon",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "graduation-cap",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "NZDCp",
+                  "x": 22,
+                  "y": 78,
+                  "name": "eduTitle",
+                  "fill": "#334155",
+                  "textGrowth": "fixed-width",
+                  "width": 220,
+                  "content": "Formación Académica",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "kqo3q",
+                  "x": 22,
+                  "y": 112,
+                  "name": "eduList",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 244,
+                  "content": "• Universidad Nacional de San Agustín de Arequipa\n• Máster en Actualización de Tratamientos Psiquiátricos en pacientes menores\n• The Institute for Functional Medicine",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "L66SO",
+              "x": 962,
+              "y": 700,
+              "name": "expCard",
+              "width": 330,
+              "height": 264,
+              "fill": "#FFFFFF",
+              "cornerRadius": 22,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#EEF2F7"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A10",
+                "offset": {
+                  "x": 0,
+                  "y": 14
+                },
+                "blur": 26
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JlGMy",
+                  "x": 22,
+                  "y": 22,
+                  "name": "expIconWrap",
+                  "width": 36,
+                  "height": 36,
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#EEF2F7"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "ELMtG",
+                      "name": "expIcon",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "building-2",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "XETn8",
+                  "x": 22,
+                  "y": 78,
+                  "name": "expTitle",
+                  "fill": "#334155",
+                  "textGrowth": "fixed-width",
+                  "width": 240,
+                  "content": "Experiencia Hospitalaria",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "gpINO",
+                  "x": 22,
+                  "y": 112,
+                  "name": "expList",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 284,
+                  "content": "• Hospital Honorio Delgado Espinoza\n• Hospital III Yanahuara\n• Hospital de Camaná",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "FH7j7",
+              "x": 650,
+              "y": 1000,
+              "name": "langLabel",
+              "fill": "$primary",
+              "content": "IDIOMAS",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "frame",
+              "id": "qWiHH",
+              "x": 650,
+              "y": 1026,
+              "name": "lang1",
+              "width": 96,
+              "height": 34,
+              "fill": "#FFFFFF",
+              "cornerRadius": 17,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E2E8F0"
+              },
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OMsL5",
+                  "name": "lang1Text",
+                  "fill": "#64748B",
+                  "content": "Español",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "euLPZ",
+              "x": 758,
+              "y": 1026,
+              "name": "lang2",
+              "width": 84,
+              "height": 34,
+              "fill": "#FFFFFF",
+              "cornerRadius": 17,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E2E8F0"
+              },
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "DeY52",
+                  "name": "lang2Text",
+                  "fill": "#64748B",
+                  "content": "Inglés",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "C8gxh",
+              "x": 854,
+              "y": 1026,
+              "name": "lang3",
+              "width": 96,
+              "height": 34,
+              "fill": "#FFFFFF",
+              "cornerRadius": 17,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E2E8F0"
+              },
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MSEkC",
+                  "name": "lang3Text",
+                  "fill": "#64748B",
+                  "content": "Alemán",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "0nmT1",
+          "x": 0,
+          "y": 1940,
+          "name": "Conditions",
+          "width": 1440,
+          "height": 500,
+          "fill": "$primary",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "vwNok",
+              "x": 0,
+              "y": 0,
+              "name": "conditionsDots",
+              "opacity": 0.35,
+              "width": 1440,
+              "height": 500,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./assets/dot-grid.svg",
+                "mode": "stretch"
+              }
+            },
+            {
+              "type": "text",
+              "id": "0tE8y",
+              "x": 360,
+              "y": 56,
+              "name": "conditionsTitle",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 720,
+              "content": "Enfermedades Tratadas",
+              "textAlign": "center",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 52,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "UH23t",
+              "x": 390,
+              "y": 118,
+              "name": "conditionsSubtitle",
+              "fill": "#C7DDEA",
+              "textGrowth": "fixed-width",
+              "width": 660,
+              "content": "Abordaje clínico especializado para diversas patologías de la salud mental.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "itzA4",
+              "x": 100,
+              "y": 214,
+              "name": "cond1",
+              "width": 288,
+              "height": 50,
+              "fill": "#1E547A",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "5hN3p",
+                  "name": "cond1Text",
+                  "fill": "#EAF6FB",
+                  "content": "• Depresión Mayor",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qn9G1",
+              "x": 414,
+              "y": 214,
+              "name": "cond2",
+              "width": 288,
+              "height": 50,
+              "fill": "#1E547A",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "HOYSt",
+                  "name": "cond2Text",
+                  "fill": "#EAF6FB",
+                  "content": "• Trastornos de Ansiedad",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "o0MUB",
+              "x": 728,
+              "y": 214,
+              "name": "cond3",
+              "width": 288,
+              "height": 50,
+              "fill": "#1E547A",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "BbVy1",
+                  "name": "cond3Text",
+                  "fill": "#EAF6FB",
+                  "content": "• Ataques de Pánico",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BAeVA",
+              "x": 1042,
+              "y": 214,
+              "name": "cond4",
+              "width": 288,
+              "height": 50,
+              "fill": "#1E547A",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JscFv",
+                  "name": "cond4Text",
+                  "fill": "#EAF6FB",
+                  "content": "• TDAH (Déficit de Atención)",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "46b6t",
+              "x": 100,
+              "y": 282,
+              "name": "cond5",
+              "width": 288,
+              "height": 50,
+              "fill": "#1E547A",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "1SDqn",
+                  "name": "cond5Text",
+                  "fill": "#EAF6FB",
+                  "content": "• Trastorno Obsesivo Compulsivo",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aYpVs",
+              "x": 414,
+              "y": 282,
+              "name": "cond6",
+              "width": 288,
+              "height": 50,
+              "fill": "#1E547A",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XVi0F",
+                  "name": "cond6Text",
+                  "fill": "#EAF6FB",
+                  "content": "• Esquizofrenia",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lClwx",
+              "x": 728,
+              "y": 282,
+              "name": "cond7",
+              "width": 288,
+              "height": 50,
+              "fill": "#1E547A",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zg74J",
+                  "name": "cond7Text",
+                  "fill": "#EAF6FB",
+                  "content": "• Insomnio Crónico",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mZZm9",
+              "x": 1042,
+              "y": 282,
+              "name": "cond8",
+              "width": 288,
+              "height": 50,
+              "fill": "#1E547A",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "aPstS",
+                  "name": "cond8Text",
+                  "fill": "#EAF6FB",
+                  "content": "• Fobia Social",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QXI8g",
+              "x": 100,
+              "y": 350,
+              "name": "cond9",
+              "width": 288,
+              "height": 50,
+              "fill": "#1E547A",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bZVo2",
+                  "name": "cond9Text",
+                  "fill": "#EAF6FB",
+                  "content": "• Trastornos de Personalidad",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VLaBq",
+              "x": 414,
+              "y": 350,
+              "name": "cond10",
+              "width": 288,
+              "height": 50,
+              "fill": "#1E547A",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "izYdb",
+                  "name": "cond10Text",
+                  "fill": "#EAF6FB",
+                  "content": "• Adicción al Juego (Ludopatía)",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rgzXV",
+              "x": 728,
+              "y": 350,
+              "name": "cond11",
+              "width": 288,
+              "height": 50,
+              "fill": "#1E547A",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dSJJF",
+                  "name": "cond11Text",
+                  "fill": "#EAF6FB",
+                  "content": "• Alcoholismo",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "l47r7",
+              "x": 1042,
+              "y": 350,
+              "name": "cond12",
+              "width": 288,
+              "height": 50,
+              "fill": "#1E547A",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "fF8fV",
+                  "name": "cond12Text",
+                  "fill": "#EAF6FB",
+                  "content": "• Anorexia Nerviosa",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xjCgH",
+          "x": 0,
+          "y": 2440,
+          "name": "Services",
+          "width": 1440,
+          "height": 980,
+          "fill": "$light",
+          "layout": "none",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "zgiYc",
+              "x": -140,
+              "y": 40,
+              "name": "servicesGlow1",
+              "fill": "#51BABC14",
+              "width": 860,
+              "height": 620,
+              "effect": {
+                "type": "blur",
+                "radius": 120
+              }
+            },
+            {
+              "type": "ellipse",
+              "id": "IgAyl",
+              "x": 920,
+              "y": 160,
+              "name": "servicesGlow2",
+              "fill": "#14B8A610",
+              "width": 420,
+              "height": 360,
+              "effect": {
+                "type": "blur",
+                "radius": 110
+              }
+            },
+            {
+              "type": "text",
+              "id": "BQlyX",
+              "x": 380,
+              "y": 72,
+              "name": "servicesTitle",
+              "fill": "$primary",
+              "textGrowth": "fixed-width",
+              "width": 680,
+              "content": "Nuestros Servicios",
+              "textAlign": "center",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 58,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "jBoLO",
+              "x": 410,
+              "y": 148,
+              "name": "servicesSubtitle",
+              "fill": "#64748B",
+              "textGrowth": "fixed-width",
+              "width": 620,
+              "content": "Atención especializada con tarifas claras y transparentes.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "500"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "nsTSx",
+              "x": 694,
+              "y": 206,
+              "name": "servicesLine",
+              "fill": "$accent",
+              "width": 68,
+              "height": 4
+            },
+            {
+              "type": "frame",
+              "id": "H6qbK",
+              "x": 102,
+              "y": 256,
+              "name": "svc1",
+              "width": 330,
+              "height": 284,
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#EEF2F7"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A10",
+                "offset": {
+                  "x": 0,
+                  "y": 14
+                },
+                "blur": 26
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ITEb7",
+                  "x": 28,
+                  "y": 28,
+                  "name": "svc1IconWrap",
+                  "width": 42,
+                  "height": 42,
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "JD3rn",
+                      "name": "svc1Icon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "brain",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "MfYvj",
+                  "x": 28,
+                  "y": 104,
+                  "name": "svc1Title",
+                  "fill": "$dark",
+                  "textGrowth": "fixed-width",
+                  "width": 260,
+                  "content": "Consulta Especializada",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "g6MIV",
+                  "x": 28,
+                  "y": 156,
+                  "name": "svc1Desc",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 270,
+                  "content": "Evaluación completa del estado mental y diagnóstico para adultos y adolescentes.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "ynTsB",
+                  "x": 28,
+                  "y": 228,
+                  "name": "svc1Btn",
+                  "width": 274,
+                  "height": 44,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 9,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$accent"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jf62m",
+                      "name": "svc1BtnText",
+                      "fill": "$accent",
+                      "content": "Reservar Cita",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yC73L",
+              "x": 456,
+              "y": 256,
+              "name": "svc2",
+              "width": 330,
+              "height": 284,
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#EEF2F7"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A10",
+                "offset": {
+                  "x": 0,
+                  "y": 14
+                },
+                "blur": 26
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "cVOwI",
+                  "x": 28,
+                  "y": 28,
+                  "name": "svc2IconWrap",
+                  "width": 42,
+                  "height": 42,
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "tnx0v",
+                      "name": "svc2Icon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "activity",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "oUVXJ",
+                  "x": 28,
+                  "y": 104,
+                  "name": "svc2Title",
+                  "fill": "$dark",
+                  "textGrowth": "fixed-width",
+                  "width": 260,
+                  "content": "Visitas Sucesivas",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "rxq1T",
+                  "x": 28,
+                  "y": 156,
+                  "name": "svc2Desc",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 270,
+                  "content": "Seguimiento continuo y ajuste de tratamiento.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "tDyS3",
+                  "x": 28,
+                  "y": 228,
+                  "name": "svc2Btn",
+                  "width": 274,
+                  "height": 44,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 9,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$accent"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "3DIc4",
+                      "name": "svc2BtnText",
+                      "fill": "$accent",
+                      "content": "Reservar Cita",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "T2NHG",
+              "x": 810,
+              "y": 256,
+              "name": "svc3",
+              "width": 330,
+              "height": 284,
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#EEF2F7"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A10",
+                "offset": {
+                  "x": 0,
+                  "y": 14
+                },
+                "blur": 26
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tyAf4",
+                  "x": 28,
+                  "y": 28,
+                  "name": "svc3IconWrap",
+                  "width": 42,
+                  "height": 42,
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "liazt",
+                      "name": "svc3Icon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "stethoscope",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "cjlDk",
+                  "x": 28,
+                  "y": 104,
+                  "name": "svc3Title",
+                  "fill": "$dark",
+                  "textGrowth": "fixed-width",
+                  "width": 260,
+                  "content": "Consulta Online",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "557oh",
+                  "x": 28,
+                  "y": 156,
+                  "name": "svc3Desc",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 270,
+                  "content": "Atención remota con la misma calidad y calidez profesional.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "1UVEj",
+                  "x": 28,
+                  "y": 228,
+                  "name": "svc3Btn",
+                  "width": 274,
+                  "height": 44,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 9,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$accent"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KtKzZ",
+                      "name": "svc3BtnText",
+                      "fill": "$accent",
+                      "content": "Reservar Cita",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nbpLC",
+              "x": 102,
+              "y": 570,
+              "name": "svc4",
+              "width": 330,
+              "height": 284,
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#EEF2F7"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A10",
+                "offset": {
+                  "x": 0,
+                  "y": 14
+                },
+                "blur": 26
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ZG1jZ",
+                  "x": 28,
+                  "y": 28,
+                  "name": "svc4IconWrap",
+                  "width": 42,
+                  "height": 42,
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "mVqCD",
+                      "name": "svc4Icon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "graduation-cap",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "3webC",
+                  "x": 28,
+                  "y": 104,
+                  "name": "svc4Title",
+                  "fill": "$dark",
+                  "textGrowth": "fixed-width",
+                  "width": 260,
+                  "content": "Certificados Salud Mental",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "fjb1B",
+                  "x": 28,
+                  "y": 156,
+                  "name": "svc4Desc",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 270,
+                  "content": "Documentación oficial para trámites administrativos y laborales.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "XX4Ez",
+                  "x": 28,
+                  "y": 228,
+                  "name": "svc4Btn",
+                  "width": 274,
+                  "height": 44,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 9,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$accent"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "q3zCA",
+                      "name": "svc4BtnText",
+                      "fill": "$accent",
+                      "content": "Reservar Cita",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "S69Fc",
+              "x": 456,
+              "y": 570,
+              "name": "svc5",
+              "width": 330,
+              "height": 284,
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#EEF2F7"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A10",
+                "offset": {
+                  "x": 0,
+                  "y": 14
+                },
+                "blur": 26
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gqSbO",
+                  "x": 28,
+                  "y": 28,
+                  "name": "svc5IconWrap",
+                  "width": 42,
+                  "height": 42,
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "OVX4f",
+                      "name": "svc5Icon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "heart-pulse",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "t4RMS",
+                  "x": 28,
+                  "y": 104,
+                  "name": "svc5Title",
+                  "fill": "$dark",
+                  "textGrowth": "fixed-width",
+                  "width": 260,
+                  "content": "Taller: Ansiedad",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "wxFJu",
+                  "x": 28,
+                  "y": 156,
+                  "name": "svc5Desc",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 270,
+                  "content": "Estrategias prácticas para el manejo de crisis y estrés.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "6g2xr",
+                  "x": 28,
+                  "y": 228,
+                  "name": "svc5Btn",
+                  "width": 274,
+                  "height": 44,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 9,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$accent"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "4t2q5",
+                      "name": "svc5BtnText",
+                      "fill": "$accent",
+                      "content": "Reservar Cita",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qHA6y",
+              "x": 810,
+              "y": 570,
+              "name": "svc6",
+              "width": 330,
+              "height": 284,
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#EEF2F7"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A10",
+                "offset": {
+                  "x": 0,
+                  "y": 14
+                },
+                "blur": 26
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ABXbc",
+                  "x": 28,
+                  "y": 28,
+                  "name": "svc6IconWrap",
+                  "width": 42,
+                  "height": 42,
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "BdEnG",
+                      "name": "svc6Icon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "activity",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "YF7aI",
+                  "x": 28,
+                  "y": 104,
+                  "name": "svc6Title",
+                  "fill": "$dark",
+                  "textGrowth": "fixed-width",
+                  "width": 260,
+                  "content": "Tratamiento Adicciones",
+                  "fontFamily": "Cormorant Garamond",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "r2VFP",
+                  "x": 28,
+                  "y": 156,
+                  "name": "svc6Desc",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 270,
+                  "content": "Ludopatía, alcoholismo y otras dependencias.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "VuXyG",
+                  "x": 28,
+                  "y": 228,
+                  "name": "svc6Btn",
+                  "width": 274,
+                  "height": 44,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 9,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$accent"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Gf81A",
+                      "name": "svc6BtnText",
+                      "fill": "$accent",
+                      "content": "Reservar Cita",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "1qCYB",
+          "x": 0,
+          "y": 3420,
+          "name": "Testimonials",
+          "width": 1440,
+          "height": 760,
+          "fill": "$primary",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "a3xVX",
+              "x": 0,
+              "y": 0,
+              "name": "testDots",
+              "opacity": 0.35,
+              "width": 1440,
+              "height": 760,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./assets/dot-grid.svg",
+                "mode": "stretch"
+              }
+            },
+            {
+              "type": "text",
+              "id": "XlCHH",
+              "x": 310,
+              "y": 80,
+              "name": "testTitle",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 820,
+              "content": "Lo que dicen nuestros pacientes",
+              "textAlign": "center",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 58,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "9qPqV",
+              "x": 420,
+              "y": 154,
+              "name": "testSubtitle",
+              "fill": "#C7DDEA",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "Opiniones verificadas de Doctoralia",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "500"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "GDOk6",
+              "x": 694,
+              "y": 212,
+              "name": "testLine",
+              "fill": "$accent",
+              "width": 68,
+              "height": 4
+            },
+            {
+              "type": "frame",
+              "id": "NO6mc",
+              "x": 114,
+              "y": 284,
+              "name": "card1",
+              "width": 382,
+              "height": 242,
+              "fill": "#FFFFFF",
+              "cornerRadius": 22,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#EEF2F7"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "aagQG",
+                  "x": 28,
+                  "y": 32,
+                  "name": "card1Avatar",
+                  "fill": "#EAF2F7",
+                  "width": 42,
+                  "height": 42
+                },
+                {
+                  "type": "text",
+                  "id": "Grdom",
+                  "x": 42,
+                  "y": 41,
+                  "name": "card1Initial",
+                  "fill": "#64748B",
+                  "content": "C",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "6LVzh",
+                  "x": 86,
+                  "y": 34,
+                  "name": "card1Meta",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 170,
+                  "content": "Camila V.\n25 de noviembre de 2025",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "KU542",
+                  "x": 288,
+                  "y": 40,
+                  "name": "card1Stars",
+                  "fill": "$secondary",
+                  "content": "★★★★★",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "6dt0e",
+                  "x": 28,
+                  "y": 102,
+                  "name": "card1Review",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 320,
+                  "content": "\"Muy buen profesional, muy dedicado y paciente en sus explicaciones.\"",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "500",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "T1cyb",
+              "x": 529,
+              "y": 284,
+              "name": "card2",
+              "width": 382,
+              "height": 242,
+              "fill": "#FFFFFF",
+              "cornerRadius": 22,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#EEF2F7"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "9jMbl",
+                  "x": 28,
+                  "y": 32,
+                  "name": "card2Avatar",
+                  "fill": "#EAF2F7",
+                  "width": 42,
+                  "height": 42
+                },
+                {
+                  "type": "text",
+                  "id": "BOJM4",
+                  "x": 42,
+                  "y": 41,
+                  "name": "card2Initial",
+                  "fill": "#64748B",
+                  "content": "J",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "BKGgz",
+                  "x": 86,
+                  "y": 34,
+                  "name": "card2Meta",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 170,
+                  "content": "JG\n4 de noviembre de 2025",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Av2rb",
+                  "x": 288,
+                  "y": 40,
+                  "name": "card2Stars",
+                  "fill": "$secondary",
+                  "content": "★★★★★",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "EX3ae",
+                  "x": 28,
+                  "y": 102,
+                  "name": "card2Review",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 320,
+                  "content": "\"Muy buena atención, resultados con el tratamiento\"",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "500",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PjWjR",
+              "x": 944,
+              "y": 284,
+              "name": "card3",
+              "width": 382,
+              "height": 242,
+              "fill": "#FFFFFF",
+              "cornerRadius": 22,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#EEF2F7"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "ROikV",
+                  "x": 28,
+                  "y": 32,
+                  "name": "card3Avatar",
+                  "fill": "#EAF2F7",
+                  "width": 42,
+                  "height": 42
+                },
+                {
+                  "type": "text",
+                  "id": "I6lNv",
+                  "x": 42,
+                  "y": 41,
+                  "name": "card3Initial",
+                  "fill": "#64748B",
+                  "content": "G",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "0lKkD",
+                  "x": 86,
+                  "y": 34,
+                  "name": "card3Meta",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 170,
+                  "content": "Gilmer\n29 de octubre de 2025",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "J567w",
+                  "x": 288,
+                  "y": 40,
+                  "name": "card3Stars",
+                  "fill": "$secondary",
+                  "content": "★★★★★",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "soLWe",
+                  "x": 28,
+                  "y": 102,
+                  "name": "card3Review",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 320,
+                  "content": "\"Muy recomendable, explica todo a detalle. Muy buen profesional.\"",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "500",
+                  "fontStyle": "italic"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Qwgbi",
+              "x": 559,
+              "y": 588,
+              "name": "testCta",
+              "width": 322,
+              "height": 38,
+              "fill": "#FFFFFF",
+              "cornerRadius": 19,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E2E8F0"
+              },
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "0tmbZ",
+                  "name": "testCtaText",
+                  "fill": "#64748B",
+                  "content": "Ver perfil en Doctoralia   ★★★★★",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jFEKw",
+          "x": 0,
+          "y": 4180,
+          "name": "FAQ",
+          "width": 1440,
+          "height": 900,
+          "fill": "$light",
+          "layout": "none",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "rB87y",
+              "x": -120,
+              "y": 0,
+              "name": "faqGlow1",
+              "fill": "#51BABC14",
+              "width": 760,
+              "height": 620,
+              "effect": {
+                "type": "blur",
+                "radius": 120
+              }
+            },
+            {
+              "type": "ellipse",
+              "id": "hSFGM",
+              "x": 950,
+              "y": 120,
+              "name": "faqGlow2",
+              "fill": "#14B8A610",
+              "width": 360,
+              "height": 360,
+              "effect": {
+                "type": "blur",
+                "radius": 110
+              }
+            },
+            {
+              "type": "text",
+              "id": "NCHrl",
+              "x": 360,
+              "y": 74,
+              "name": "faqTitle",
+              "fill": "$primary",
+              "textGrowth": "fixed-width",
+              "width": 720,
+              "content": "Preguntas Frecuentes",
+              "textAlign": "center",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 58,
+              "fontWeight": "600"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "9DWQy",
+              "x": 694,
+              "y": 154,
+              "name": "faqLine",
+              "fill": "$accent",
+              "width": 68,
+              "height": 4
+            },
+            {
+              "type": "frame",
+              "id": "IblxM",
+              "x": 156,
+              "y": 244,
+              "name": "faqOpen",
+              "width": 624,
+              "height": 186,
+              "fill": "#FFFFFF",
+              "cornerRadius": 18,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E2E8F0"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kEdUT",
+                  "x": 18,
+                  "y": 22,
+                  "name": "faqOpenQ",
+                  "fill": "$primary",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "¿Qué condiciones trata el Dr. Gustavo Paucar?",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "j8P19",
+                  "x": 570,
+                  "y": 16,
+                  "name": "faqOpenIcon",
+                  "width": 30,
+                  "height": 30,
+                  "fill": "$accent",
+                  "cornerRadius": 15,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "XYnO8",
+                      "name": "faqOpenChevron",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "chevron-up",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "jo6Ua",
+                  "x": 18,
+                  "y": 68,
+                  "name": "faqOpenA",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 560,
+                  "content": "El Dr. Gustavo Paucar se especializa en el diagnóstico y tratamiento de trastornos como la ansiedad, depresión, trastorno afectivo bipolar, esquizofrenia, ataques de pánico y trastornos del sueño (insomnio). Su enfoque es integral, buscando no solo el alivio de síntomas, sino la recuperación funcional del paciente.",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JBgc9",
+              "x": 156,
+              "y": 448,
+              "name": "faq2",
+              "width": 624,
+              "height": 58,
+              "fill": "#FFFFFF",
+              "cornerRadius": 18,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E2E8F0"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8Afyy",
+                  "x": 18,
+                  "y": 18,
+                  "name": "faq2Q",
+                  "fill": "$primary",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "¿Cómo es la primera consulta psiquiátrica?",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "Pb1oV",
+                  "x": 570,
+                  "y": 14,
+                  "name": "faq2Icon",
+                  "width": 30,
+                  "height": 30,
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 15,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "Mu8CG",
+                      "name": "faq2Chevron",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "$secondary"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "81OU8",
+              "x": 156,
+              "y": 522,
+              "name": "faq3",
+              "width": 624,
+              "height": 58,
+              "fill": "#FFFFFF",
+              "cornerRadius": 18,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E2E8F0"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "icNOO",
+                  "x": 18,
+                  "y": 18,
+                  "name": "faq3Q",
+                  "fill": "$primary",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "¿Realiza consultas presenciales y online?",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "4Fl56",
+                  "x": 570,
+                  "y": 14,
+                  "name": "faq3Icon",
+                  "width": 30,
+                  "height": 30,
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 15,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "tFBsO",
+                      "name": "faq3Chevron",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "$secondary"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CJB95",
+              "x": 156,
+              "y": 596,
+              "name": "faq4",
+              "width": 624,
+              "height": 58,
+              "fill": "#FFFFFF",
+              "cornerRadius": 18,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E2E8F0"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mEdZg",
+                  "x": 18,
+                  "y": 18,
+                  "name": "faq4Q",
+                  "fill": "$primary",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "¿Acepta seguros médicos o EPS?",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "gUrsf",
+                  "x": 570,
+                  "y": 14,
+                  "name": "faq4Icon",
+                  "width": 30,
+                  "height": 30,
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 15,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "JyQyE",
+                      "name": "faq4Chevron",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "$secondary"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "7INuf",
+              "x": 156,
+              "y": 670,
+              "name": "faq5",
+              "width": 624,
+              "height": 58,
+              "fill": "#FFFFFF",
+              "cornerRadius": 18,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E2E8F0"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "7YvRT",
+                  "x": 18,
+                  "y": 18,
+                  "name": "faq5Q",
+                  "fill": "$primary",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "¿Cuál es la diferencia entre psiquiatra y psicólogo?",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "VN3yU",
+                  "x": 570,
+                  "y": 14,
+                  "name": "faq5Icon",
+                  "width": 30,
+                  "height": 30,
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 15,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "iHxNG",
+                      "name": "faq5Chevron",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "$secondary"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 44,
+              "id": "n8qHL",
+              "x": 884,
+              "y": 262,
+              "name": "faqBlob1",
+              "rotation": 3.0000000000000004,
+              "fill": "#EAF0FF",
+              "width": 332,
+              "height": 404
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 44,
+              "id": "etZ32",
+              "x": 900,
+              "y": 252,
+              "name": "faqBlob2",
+              "rotation": -2,
+              "fill": "#DCE7FF55",
+              "width": 332,
+              "height": 404,
+              "effect": {
+                "type": "blur",
+                "radius": 6
+              }
+            },
+            {
+              "type": "frame",
+              "id": "TIwK1",
+              "x": 920,
+              "y": 238,
+              "name": "faqImage",
+              "width": 286,
+              "height": 480,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "../public/images/asset1.webp",
+                "mode": "fit"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "ZQDoe",
+              "x": 1118,
+              "y": 304,
+              "name": "faqLocCard",
+              "width": 186,
+              "height": 74,
+              "fill": "#FFFFFF",
+              "cornerRadius": 20,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A12",
+                "offset": {
+                  "x": 0,
+                  "y": 14
+                },
+                "blur": 26
+              },
+              "gap": 12,
+              "padding": [
+                14,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "CKzbO",
+                  "name": "faqLocIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "map-pin",
+                  "iconFontFamily": "lucide",
+                  "fill": "#4F86FF"
+                },
+                {
+                  "type": "text",
+                  "id": "S6R8n",
+                  "name": "faqLocText",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 120,
+                  "content": "Ubicación\nConsultorio en Arequipa",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "r6AZY",
+              "x": 804,
+              "y": 594,
+              "name": "faqContactCard",
+              "width": 236,
+              "height": 60,
+              "fill": "#FFFFFF",
+              "cornerRadius": 18,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A12",
+                "offset": {
+                  "x": 0,
+                  "y": 14
+                },
+                "blur": 24
+              },
+              "gap": 12,
+              "padding": [
+                12,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "X8jtd",
+                  "name": "faqContactIcon",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "message-circle",
+                  "iconFontFamily": "lucide",
+                  "fill": "#22C55E"
+                },
+                {
+                  "type": "text",
+                  "id": "s5mrU",
+                  "name": "faqContactText",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 140,
+                  "content": "¿Dudas?\nContáctanos al WhatsApp",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BzXju",
+              "x": 1068,
+              "y": 670,
+              "name": "faqBadge",
+              "width": 182,
+              "height": 34,
+              "fill": "#1E293B",
+              "cornerRadius": 17,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0F172A18",
+                "offset": {
+                  "x": 0,
+                  "y": 14
+                },
+                "blur": 24
+              },
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "RPU7z",
+                  "name": "faqBadgeText",
+                  "fill": "#FFFFFF",
+                  "content": "Atención Especializada",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pjUSr",
+          "x": 0,
+          "y": 5080,
+          "name": "Location",
+          "width": 1440,
+          "height": 760,
+          "fill": "$primary",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "oMUPn",
+              "x": 0,
+              "y": 0,
+              "name": "locDots",
+              "opacity": 0.35,
+              "width": 1440,
+              "height": 760,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./assets/dot-grid.svg",
+                "mode": "stretch"
+              }
+            },
+            {
+              "type": "text",
+              "id": "4KoQb",
+              "x": 370,
+              "y": 70,
+              "name": "locTitle",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 700,
+              "content": "Visítanos en Arequipa",
+              "textAlign": "center",
+              "fontFamily": "Cormorant Garamond",
+              "fontSize": 58,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "QLksc",
+              "x": 455,
+              "y": 144,
+              "name": "locSubtitle",
+              "fill": "#C7DDEA",
+              "textGrowth": "fixed-width",
+              "width": 530,
+              "content": "Estamos listos para atenderte",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "nwgCb",
+              "x": 102,
+              "y": 240,
+              "name": "locCard1",
+              "width": 490,
+              "height": 96,
+              "fill": "#1E547A",
+              "cornerRadius": 18,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "gap": 16,
+              "padding": [
+                18,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "6pdx8",
+                  "name": "locCard1Icon",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "map-pin",
+                  "iconFontFamily": "lucide",
+                  "fill": "$secondary"
+                },
+                {
+                  "type": "text",
+                  "id": "3ffXE",
+                  "name": "locCard1Text",
+                  "fill": "#EAF6FB",
+                  "textGrowth": "fixed-width",
+                  "width": 360,
+                  "content": "Dirección\nOrquideas 105, Yanahuara 04014, Arequipa",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bELZS",
+              "x": 102,
+              "y": 356,
+              "name": "locCard2",
+              "width": 490,
+              "height": 96,
+              "fill": "#1E547A",
+              "cornerRadius": 18,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "gap": 16,
+              "padding": [
+                18,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "2X23g",
+                  "name": "locCard2Icon",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "phone",
+                  "iconFontFamily": "lucide",
+                  "fill": "$secondary"
+                },
+                {
+                  "type": "text",
+                  "id": "mDWg6",
+                  "name": "locCard2Text",
+                  "fill": "#EAF6FB",
+                  "textGrowth": "fixed-width",
+                  "width": 360,
+                  "content": "Contacto Directo\n953 426 499",
+                  "lineHeight": 1.3,
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "3uMc0",
+              "x": 102,
+              "y": 472,
+              "name": "locCard3",
+              "width": 490,
+              "height": 96,
+              "fill": "#1E547A",
+              "cornerRadius": 18,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "gap": 16,
+              "padding": [
+                18,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "DvprI",
+                  "name": "locCard3Icon",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "clock-3",
+                  "iconFontFamily": "lucide",
+                  "fill": "$secondary"
+                },
+                {
+                  "type": "text",
+                  "id": "gfJYp",
+                  "name": "locCard3Text",
+                  "fill": "#EAF6FB",
+                  "textGrowth": "fixed-width",
+                  "width": 360,
+                  "content": "Horario de Atención\nLunes a Sábado: 9:00 AM - 8:00 PM",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NyXT3",
+              "x": 102,
+              "y": 608,
+              "name": "locButton",
+              "width": 230,
+              "height": 42,
+              "fill": "$secondary",
+              "cornerRadius": 21,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#14B8A624",
+                "offset": {
+                  "x": 0,
+                  "y": 12
+                },
+                "blur": 24
+              },
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sXfCj",
+                  "name": "locButtonText",
+                  "fill": "#FFFFFF",
+                  "content": "Escríbenos por WhatsApp",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yZ8jP",
+              "x": 686,
+              "y": 240,
+              "name": "mapFrame",
+              "width": 642,
+              "height": 430,
+              "fill": "#DDE7F1",
+              "cornerRadius": 20,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2F6B93"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "line",
+                  "id": "KvxUi",
+                  "x": 40,
+                  "y": 100,
+                  "name": "road1",
+                  "width": 520,
+                  "height": 110,
+                  "stroke": {
+                    "thickness": 5,
+                    "cap": "round",
+                    "fill": "#FFFFFF"
+                  }
+                },
+                {
+                  "type": "line",
+                  "id": "gk47x",
+                  "x": 120,
+                  "y": 40,
+                  "name": "road2",
+                  "width": 280,
+                  "height": 260,
+                  "stroke": {
+                    "thickness": 4,
+                    "cap": "round",
+                    "fill": "#F59E0B"
+                  }
+                },
+                {
+                  "type": "line",
+                  "id": "WU4Zq",
+                  "x": 280,
+                  "y": 10,
+                  "name": "road3",
+                  "width": 220,
+                  "height": 320,
+                  "stroke": {
+                    "thickness": 4,
+                    "cap": "round",
+                    "fill": "#93C5FD"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "DjKuo",
+                  "x": 18,
+                  "y": 18,
+                  "name": "mapBadge",
+                  "width": 116,
+                  "height": 32,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ve2cI",
+                      "name": "mapBadgeText",
+                      "fill": "#64748B",
+                      "content": "Arequipa, Perú",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QmxbZ",
+                  "x": 18,
+                  "y": 344,
+                  "name": "mapOverlay",
+                  "width": 606,
+                  "height": 68,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0F172A12",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 20
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UxROP",
+                      "x": 18,
+                      "y": 14,
+                      "name": "mapOverlayTitle",
+                      "fill": "#334155",
+                      "content": "Ver en Google Maps",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MoZDG",
+                      "x": 18,
+                      "y": 36,
+                      "name": "mapOverlaySub",
+                      "fill": "#94A3B8",
+                      "content": "Obtén indicaciones para llegar",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qC4PC",
+                      "x": 548,
+                      "y": 14,
+                      "name": "mapArrow",
+                      "width": 40,
+                      "height": 40,
+                      "fill": "$primary",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "6BBk4",
+                          "name": "mapArrowText",
+                          "fill": "#FFFFFF",
+                          "content": ">",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "4j9P5",
+          "x": 0,
+          "y": 5840,
+          "name": "Footer",
+          "width": 1440,
+          "height": 330,
+          "fill": "$footer",
+          "layout": "none"
+        },
+        {
+          "type": "frame",
+          "id": "gc170",
+          "x": 1342,
+          "y": 678,
+          "name": "whatsWrap",
+          "width": 58,
+          "height": 58,
+          "fill": "#25D366",
+          "cornerRadius": 29,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#25D36655",
+            "offset": {
+              "x": 0,
+              "y": 18
+            },
+            "blur": 28
+          },
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "7mwfz",
+              "name": "whatsIcon",
+              "width": 30,
+              "height": 30,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "../public/images/icons_whatsapp.svg",
+                "mode": "fit"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "mepTg",
+      "x": 1576,
+      "y": -778,
+      "name": "Frame 1",
+      "clip": true,
+      "width": 691,
+      "height": 641,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "rectangle",
+      "cornerRadius": [
+        110,
+        110,
+        27,
+        27
+      ],
+      "id": "w8Mpr",
+      "x": 2661,
+      "y": 146,
+      "fill": "#6da0cf29",
+      "width": 289,
+      "height": 384,
+      "stroke": {
+        "align": "outside",
+        "thickness": 10,
+        "fill": "#ffffffff"
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "PmKtl",
+      "x": 2601,
+      "y": -43,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "galene-image1.png",
+        "mode": "fill"
+      },
+      "width": 471,
+      "height": 664
+    }
+  ],
+  "variables": {
+    "accent": {
+      "type": "color",
+      "value": "#14B8A6"
+    },
+    "bodyFont": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "border": {
+      "type": "color",
+      "value": "#E2E8F0"
+    },
+    "dark": {
+      "type": "color",
+      "value": "#0F172A"
+    },
+    "footer": {
+      "type": "color",
+      "value": "#0F172A"
+    },
+    "headingFont": {
+      "type": "string",
+      "value": "Cormorant Garamond"
+    },
+    "light": {
+      "type": "color",
+      "value": "#F8FAFC"
+    },
+    "muted": {
+      "type": "color",
+      "value": "#64748B"
+    },
+    "primary": {
+      "type": "color",
+      "value": "#064168"
+    },
+    "secondary": {
+      "type": "color",
+      "value": "#51BABC"
+    }
+  }
+}

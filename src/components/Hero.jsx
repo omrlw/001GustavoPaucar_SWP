@@ -105,7 +105,7 @@ const Hero = () => (
               srcSet="/images/hero-lcp-512.webp 512w, /images/hero-lcp-768.webp 768w, /images/hero-lcp-1024.webp 1024w"
               sizes="(min-width: 1280px) 664px, (min-width: 1024px) 560px, (min-width: 640px) 512px, 100vw"
               alt="Instalaciones y equipo de Galene Salud Mental"
-              className="absolute inset-0 w-full h-full object-cover p-2"
+              className="absolute inset-0 w-full h-full object-cover"
               width={768}
               height={768}
               loading="eager"
