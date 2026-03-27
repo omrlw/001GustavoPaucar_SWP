@@ -1,3 +1,5 @@
+import { SEO_PAGES } from '../../data/seoPages.js';
+
 const DEFAULT_SEO = {
   title: 'Psiquiatra en Arequipa | Dr. Gustavo Paucar Chávez | Galene',
   description:
@@ -14,6 +16,15 @@ const ROUTE_SEO = {
     title: 'Términos de Uso | Galene',
     description: 'Términos de uso del sitio web de Galene Salud Mental e Integrativa.',
   },
+  ...Object.fromEntries(
+    SEO_PAGES.map((page) => [
+      page.path,
+      {
+        title: page.title,
+        description: page.description,
+      },
+    ])
+  ),
 };
 
 const CANONICAL_HOST = 'www.galenesalud.com';
@@ -49,10 +60,7 @@ export function getSeoForPath(pathname) {
 }
 
 export function getBaseUrl() {
-  let envUrl = import.meta.env.VITE_SITE_URL || import.meta.env.PUBLIC_SITE_URL;
-  if (!envUrl && typeof process !== 'undefined') {
-    envUrl = process.env.VITE_SITE_URL || process.env.PUBLIC_SITE_URL;
-  }
+  const envUrl = import.meta.env.VITE_SITE_URL || import.meta.env.PUBLIC_SITE_URL;
   const raw = envUrl || FALLBACK_BASE_URL;
   return canonicalizeSiteUrl(normalizeSiteUrl(raw));
 }

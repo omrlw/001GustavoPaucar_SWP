@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionTitle from '../components/ui/SectionTitle.jsx';
+import LocalSeoLinks from '../components/LocalSeoLinks.astro';
+import ServiceStructuredData from '../components/seo/ServiceStructuredData.astro';
+import { BRAND_INFO } from '../data/content';
+import { SEO_PAGES } from '../data/seoPages.js';
+
+const page = SEO_PAGES.find((entry) => entry.path === '/consulta-psiquiatrica-online');
+const scenarios = [
+  'Pacientes que viven fuera de Arequipa y necesitan seguimiento continuo.',
+  'Personas con dificultad para trasladarse o con horarios muy ajustados.',
+  'Seguimiento de ansiedad, depresión, insomnio y ajustes terapéuticos.',
+];
+const expectations = [
+  'La cita se realiza por videollamada en un espacio privado y sin interrupciones.',
+  'Conviene tener a mano antecedentes, exámenes y la lista actual de medicación.',
+  'Si hubiera una urgencia o riesgo inmediato, corresponde buscar atención presencial de emergencia.',
+];
+---
+
+<BaseLayout title={page.title} description={page.description}>
+  <Fragment slot="head">
+    <ServiceStructuredData
+      path={page.path}
+      title={page.title}
+      description={page.description}
+      serviceName={page.serviceName}
+      areaServed="Perú"
+      remote={true}
+    />
+  </Fragment>
+
+  <section class="pt-32 pb-16 sm:pt-36 lg:pt-40">
+    <div class="container mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
+      <p class="text-sm font-semibold uppercase tracking-[0.25em] text-accent">Telemedicina</p>
+      <h1 class="mt-4 font-heading text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        Consulta psiquiátrica online para pacientes en Perú
+      </h1>
+      <p class="mt-6 max-w-3xl text-lg leading-relaxed text-slate-600">
+        La atención virtual permite continuar tratamiento, resolver dudas clínicas y mantener el
+        seguimiento cuando no puedes acudir al consultorio. Es una opción útil para pacientes que
+        requieren continuidad y orientación profesional con mayor flexibilidad.
+      </p>
+      <a
+        href={BRAND_INFO.whatsappLink}
+        target="_blank"
+        rel="noreferrer"
+        class="mt-8 inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 font-semibold text-white shadow-lg shadow-accent/15 transition hover:bg-accent-hover"
+      >
+        Agendar consulta online
+      </a>
+    </div>
+  </section>
+
+  <section class="pb-16">
+    <div class="container mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
+      <SectionTitle
+        title="¿Para quién puede ser útil?"
+        subtitle="La consulta virtual es especialmente valiosa cuando la continuidad del tratamiento es prioritaria."
+        align="left"
+      />
+      <div class="grid gap-6 md:grid-cols-3">
+        {scenarios.map((item) => (
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 text-sm leading-relaxed text-slate-700 shadow-sm">
+            {item}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light-alt py-16">
+    <div class="container mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
+      <SectionTitle
+        title="Qué esperar de la cita"
+        subtitle="Un proceso ordenado ayuda a que la consulta remota sea clara, eficiente y segura."
+        align="left"
+      />
+      <div class="grid gap-4">
+        {expectations.map((item) => (
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 text-sm leading-relaxed text-slate-700 shadow-sm">
+            {item}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
+      <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+        <h2 class="font-heading text-3xl font-semibold tracking-tight text-slate-900">
+          Atención online con continuidad clínica
+        </h2>
+        <p class="mt-4 text-base leading-relaxed text-slate-700">
+          La consulta psiquiátrica online puede ser un buen complemento o continuidad de la atención
+          presencial. Si deseas confirmar disponibilidad, modalidad y pasos previos, puedes
+          comunicarte directamente por WhatsApp.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <LocalSeoLinks currentPath={page.path} />
+</BaseLayout>

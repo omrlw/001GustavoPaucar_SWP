@@ -2,10 +2,10 @@
 import '../styles/fonts.css';
 import '../index.css';
 import Footer from '../components/layout/Footer.jsx';
-import NavbarClient from '../components/layout/NavbarClient.jsx';
+import Navbar from '../components/layout/Navbar.astro';
 import FloatingWhatsApp from '../components/FloatingWhatsApp.jsx';
-import ScrollReveal from '../components/ScrollReveal.jsx';
-import DeferredAnalytics from '../components/DeferredAnalytics.jsx';
+import ScrollReveal from '../components/ScrollReveal.astro';
+import DeferredAnalytics from '../components/DeferredAnalytics.astro';
 import { getSeoForPath } from '../components/seo/seoConfig.js';
 
 const { title: titleProp, description: descriptionProp, robots: robotsProp } = Astro.props;
@@ -51,7 +51,6 @@ const ogImage = siteUrl ? `${siteUrl}/images/hero-lcp-1024.webp` : '/images/hero
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -78,24 +77,18 @@ const ogImage = siteUrl ? `${siteUrl}/images/hero-lcp-1024.webp` : '/images/hero
     <meta name="twitter:image" content={ogImage} />
 
     <title>{title}</title>
-    <link
-      rel="preload"
-      as="image"
-      href="/images/hero-lcp-768.webp"
-      imagesrcset="/images/hero-lcp-512.webp 512w, /images/hero-lcp-768.webp 768w, /images/hero-lcp-1024.webp 1024w"
-      imagesizes="(min-width: 1280px) 664px, (min-width: 1024px) 560px, (min-width: 640px) 512px, 100vw"
-    />
+    <slot name="head" />
   </head>
   <body>
     <div class="font-body text-dark antialiased bg-light page-mesh">
-      <ScrollReveal client:load />
-      <NavbarClient client:load />
+      <ScrollReveal />
+      <Navbar />
       <main>
         <slot />
       </main>
       <Footer />
       <FloatingWhatsApp />
-      <DeferredAnalytics client:idle />
+      <DeferredAnalytics />
     </div>
   </body>
 </html>

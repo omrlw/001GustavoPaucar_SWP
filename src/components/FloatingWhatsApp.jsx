@@ -16,6 +16,8 @@ const FloatingWhatsApp = () => (
       className="w-10 h-10"
       width={40}
       height={40}
+      loading="lazy"
+      fetchPriority="low"
       decoding="async"
     />
     <span className="absolute right-full mr-4 bg-white text-slate-800 px-3 py-1 rounded-lg text-sm font-medium shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap hidden md:block pointer-events-none select-none">

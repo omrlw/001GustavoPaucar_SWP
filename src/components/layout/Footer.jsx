@@ -21,6 +21,11 @@ const Footer = () => {
             src="/images/docplanner.webp"
             alt="Doctoralia"
             className="w-4 h-4 object-contain brightness-0 invert opacity-60 group-hover:opacity-100"
+            width={16}
+            height={16}
+            loading="lazy"
+            fetchPriority="low"
+            decoding="async"
           />
         );
       default: return null;
@@ -37,6 +42,11 @@ const Footer = () => {
                 src="/images/LogoGaleneOscuro.svg"
                 alt={BRAND_INFO.name}
                 className="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity brightness-0 invert"
+                width={216}
+                height={40}
+                loading="lazy"
+                fetchPriority="low"
+                decoding="async"
               />
             </a>
             <p className="max-w-xs text-slate-500 mb-6">{FOOTER_CONTENT.mission}</p>

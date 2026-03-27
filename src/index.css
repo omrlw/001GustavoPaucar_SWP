@@ -22,7 +22,7 @@
   /* Un gris suave para hover */
 
   --font-heading: "Cormorant Garamond", serif;
-  --font-body: "Inter", sans-serif;
+  --font-body: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 :root {
@@ -211,23 +211,6 @@
   }
 }
 
-@layer components {
-  .testimonial-marquee {
-    width: max-content;
-    animation: testimonialMarquee 50s linear infinite;
-  }
-}
-
-@keyframes testimonialMarquee {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
 @layer utilities {
   .cv-auto {
     content-visibility: auto;
@@ -257,6 +240,28 @@
 
   .bg-light-alt {
     background-color: rgba(6, 65, 104, 0.02);
+  }
+}
+
+@layer components {
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item .faq-panel {
+    grid-template-rows: 0fr;
+    opacity: 0;
+  }
+
+  .faq-item[open] .faq-panel {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+
+  .faq-item[open] .faq-icon {
+    transform: rotate(180deg);
+    background-color: var(--accent);
+    color: white;
   }
 }
 
@@ -500,7 +505,6 @@
 
 
   .hero-particle,
-  .testimonial-marquee,
   .animate-bounce-slow,
   .animate-float-slow,
   .animate-pulse-gentle {

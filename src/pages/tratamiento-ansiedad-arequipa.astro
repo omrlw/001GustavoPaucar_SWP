@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionTitle from '../components/ui/SectionTitle.jsx';
+import LocalSeoLinks from '../components/LocalSeoLinks.astro';
+import ServiceStructuredData from '../components/seo/ServiceStructuredData.astro';
+import { BRAND_INFO } from '../data/content';
+import { SEO_PAGES } from '../data/seoPages.js';
+
+const page = SEO_PAGES.find((entry) => entry.path === '/tratamiento-ansiedad-arequipa');
+const symptoms = [
+  'Sensación constante de alerta o preocupación difícil de controlar.',
+  'Palpitaciones, opresión en el pecho, falta de aire o temblores.',
+  'Problemas de sueño, rumiación mental, irritabilidad o fatiga.',
+  'Crisis intensas de miedo, evitación de lugares o sensación de pérdida de control.',
+];
+const treatmentSteps = [
+  'Evaluación clínica para diferenciar ansiedad generalizada, ataques de pánico, insomnio u otras causas.',
+  'Plan de tratamiento individual según intensidad, antecedentes y funcionamiento diario.',
+  'Seguimiento para ajustar medicación, pautas de sueño, manejo de estrés y coordinación con psicoterapia.',
+];
+---
+
+<BaseLayout title={page.title} description={page.description}>
+  <Fragment slot="head">
+    <ServiceStructuredData
+      path={page.path}
+      title={page.title}
+      description={page.description}
+      serviceName={page.serviceName}
+    />
+  </Fragment>
+
+  <section class="pt-32 pb-16 sm:pt-36 lg:pt-40">
+    <div class="container mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
+      <p class="text-sm font-semibold uppercase tracking-[0.25em] text-accent">Salud mental en Arequipa</p>
+      <h1 class="mt-4 font-heading text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        Tratamiento de ansiedad en Arequipa con evaluación psiquiátrica especializada
+      </h1>
+      <p class="mt-6 max-w-3xl text-lg leading-relaxed text-slate-600">
+        Si la ansiedad está afectando tu descanso, concentración o relaciones, una valoración
+        médica puede ayudarte a entender qué ocurre y cómo abordarlo. El tratamiento se adapta a
+        la intensidad de los síntomas y a tu contexto personal.
+      </p>
+    </div>
+  </section>
+
+  <section class="pb-16">
+    <div class="container mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
+      <SectionTitle
+        title="Síntomas frecuentes"
+        subtitle="La ansiedad puede expresarse de forma emocional, física y conductual."
+        align="left"
+      />
+      <div class="grid gap-4 md:grid-cols-2">
+        {symptoms.map((item) => (
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 text-sm leading-relaxed text-slate-700 shadow-sm">
+            {item}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light-alt py-16">
+    <div class="container mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
+      <SectionTitle
+        title="Cómo se plantea el tratamiento"
+        subtitle="El objetivo es reducir síntomas y recuperar funcionamiento, no solo “aguantar” la ansiedad."
+        align="left"
+      />
+      <div class="grid gap-6 lg:grid-cols-3">
+        {treatmentSteps.map((item) => (
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 text-sm leading-relaxed text-slate-700 shadow-sm">
+            {item}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
+      <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+        <h2 class="font-heading text-3xl font-semibold tracking-tight text-slate-900">
+          Consulta si tus síntomas ya están interfiriendo con tu vida diaria
+        </h2>
+        <p class="mt-4 text-base leading-relaxed text-slate-700">
+          Si la ansiedad se acompaña de insomnio, dificultad para trabajar, sensación de
+          descontrol o evitación creciente, vale la pena pedir una cita. La atención presencial en
+          Arequipa permite revisar la evolución con más precisión y decidir si conviene combinar
+          estrategias médicas y psicoterapéuticas.
+        </p>
+        <a
+          href={BRAND_INFO.whatsappLink}
+          target="_blank"
+          rel="noreferrer"
+          class="mt-6 inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 font-semibold text-white shadow-lg shadow-accent/15 transition hover:bg-accent-hover"
+        >
+          Solicitar orientación por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <LocalSeoLinks currentPath={page.path} />
+</BaseLayout>

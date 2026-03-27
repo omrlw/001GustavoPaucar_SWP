@@ -1,16 +1,13 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { Quote, Star } from 'lucide-react';
 import SectionTitle from './ui/SectionTitle';
 import { TESTIMONIALS_CONTENT } from '../data/content';
 
 const Testimonials = () => {
-  const marqueeReviews = useMemo(
-    () => [...TESTIMONIALS_CONTENT.reviews, ...TESTIMONIALS_CONTENT.reviews],
-    []
-  );
+  const featuredReviews = TESTIMONIALS_CONTENT.reviews.slice(0, 6);
 
   return (
-    <section id="testimonios" className="py-16 sm:py-20 lg:py-24 bg-primary overflow-hidden section-glow border-y border-slate-200/50">
+    <section id="testimonios" className="cv-auto py-16 sm:py-20 lg:py-24 bg-primary overflow-hidden section-glow border-y border-slate-200/50">
       <div
         className="absolute inset-0 opacity-10 pointer-events-none"
         style={{
@@ -30,47 +27,34 @@ const Testimonials = () => {
 
         />
 
-        <div className="relative mt-10">
-          <div className="overflow-hidden">
-            <div className="flex gap-8 testimonial-marquee">
-              {marqueeReviews.map((review, idx) => (
-                <article
-                  key={`${review.author}-${review.date}-${idx}`}
-                  className="bg-light p-10 rounded-2xl relative shadow-sm border border-slate-50 shrink-0 flex flex-col gap-3 w-[280px] h-[280px] sm:w-[300px] sm:h-[300px] lg:w-[500px] lg:h-[280px]"
-                >
-                  <Quote size={26} className="text-primary/10 absolute top-4 right-4" aria-hidden />
-                  <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                    <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
-                      <div className="w-12 h-12 rounded-full bg-primary/10 text-primary font-semibold flex items-center justify-center text-lg">
-                        {review.initial}
-                      </div>
-                      <div className="flex flex-col gap-0.5">
-                        <p className="font-bold text-sm text-dark">{review.author}</p>
-                        <p className="text-xs text-dark/60 hidden sm:block">{review.date}</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-2 sm:hidden">
-                      <p className="text-xs text-dark/60">{review.date}</p>
-                      <div className="flex gap-1" aria-label="Calificación de cinco estrellas">
-                        {[1, 2, 3, 4, 5].map((star) => (
-                          <Star key={star} size={14} className="fill-secondary text-secondary" aria-hidden />
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className="hidden sm:flex gap-1" aria-label="Calificación de cinco estrellas">
-                      {[1, 2, 3, 4, 5].map((star) => (
-                        <Star key={star} size={14} className="fill-secondary text-secondary" aria-hidden />
-                      ))}
-                    </div>
+        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {featuredReviews.map((review) => (
+            <article
+              key={`${review.author}-${review.date}`}
+              className="relative flex h-full flex-col gap-4 rounded-2xl border border-slate-50 bg-light p-8 shadow-sm"
+            >
+              <Quote size={26} className="absolute right-4 top-4 text-primary/10" aria-hidden />
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-lg font-semibold text-primary">
+                    {review.initial}
                   </div>
+                  <div>
+                    <p className="font-bold text-sm text-dark">{review.author}</p>
+                    <p className="text-xs text-dark/60">{review.badge}</p>
+                  </div>
+                </div>
+                <div className="flex gap-1 text-secondary" aria-label="Calificación de cinco estrellas">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star key={star} size={14} className="fill-current" aria-hidden />
+                  ))}
+                </div>
+              </div>
 
-                  <p className=" py-2 text-gray-600 italic font-body leading-relaxed line-clamp-6 font-">"{review.text}"</p>
-                </article>
-              ))}
-            </div>
-          </div>
+              <p className="text-sm text-dark/60">{review.date}</p>
+              <p className="text-gray-600 italic font-body leading-relaxed">"{review.text}"</p>
+            </article>
+          ))}
         </div>
 
         <div className="mt-12 text-center">

@@ -1,0 +1,113 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionTitle from '../components/ui/SectionTitle.jsx';
+import LocalSeoLinks from '../components/LocalSeoLinks.astro';
+import ServiceStructuredData from '../components/seo/ServiceStructuredData.astro';
+import { BRAND_INFO, DOCTOR_DATA } from '../data/content';
+import { SEO_PAGES } from '../data/seoPages.js';
+
+const page = SEO_PAGES.find((entry) => entry.path === '/psiquiatra-arequipa');
+const benefits = [
+  'Evaluación psiquiátrica completa con enfoque humano y basado en evidencia.',
+  'Diagnóstico y plan terapéutico para ansiedad, depresión, insomnio y adicciones.',
+  'Seguimiento continuo para ajustar medicación, hábitos y objetivos de recuperación.',
+];
+const signals = [
+  'Ansiedad persistente, crisis de pánico o pensamientos intrusivos.',
+  'Insomnio, irritabilidad, agotamiento emocional o dificultad para concentrarte.',
+  'Cambios de ánimo, desmotivación, consumo problemático o deterioro funcional.',
+];
+---
+
+<BaseLayout title={page.title} description={page.description}>
+  <Fragment slot="head">
+    <ServiceStructuredData
+      path={page.path}
+      title={page.title}
+      description={page.description}
+      serviceName={page.serviceName}
+    />
+  </Fragment>
+
+  <section class="pt-32 pb-16 sm:pt-36 lg:pt-40">
+    <div class="container mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
+      <p class="text-sm font-semibold uppercase tracking-[0.25em] text-accent">Atención presencial</p>
+      <h1 class="mt-4 font-heading text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        Psiquiatra en Arequipa con enfoque médico, humano y personalizado
+      </h1>
+      <p class="mt-6 max-w-3xl text-lg leading-relaxed text-slate-600">
+        El {DOCTOR_DATA.name} brinda atención psiquiátrica presencial en Arequipa para adultos y
+        adolescentes. La consulta se orienta a entender tus síntomas, establecer un diagnóstico
+        claro y construir un plan de tratamiento realista para tu día a día.
+      </p>
+
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a
+          href={BRAND_INFO.whatsappLink}
+          target="_blank"
+          rel="noreferrer"
+          class="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 font-semibold text-white shadow-lg shadow-accent/15 transition hover:bg-accent-hover"
+        >
+          Agendar por WhatsApp
+        </a>
+        <a
+          href="/#ubicacion"
+          class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-800 transition hover:border-primary hover:text-primary"
+        >
+          Ver ubicación del consultorio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-16">
+    <div class="container mx-auto grid max-w-5xl gap-6 px-6 sm:px-8 lg:grid-cols-3 lg:px-10">
+      {benefits.map((item) => (
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <p class="text-sm leading-relaxed text-slate-700">{item}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="bg-light-alt py-16">
+    <div class="container mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
+      <SectionTitle
+        title="¿Cuándo conviene consultar?"
+        subtitle="Buscar apoyo médico temprano suele ayudar a recuperar estabilidad con menos desgaste."
+        align="left"
+      />
+      <div class="grid gap-4 md:grid-cols-2">
+        {signals.map((item) => (
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 text-sm leading-relaxed text-slate-700 shadow-sm">
+            {item}
+          </div>
+        ))}
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 text-sm leading-relaxed text-slate-700 shadow-sm">
+          La consulta también es útil si ya recibiste tratamiento antes y necesitas una segunda
+          opinión o seguimiento más constante en Arequipa.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container mx-auto max-w-5xl px-6 sm:px-8 lg:px-10">
+      <SectionTitle
+        title="Atención clínica orientada a resultados"
+        subtitle="La meta no es solo aliviar síntomas, sino ayudarte a recuperar claridad, funcionamiento y bienestar."
+        align="left"
+      />
+      <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+        <p class="text-base leading-relaxed text-slate-700">
+          El consultorio está ubicado en {BRAND_INFO.address}. Durante la evaluación se revisan
+          antecedentes, síntomas actuales, impacto en sueño, ánimo, trabajo, estudios y vínculos.
+          Con esa información se define si conviene tratamiento farmacológico, ajustes de hábitos,
+          terapia complementaria o seguimiento periódico.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <LocalSeoLinks currentPath={page.path} />
+</BaseLayout>

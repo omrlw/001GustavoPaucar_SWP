@@ -1,7 +1,8 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { SEO_PAGES } from '../src/data/seoPages.js';
 
-const ROUTES = ['/', '/privacidad', '/terminos'];
+const ROUTES = ['/', '/privacidad', '/terminos', ...SEO_PAGES.map((page) => page.path)];
 const CANONICAL_HOST = 'www.galenesalud.com';
 const FALLBACK_BASE_URL = `https://${CANONICAL_HOST}`;
 
@@ -49,14 +50,11 @@ const toAbsoluteUrl = (baseUrl, route) => {
   return `${baseUrl}${route}`;
 };
 
-const formatIsoDate = (date) => date.toISOString().slice(0, 10);
-
 const projectRoot = process.cwd();
 const publicDir = path.join(projectRoot, 'public');
 
 const main = async () => {
   const baseUrl = canonicalizeBaseUrl(normalizeBaseUrl(getBaseUrl() || FALLBACK_BASE_URL));
-  const today = formatIsoDate(new Date());
 
   await fs.mkdir(publicDir, { recursive: true });
 
@@ -74,7 +72,6 @@ const main = async () => {
     return [
       '  <url>',
       `    <loc>${loc}</loc>`,
-      `    <lastmod>${today}</lastmod>`,
       '    <changefreq>weekly</changefreq>',
       '    <priority>0.8</priority>',
       '  </url>',

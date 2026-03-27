@@ -1,0 +1,103 @@
+---
+import { BRAND_INFO, DOCTOR_DATA } from '../../data/content';
+import { getBaseUrl } from './seoConfig';
+
+const {
+  path,
+  title,
+  description,
+  serviceName,
+  areaServed = 'Arequipa',
+  remote = false,
+} = Astro.props;
+
+const baseUrl = getBaseUrl();
+const pageUrl = `${baseUrl}${path}`;
+const cleanPhone = String(BRAND_INFO.phone || '').replace(/\D/g, '');
+const phone = cleanPhone.startsWith('51') ? `+${cleanPhone}` : `+51${cleanPhone}`;
+const address = {
+  '@type': 'PostalAddress',
+  streetAddress: BRAND_INFO.address,
+  addressLocality: 'Arequipa',
+  addressRegion: 'Arequipa',
+  addressCountry: 'PE',
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': ['MedicalClinic', 'LocalBusiness'],
+      '@id': `${baseUrl}/#clinic`,
+      name: 'Galene Salud Mental e Integrativa',
+      url: `${baseUrl}/`,
+      telephone: phone,
+      address,
+      areaServed: [{ '@type': 'AdministrativeArea', name: areaServed }],
+    },
+    {
+      '@type': 'Physician',
+      '@id': `${baseUrl}/#doctor`,
+      name: DOCTOR_DATA.name,
+      jobTitle: DOCTOR_DATA.specialty,
+      telephone: phone,
+      address,
+      areaServed: [{ '@type': 'AdministrativeArea', name: areaServed }],
+      affiliation: { '@id': `${baseUrl}/#clinic` },
+    },
+    {
+      '@type': ['WebPage', 'MedicalWebPage'],
+      '@id': `${pageUrl}#webpage`,
+      url: pageUrl,
+      name: title,
+      description,
+      inLanguage: 'es-PE',
+      isPartOf: { '@id': `${baseUrl}/#website` },
+      about: [
+        { '@id': `${baseUrl}/#doctor` },
+        { '@id': `${baseUrl}/#clinic` },
+      ],
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${pageUrl}#breadcrumb`,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Inicio',
+          item: `${baseUrl}/`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: serviceName,
+          item: pageUrl,
+        },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': `${pageUrl}#service`,
+      name: serviceName,
+      description,
+      areaServed: [{ '@type': 'AdministrativeArea', name: areaServed }],
+      provider: { '@id': `${baseUrl}/#clinic` },
+      availableChannel: remote
+        ? {
+            '@type': 'ServiceChannel',
+            serviceUrl: pageUrl,
+            availableLanguage: ['es', 'en'],
+          }
+        : undefined,
+      audience: {
+        '@type': 'PeopleAudience',
+        suggestedMinAge: 14,
+      },
+      telephone: phone,
+    },
+  ],
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

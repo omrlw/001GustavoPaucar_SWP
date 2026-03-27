@@ -81,6 +81,8 @@ const Hero = () => (
               className="w-5 h-5"
               width={20}
               height={20}
+              loading="lazy"
+              fetchPriority="low"
               decoding="async"
             />
             <div className="flex items-center gap-2 text-sm font-medium flex-wrap">
