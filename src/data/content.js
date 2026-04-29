@@ -91,7 +91,7 @@ export const CONDITIONS_CONTENT = {
 
 export const SERVICES_CONTENT = {
   title: 'Nuestros Servicios',
-  subtitle: 'Atención especializada con tarifas claras y transparentes.',
+  subtitle: 'Atención especializada y presupuestos adaptados a tus necesidades.',
   services: [
     {
       title: 'Consulta Especializada',
